@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Huiwen-mincho（汇文明朝体）—— 主要标题字体（自托管）
+   仅用于标题/展示文字；正文保持 --font-sans 不变
+   ============================================================ */
+@font-face {
+  font-family: "Huiwen-mincho";
+  src: url("./assets/fonts/Huiwen-mincho.otf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* ============================================================
+     Sonho Kitchen 品牌色系统 —— 温暖手作，非奢华酒店
+     Primary: Warm Beige   暖米色
+     Secondary: Coffee Brown 咖啡棕
+     Accent: Soft Sky Blue  柔和天蓝
+     ============================================================ */
+  --color-beige-50: #fbf7ef;   /* 最浅暖米（页面底） */
+  --color-beige-100: #f7f0e3; /* 暖米 */
+  --color-beige-200: #efe4d0; /* 暖米加深 */
+  --color-beige-300: #e5d5ba; /* 卡片描边/分隔 */
+  --color-beige-400: #d6bf9c; /* 次级暖米 */
+
+  --color-coffee-300: #b08a6a; /* 浅咖啡（次级文字） */
+  --color-coffee-400: #96704f; /* 咖啡（强调） */
+  --color-coffee-500: #7a5a3e; /* 主咖啡棕（标题/正文） */
+  --color-coffee-600: #5f4530; /* 深咖啡（主按钮文字/深强调） */
+  --color-coffee-700: #4a3526; /* 最深咖啡 */
+
+  --color-sky-200: #d7e6ec; /* 柔和天蓝（浅） */
+  --color-sky-300: #bcd6e2; /* 柔和天蓝 */
+  --color-sky-400: #9fc3d4; /* 柔和天蓝（强调） */
+  --color-sky-500: #7fa9bf; /* 柔和天蓝（深） */
+
+  /* 兼容旧 token（映射到暖色系，避免遗漏报错） */
+  --color-cream: #fbf7ef;
+  --color-sand: #efe4d0;
+  --color-gold: #b08a6a;
+  --color-latte: #d6bf9c;
+  --color-espresso: #4a3526;
+  --color-cocoa: #5f4530;
+  --color-mocha: #7a5a3e;
+  --color-ember: #c98a5a;
+  --color-wine: #8a6a50;
+  --color-sage: #a8b89a;
+
+  --font-serif: "Huiwen-mincho", "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+  --font-sans: "Inter", "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
+
+  --animate-fade-up: fade-up 0.6s ease-out both;
+  --animate-fade-in: fade-in 0.5s ease-out both;
+  --animate-pop: pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  --animate-shimmer: shimmer 2.2s linear infinite;
+  --animate-pulse-soft: pulse-soft 2s ease-in-out infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+  --animate-drift: drift 14s ease-in-out infinite alternate;
+  --animate-shine: shine 3.5s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes pop {
+    from { opacity: 0; transform: scale(0.92); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.55; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+    50% { transform: translateY(-10px) rotate(var(--rot, 0deg)); }
+  }
+  @keyframes drift {
+    0% { transform: translate3d(0, 0, 0) scale(1); }
+    100% { transform: translate3d(0, -3%, 0) scale(1.06); }
+  }
+  @keyframes shine {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.9; }
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f7f0e3; /* 暖米色页面底，避免纯黑 */
+  color: var(--color-coffee-600);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: none;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+/* Hide scrollbars for horizontal photo strips */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Text gradient helper —— 咖啡棕渐变（暖色） */
+.text-gradient-gold {
+  background: linear-gradient(120deg, #c9a06a, #7a5a3e 50%, #c9a06a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ============================================================
+   玻璃拟态（暖色系，浅色玻璃）—— Apple Journal / 手作质感
+   ============================================================ */
+.glass {
+  background: rgba(255, 252, 246, 0.6);
+  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  backdrop-filter: blur(20px) saturate(1.2);
+  border: 1px solid rgba(122, 90, 62, 0.12);
+}
+.glass-strong {
+  background: rgba(255, 252, 246, 0.82);
+  -webkit-backdrop-filter: blur(24px) saturate(1.3);
+  backdrop-filter: blur(24px) saturate(1.3);
+  border: 1px solid rgba(122, 90, 62, 0.14);
+}
+.glass-light {
+  background: rgba(255, 252, 246, 0.5);
+  -webkit-backdrop-filter: blur(14px) saturate(1.15);
+  backdrop-filter: blur(14px) saturate(1.15);
+  border: 1px solid rgba(122, 90, 62, 0.1);
+}
+
+/* Soft inner highlight for glass cards */
+.glass-highlight {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    0 20px 50px -24px rgba(90, 60, 35, 0.35);
+}
+
+/* ============================================================
+   漂浮照片卡 —— 手作纸张边缘 + 柔和阴影（非深色投影）
+   ============================================================ */
+.photo-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow:
+    0 16px 34px -18px rgba(90, 60, 35, 0.4),
+    0 0 0 1px rgba(122, 90, 62, 0.08);
+  background: #fff;
+}
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============================================================
+   动态色彩背景（暖色系，浅色）—— 由照片提取的柔和氛围
+   ============================================================ */
+.memory-bg {
+  background:
+    radial-gradient(120% 90% at 15% 0%, var(--bg-glow, rgba(214,191,156,0.5)) 0%, transparent 55%),
+    radial-gradient(140% 120% at 90% 100%, var(--bg-accent, rgba(159,195,212,0.4)) 0%, transparent 55%),
+    linear-gradient(180deg, var(--bg-mid, #f7f0e3) 0%, var(--bg-deep, #efe4d0) 100%);
+}
+
+/* Blurred photo backdrop layer —— 暖色提亮，非压暗 */
+.memory-photo-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(30px) saturate(1.1) brightness(1.05);
+  transform: scale(1.15);
+  opacity: 0.5;
+}
+
+/* Soft warm vignette overlay for story export */
+.story-vignette {
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 45%),
+    radial-gradient(140% 120% at 50% 110%, rgba(122,90,62,0.18) 0%, rgba(122,90,62,0) 55%);
+}
+
+/* Fine grain texture —— 纸张颗粒（手作感） */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Elegant serif display for storytelling */
+.story-display {
+  font-family: var(--font-serif);
+  letter-spacing: 0.01em;
+}
+
+/* ============================================================
+   可收藏记忆卡 —— 像一张手作明信片/收藏物件
+   ============================================================ */
+.keepsake-card {
+  position: relative;
+  background: #fffdf8;
+  border-radius: 22px;
+  border: 1px solid rgba(122, 90, 62, 0.14);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 24px 50px -28px rgba(90, 60, 35, 0.45);
+}
+
+/* 柔和天蓝点缀线（品牌强调） */
+.sky-rule {
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--color-sky-400), transparent);
+}
+
+/* 咖啡棕正文排版（编辑感） */
+.editorial-body {
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
