@@ -3,6 +3,12 @@
 // 构图原则：1 张 Hero（主角）+ 2 张支持照片（Memory Snapshots）
 //   - 第二张"招牌时刻"是 Hero，引导时视觉强调
 //   - 不鼓励等权构图
+//
+// 体验原则（记忆优先，而非点评工具）：
+//   - 相机始终是视觉中心，灵感卡只是低层级的温柔提示
+//   - 不评判、不说"正确拍法"、保留用户自主权
+//   - 拍完后先肯定"这一刻已经留下了。"，再给一条可选建议
+//   - [就用这张] 与 [再拍一个角度] 心理上同等正当
 import { useEffect, useState } from 'react'
 import { PHOTO_STEPS } from '../data/photos'
 import { useCamera } from '../hooks/useCamera'
@@ -122,7 +128,7 @@ export default function CaptureScreen({ onComplete, onExit, initialPhotos = [] }
     }
   }
 
-  // 重拍
+  // 再拍一个角度（与"就用这张"心理对等）
   const retake = () => {
     setPhase(PHASE.CAMERA)
     setAnalysis(null)
@@ -198,72 +204,85 @@ export default function CaptureScreen({ onComplete, onExit, initialPhotos = [] }
   )
 }
 
-// ---- 章节进度（顶部分段条，暖色） ----
+// ---- 章节进度（顶部分段条 + 01 空间 / 02 主角 / 03 同行 叙事） ----
 function ChapterDots({ current, total }) {
+  const step = PHOTO_STEPS[current]
   return (
-    <div className="flex items-center gap-1.5">
-      {Array.from({ length: total }).map((_, i) => (
-        <div
-          key={i}
-          className={`h-1 rounded-full transition-all duration-500 ${
-            i === current ? 'w-6 bg-coffee-500' : i < current ? 'w-4 bg-coffee-400/60' : 'w-4 bg-coffee-300/30'
-          }`}
-        />
-      ))}
+    <div className="flex flex-col items-center gap-1.5">
+      <div className="flex items-center gap-1.5">
+        {Array.from({ length: total }).map((_, i) => (
+          <div
+            key={i}
+            className={`h-1 rounded-full transition-all duration-500 ${
+              i === current ? 'w-6 bg-coffee-500' : i < current ? 'w-4 bg-coffee-400/60' : 'w-4 bg-coffee-300/30'
+            }`}
+          />
+        ))}
+      </div>
+      {/* 进度叙事：01 空间 / 02 主角 / 03 同行（而非 1/3） */}
+      <div className="flex items-center gap-1.5 text-[10px] tracking-[0.18em] text-coffee-400">
+        <span className="font-medium text-coffee-500">{step.index}</span>
+        <span className="text-coffee-400/80">{step.chapter}</span>
+      </div>
     </div>
   )
 }
 
-// ---- 拍摄引导视图（暖色手作 + Hero 强调） ----
+// ---- 轻量摄影提醒（小字，无重容器） ----
+function Reminders({ items }) {
+  if (!items?.length) return null
+  return (
+    <ul className="mx-auto flex w-full max-w-sm flex-col items-center gap-1.5">
+      {items.map((text, i) => (
+        <li key={i} className="flex items-center gap-2 text-[12px] leading-relaxed text-coffee-400">
+          <span className="text-coffee-300">{['①', '②', '③'][i] || '·'}</span>
+          <span>{text}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+// ---- 拍摄引导视图（Hero 照片即老师，界面极简） ----
 function GuideView({ step, stepIndex, isHero, onStart, onDemo }) {
   return (
-    <div className="flex flex-1 flex-col px-6 pt-6 animate-fade-in">
-      {/* 章节氛围大图 */}
-      <div className={`relative mx-auto w-full max-w-sm overflow-hidden rounded-[1.8rem] ${isHero ? 'aspect-[4/5]' : 'aspect-[4/3]'}`}>
-        <div className="absolute inset-0" style={{ background: guideBg(step.id) }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-beige-200/70 via-transparent to-transparent" />
-        {/* 章节标签 */}
-        <div className="glass-light absolute left-4 top-4 flex items-center gap-2 rounded-full px-3 py-1.5">
-          <Icon name={step.icon} size={14} className="text-coffee-500" />
-          <span className="text-xs font-medium text-coffee-600">{step.chapter}</span>
+    <div className="flex flex-1 flex-col px-5 pt-3 animate-fade-in">
+      {/* 章节 Hero：真实餐厅照片铺满，文字叠层（照片是主角） */}
+      <div className="editorial-frame photo-vignette photo-bottom-gradient relative mx-auto w-full max-w-sm aspect-[4/5]">
+        <img src={step.photo} alt={step.photoAlt || step.title} className="photo-warm" />
+        {/* 章节标签（玻璃胶囊，仅文字背后） */}
+        <div className="glass-capsule absolute left-4 top-4 flex items-center gap-2 rounded-full px-3 py-1.5">
+          <Icon name={step.icon} size={14} className="text-beige-50" />
+          <span className="text-xs font-medium text-beige-50 photo-text-shadow">{step.chapter}</span>
         </div>
-        {/* Hero 徽章 */}
+        {/* Hero 徽章（弱化措辞，避免"正确拍法"暗示） */}
         {isHero && (
-          <div className="absolute right-4 top-4 flex items-center gap-1.5 rounded-full bg-sky-400/90 px-3 py-1.5 text-beige-50">
-            <Icon name="dish" size={13} />
-            <span className="text-xs font-semibold">Hero 主角镜头</span>
+          <div className="glass-capsule-dark absolute right-4 top-4 flex items-center gap-1.5 rounded-full px-3 py-1.5">
+            <Icon name="dish" size={13} className="text-beige-50" />
+            <span className="text-xs font-semibold text-beige-50 photo-text-shadow">今晚的主角</span>
           </div>
         )}
-        {/* 中央情感文案 */}
+        {/* 叠层文案：图 → 暖色渐变 → 文案（层级清晰，不与照片竞争） */}
         <div className="absolute inset-x-0 bottom-0 p-5">
-          <h2 className="story-display text-3xl text-coffee-600">{step.title}</h2>
-          <p className="mt-1 text-sm text-coffee-500/80">{step.subtitle}</p>
+          <p className="text-[10px] tracking-[0.24em] text-beige-100/85 photo-text-shadow">{step.eyebrow}</p>
+          <h2 className="story-display mt-1.5 text-3xl text-beige-50 photo-text-shadow">{step.title}</h2>
+          <p className="mt-1 text-sm text-beige-100/85 photo-text-shadow">{step.subtitle}</p>
         </div>
       </div>
 
-      {/* 引导语 */}
-      <p className="story-display mx-auto mt-7 max-w-xs text-center text-lg leading-relaxed text-coffee-600">
+      {/* 一句话引导 */}
+      <p className="story-display mx-auto mt-5 max-w-xs text-center text-[17px] leading-relaxed text-coffee-600">
         {step.prompt}
       </p>
 
-      {/* 摄影小贴士（暖色玻璃） */}
-      <div className="mx-auto mt-6 w-full max-w-sm space-y-2.5">
-        {step.tips.map((tip, i) => (
-          <div
-            key={i}
-            className="glass flex items-start gap-3 rounded-2xl px-4 py-3"
-          >
-            <span className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[11px] font-semibold ${isHero ? 'bg-sky-400/25 text-sky-500' : 'bg-coffee-500/15 text-coffee-500'}`}>
-              {i + 1}
-            </span>
-            <p className="text-sm leading-relaxed text-coffee-500">{tip}</p>
-          </div>
-        ))}
+      {/* 轻量摄影提醒（小字，无重容器） */}
+      <div className="mt-4">
+        <Reminders items={step.reminders} />
       </div>
 
-      <div className="mx-auto mt-auto w-full max-w-sm space-y-3 pb-6 pt-8">
+      <div className="mx-auto mt-auto w-full max-w-sm space-y-2.5 pb-5 pt-6">
         <PrimaryButton onClick={onStart} className="w-full" icon="camera">
-          {isHero ? '拍下今晚的主角' : stepIndex === 0 ? '拍下第一幕氛围' : '拍下这一章'}
+          {isHero ? '让这道菜成为主角' : stepIndex === 0 ? '记录今晚的空间' : '记住一起吃饭的人'}
         </PrimaryButton>
         <GhostButton onClick={onDemo} className="w-full">
           用示例照片体验
@@ -282,22 +301,23 @@ function guideBg(id) {
   return map[id] || map['signature-moment']
 }
 
-// ---- 相机取景视图（Hero 强调取景框） ----
+// ---- 相机取景视图（相机为视觉中心，灵感卡为低层级浮层） ----
 function CameraView({ camera, step, isHero, onCapture, cameraDenied, onUseDemo, demoMode }) {
   const { videoRef, flip } = camera
+
   return (
     <div className="flex flex-1 flex-col px-4 pt-3">
-      {/* 章节提示条 */}
-      <div className="glass mx-auto mb-3 flex items-center gap-2 rounded-full px-4 py-2 text-coffee-600">
-        <Icon name={step.icon} size={15} className="text-coffee-500" />
-        <span className="text-[13px]">{step.prompt}</span>
+      {/* 章节提示条（弱化，不喧宾夺主） */}
+      <div className="glass mx-auto mb-3 flex max-w-sm items-center gap-2 rounded-full px-4 py-2 text-coffee-600">
+        <span className="text-[10px] tracking-[0.18em] text-coffee-400">{step.index}</span>
+        <span className="text-[13px]">{step.title}</span>
         {isHero && (
-          <span className="ml-1 rounded-full bg-sky-400/90 px-2 py-0.5 text-[10px] font-semibold text-beige-50">Hero</span>
+          <span className="ml-1 rounded-full bg-sky-400/90 px-2 py-0.5 text-[10px] font-semibold text-beige-50">主角</span>
         )}
       </div>
 
       {/* 全屏取景框 */}
-      <div className={`relative mx-auto w-full max-w-sm overflow-hidden rounded-[1.8rem] bg-beige-200 shadow-xl shadow-coffee-500/15 ${isHero ? 'aspect-[3/4]' : 'aspect-[3/4]'}`}>
+      <div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-[1.8rem] bg-beige-200 shadow-xl shadow-coffee-500/15 aspect-[3/4]">
         {!cameraDenied && !demoMode ? (
           <video
             ref={videoRef}
@@ -389,7 +409,7 @@ function AnalyzingView({ enhancing, theme, photoBg }) {
           <Icon name="sparkles" size={38} className="text-coffee-500" />
         </div>
         <h3 className="story-display text-2xl text-coffee-600">
-          {enhancing ? '正在温柔修片…' : 'AI 正在读懂这一刻…'}
+          {enhancing ? '正在温柔修片…' : '正在收好这一刻…'}
         </h3>
         <p className="mt-3 max-w-xs text-sm leading-relaxed text-coffee-500">
           {enhancing
@@ -401,7 +421,7 @@ function AnalyzingView({ enhancing, theme, photoBg }) {
   )
 }
 
-// ---- 增强后确认视图（暖色 + Hero 强调） ----
+// ---- 增强后确认视图（先肯定，再给一条可选建议） ----
 function ReviewView({ analysis, enhancedSrc, theme, photoBg, onConfirm, onRetake, isLast, isHero }) {
   const css = theme
     ? {
@@ -411,6 +431,9 @@ function ReviewView({ analysis, enhancedSrc, theme, photoBg, onConfirm, onRetake
         '--bg-deep': theme.deep,
       }
     : {}
+  // 只取一条最温和的建议，避免"评分/评判"感
+  const gentleTip = analysis?.suggestions?.[0]
+
   return (
     <div className="relative flex flex-1 flex-col overflow-hidden px-5 pt-3 animate-fade-in">
       {/* 动态氛围背景 */}
@@ -420,49 +443,42 @@ function ReviewView({ analysis, enhancedSrc, theme, photoBg, onConfirm, onRetake
       <div className="memory-bg absolute inset-0" style={css} />
 
       <div className="relative z-10 flex flex-1 flex-col">
-        {/* 增强后照片 */}
+        {/* 增强后照片（编辑式画框，照片是主角） */}
         <div className="relative mx-auto w-full max-w-sm">
-          <div className={`photo-card w-full ${isHero ? 'aspect-[3/4]' : 'aspect-[3/4]'} rotate-[-1deg]`}>
-            <img src={enhancedSrc} alt="增强后的照片" />
-            {/* 滤镜标签 */}
-            <div className="glass-light absolute left-3 top-3 flex items-center gap-1.5 rounded-full px-3 py-1.5">
-              <Icon name="sparkles" size={13} className="text-coffee-500" />
-              <span className="text-xs font-medium text-coffee-600">AI 已温柔优化</span>
+          <div className="editorial-frame photo-vignette w-full aspect-[3/4]">
+            <img src={enhancedSrc} alt="刚刚记录下的这一刻" className="photo-warm" />
+            {/* 滤镜标签（弱化"AI 已优化"的评判感） */}
+            <div className="glass-capsule absolute left-3 top-3 flex items-center gap-1.5 rounded-full px-3 py-1.5">
+              <Icon name="sparkles" size={13} className="text-beige-50" />
+              <span className="text-xs font-medium text-beige-50 photo-text-shadow">已为你轻轻收好</span>
             </div>
             {isHero && (
-              <div className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-sky-400/90 px-2.5 py-1 text-beige-50">
-                <Icon name="dish" size={12} />
-                <span className="text-[11px] font-semibold">Hero</span>
+              <div className="glass-capsule-dark absolute right-3 top-3 flex items-center gap-1 rounded-full px-2.5 py-1">
+                <Icon name="dish" size={12} className="text-beige-50" />
+                <span className="text-[11px] font-semibold text-beige-50 photo-text-shadow">主角</span>
               </div>
             )}
           </div>
         </div>
 
-        {/* 正向 AI 反馈 */}
-        {analysis && (
-          <div className="glass glass-highlight mx-auto mt-5 w-full max-w-sm rounded-3xl p-4 animate-pop">
-            <p className="mb-2 flex items-center gap-2 text-sm font-semibold text-coffee-600">
-              <Icon name="sparkle" size={15} />
-              {analysis.opener}
+        {/* 先肯定：这一刻已经留下了。 */}
+        <div className="mx-auto mt-5 w-full max-w-sm text-center animate-pop">
+          <h3 className="story-display text-xl text-coffee-600">这一刻已经留下了。</h3>
+          {/* 可选的一条温和建议（不评分、不评判） */}
+          {gentleTip && (
+            <p className="mt-2 text-sm leading-relaxed text-coffee-500/90">
+              如果愿意，{gentleTip}
             </p>
-            <ul className="space-y-1.5">
-              {analysis.suggestions.slice(0, 2).map((s, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm leading-relaxed text-coffee-500">
-                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-sky-400" />
-                  {s}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+          )}
+        </div>
 
-        {/* 操作按钮 */}
+        {/* 操作按钮：心理上同等正当 */}
         <div className="mx-auto mt-auto flex w-full max-w-sm gap-3 pb-6 pt-5">
           <GhostButton onClick={onRetake} icon="retake" className="flex-1">
-            重拍
+            再拍一个角度
           </GhostButton>
-          <PrimaryButton onClick={onConfirm} className="flex-[1.6]" icon="arrow">
-            {isLast ? '完成记录' : '下一幕'}
+          <PrimaryButton onClick={onConfirm} className="flex-1" icon="arrow">
+            {isLast ? '就用这张，完成记录' : '就用这张'}
           </PrimaryButton>
         </div>
       </div>

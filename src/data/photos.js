@@ -4,49 +4,58 @@
 //   - 不鼓励等权构图
 //   - 第二张"招牌时刻"是 Hero，占据视觉主导
 //   - 第一、三张是氛围与陪伴的支持镜头
+//
+// 心理原则：不评判、不说"正确拍法"、保留用户自主权。
+// 摄影即老师：Hero 照片本身已传达拍摄语言，界面不再重复解释。
+//
+// 图片统一通过 assetUrl() 引用（兼容 GitHub Pages 子路径部署）。
+import { PHOTOS } from '../lib/assets'
 
 export const PHOTO_STEPS = [
   {
     id: 'first-impression',
     role: 'snapshot', // 支持照片：环境氛围
-    chapter: '氛围',
-    title: '先记住这里',
+    chapter: '空间',
+    index: '01',
+    eyebrow: 'CAPTURE THE ATMOSPHERE',
+    title: '记录今晚的空间',
     subtitle: '环境 · 光 · 气息',
-    prompt: '轻轻环顾四周，拍下让你放松下来的那一角',
-    tips: [
-      '找一个安静的角度，让画面留出呼吸',
-      '捕捉暖光、木桌与杯盘的气息',
-      '不用太满，留白让氛围更耐看',
-    ],
+    prompt: '拍下今晚第一眼让你记住的地方。',
+    // 轻量摄影提醒（小字，无重容器）
+    reminders: ['留一点呼吸', '捕捉暖光与木桌', '不必拍满整个画面'],
     icon: 'sparkle',
+    // Hero 照片：真实餐厅氛围照，本身就是拍摄语言
+    photo: PHOTOS.atmosphere,
+    photoAlt: '暖光下的餐厅空间氛围',
   },
   {
     id: 'signature-moment',
     role: 'hero', // Hero：招牌主角
     chapter: '主角',
-    title: '这一道，是今晚的主角',
+    index: '02',
+    eyebrow: 'MAKE ONE DISH THE HERO',
+    title: '让一道菜成为主角',
     subtitle: '招牌 · 主菜',
-    prompt: '把这道菜拍成整晚的 Hero 镜头',
-    tips: [
-      '让主菜占据画面大半，成为唯一主角',
-      '靠近一些，让热气与光泽清晰可见',
-      '侧光下拍摄，食物会更立体诱人',
-    ],
+    prompt: '靠近一点，让今晚最喜欢的一道菜成为画面中心。',
+    reminders: ['靠近一点', '让热气与光泽清晰', '侧光下更立体'],
     icon: 'dish',
+    photo: PHOTOS.heroDish,
+    photoAlt: '主菜特写的光泽与构图',
   },
   {
     id: 'memory-moment',
     role: 'snapshot', // 支持照片：相聚陪伴
-    chapter: '陪伴',
-    title: '还有身边的人',
+    chapter: '同行',
+    index: '03',
+    eyebrow: 'CAPTURE THE MOMENT',
+    title: '记住一起吃饭的人',
     subtitle: '相聚 · 举杯',
-    prompt: '把这一刻的笑容与碰杯轻轻收进画面',
-    tips: [
-      '抓拍自然的互动瞬间',
-      '让餐桌与朋友一起入镜',
-      '举起杯子，让故事更有温度',
-    ],
+    prompt:
+      '不用再拍一道菜。一次夹菜、碰杯、递过来的碗，也可以成为今晚最值得记住的瞬间。',
+    reminders: ['抓拍自然的互动', '让餐桌与朋友入镜', '举起杯子，让故事有温度'],
     icon: 'heart',
+    photo: PHOTOS.together,
+    photoAlt: '一起吃饭的人与互动瞬间',
   },
 ]
 

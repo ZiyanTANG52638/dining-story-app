@@ -336,12 +336,12 @@ function HeroLayout({ photos }) {
 
   return (
     <div className="relative mx-auto w-full max-w-sm">
-      {/* Hero 大图（占主导） */}
-      <div className="photo-card aspect-[4/5] w-full rotate-[-1deg]">
-        <img src={hero.src} alt="Hero 主角照片" />
-        <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-full bg-sky-400/90 px-3 py-1 text-beige-50">
-          <Icon name="dish" size={12} />
-          <span className="text-[11px] font-semibold">Hero · 今晚主角</span>
+      {/* Hero 大图（占主导，编辑式画框） */}
+      <div className="editorial-frame photo-vignette aspect-[4/5] w-full">
+        <img src={hero.src} alt="今晚的主角照片" className="photo-warm" />
+        <div className="glass-capsule absolute left-3 top-3 flex items-center gap-1.5 rounded-full px-3 py-1">
+          <Icon name="dish" size={12} className="text-beige-50" />
+          <span className="text-[11px] font-semibold text-beige-50 photo-text-shadow">今晚的主角</span>
         </div>
       </div>
 
@@ -351,10 +351,10 @@ function HeroLayout({ photos }) {
           {snapshots.map((p, i) => (
             <div
               key={i}
-              className="photo-card h-20 w-16 rotate-[2deg]"
+              className="photo-card h-20 w-16 overflow-hidden"
               style={{ transform: `rotate(${i === 0 ? '-3deg' : '3deg'})` }}
             >
-              <img src={p.src} alt="记忆快照" />
+              <img src={p.src} alt="记忆快照" className="photo-warm" />
             </div>
           ))}
         </div>

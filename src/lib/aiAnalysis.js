@@ -130,13 +130,13 @@ function buildSuggestions(stepId, metrics) {
   const suggestions = []
   const enhance = { brightness: 0, contrast: 0, saturation: 0, sharpen: 0, warmth: 0 }
 
-  // 亮度建议
+  // 亮度建议（温和、可选，不评判）
   if (brightness < 95) {
-    suggestions.push('这个瞬间很有氛围。稍微提亮一点，能让食物与细节更清晰动人。')
+    suggestions.push('如果想让它更突出，可以再靠近一点，或让光线再亮一些。')
     enhance.brightness = 18
     enhance.warmth = 6
   } else if (brightness > 200) {
-    suggestions.push('画面明亮通透。微微降低曝光，能让色彩更沉稳高级。')
+    suggestions.push('也许可以稍微收一点光，让色彩更沉稳。')
     enhance.brightness = -12
   } else {
     suggestions.push('光线恰到好处，温暖又自然。')
@@ -144,28 +144,28 @@ function buildSuggestions(stepId, metrics) {
 
   // 清晰度建议
   if (sharpness < 14) {
-    suggestions.push('这一刻的情绪很珍贵。轻轻增强锐化，能让轮廓更利落。')
+    suggestions.push('如果愿意，可以再稳一稳手，让轮廓更清晰。')
     enhance.sharpen = 0.4
     enhance.contrast = 6
   } else {
-    suggestions.push('细节清晰锐利，质感十足。')
+    suggestions.push('细节清晰，质感很好。')
   }
 
-  // 构图建议
+  // 构图建议（用"试试/也许"而非"应该"）
   if (composition < 0.45) {
-    suggestions.push('把主角再往画面中央带一点，故事会更聚焦。')
+    suggestions.push('试试换一个角度？也许可以靠近一点，让今晚最喜欢的那道菜更居中。')
     enhance.contrast += 8
     enhance.saturation += 6
   } else {
-    suggestions.push('主体突出，构图很有张力。')
+    suggestions.push('主体很自然，画面很舒服。')
   }
 
   // 整洁度建议
   if (cleanliness < 0.5) {
-    suggestions.push('画面很有生活气息。稍作柔和处理，能让整体更干净耐看。')
+    suggestions.push('画面很有生活气息。稍作柔和处理，会让整体更耐看。')
     enhance.saturation += 4
   } else {
-    suggestions.push('画面干净利落，赏心悦目。')
+    suggestions.push('画面干净，看着很舒服。')
   }
 
   // 章节专属的"氛围滤镜"建议

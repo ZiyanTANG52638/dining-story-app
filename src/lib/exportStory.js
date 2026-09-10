@@ -141,12 +141,18 @@ export async function exportStoryImage({ photos, story, companionEmoji, momentEm
   }
 
   // 两张 Memory Snapshots 小卡：错落叠放在 Hero 下方两侧（支持而非竞争）
-  const snapTop = heroCy + heroH / 2 - 70
+  // 重叠控制在 4–6%：小卡仅轻触 Hero 底边，不覆盖食物主体与人脸
+  const snapH = 300
+  const snapW = 240
+  const heroBottom = heroCy + heroH / 2
+  // 让卡片顶部与 Hero 底边重叠约 5%（约 15px）
+  const overlap = Math.round(snapH * 0.05)
+  const snapTop = heroBottom - overlap
   if (imgs.s0) {
-    drawFloatingCard(ctx, imgs.s0, W / 2 - 150, snapTop + 40, 240, 300, 20, 3)
+    drawFloatingCard(ctx, imgs.s0, W / 2 - 150, snapTop + snapH / 2, snapW, snapH, 20, 3)
   }
   if (imgs.s1) {
-    drawFloatingCard(ctx, imgs.s1, W / 2 + 150, snapTop + 10, 240, 300, 20, -3)
+    drawFloatingCard(ctx, imgs.s1, W / 2 + 150, snapTop + snapH / 2 - 30, snapW, snapH, 20, -3)
   }
 
   // ---- 底部：暖色可收藏叙事卡（明信片物件感） ----
