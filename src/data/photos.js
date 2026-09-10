@@ -1,1 +1,82 @@
-Ly8g5LiJ5byg54Wn54mH55qE5byV5a+85a6a5LmJIOKAlOKAlCDnlKgi5pWF5LqL56ug6IqCIuiAjOmdniLku7vliqEi5p2l5byV5a+855So5oi3Ci8vCi8vIFNvbmhvIEtpdGNoZW4g5p6E5Zu+5Y6f5YiZ77yaMSDlvKAgSGVyb++8iOS4u+inku+8iSsgMiDlvKDmlK/mjIHnhafniYfvvIhNZW1vcnkgU25hcHNob3Rz77yJCi8vICAgLSDkuI3pvJPlirHnrYnmnYPmnoTlm74KLy8gICAtIOesrOS6jOW8oCLmi5vniYzml7bliLsi5pivIEhlcm/vvIzljaDmja7op4bop4nkuLvlr7wKLy8gICAtIOesrOS4gOOAgeS4ieW8oOaYr+awm+WbtOS4jumZquS8tOeahOaUr+aMgemVnOWktAoKZXhwb3J0IGNvbnN0IFBIT1RPX1NURVBTID0gWwogIHsKICAgIGlkOiAnZmlyc3QtaW1wcmVzc2lvbicsCiAgICByb2xlOiAnc25hcHNob3QnLCAvLyDmlK/mjIHnhafniYfvvJrnjq/looPmsJvlm7QKICAgIGNoYXB0ZXI6ICfmsJvlm7QnLAogICAgdGl0bGU6ICflhYjorrDkvY/ov5nph4wnLAogICAgc3VidGl0bGU6ICfnjq/looMgwrcg5YWJIMK3IOawlOaBrycsCiAgICBwcm9tcHQ6ICfovbvovbvnjq/pob7lm5vlkajvvIzmi43kuIvorqnkvaDmlL7mnb7kuIvmnaXnmoTpgqPkuIDop5InLAogICAgdGlwczogWwogICAgICAn5om+5LiA5Liq5a6J6Z2Z55qE6KeS5bqm77yM6K6p55S76Z2i55WZ5Ye65ZG85ZC4JywKICAgICAgJ+aNleaNieaaluWFieOAgeacqOahjOS4juadr+ebmOeahOawlOaBrycsCiAgICAgICfkuI3nlKjlpKrmu6HvvIznlZnnmb3orqnmsJvlm7Tmm7TogJDnnIsnLAogICAgXSwKICAgIGljb246ICdzcGFya2xlJywKICB9LAogIHsKICAgIGlkOiAnc2lnbmF0dXJlLW1vbWVudCcsCiAgICByb2xlOiAnaGVybycsIC8vIEhlcm/vvJrmi5vniYzkuLvop5IKICAgIGNoYXB0ZXI6ICfkuLvop5InLAogICAgdGl0bGU6ICfov5nkuIDpgZPvvIzmmK/ku4rmmZrnmoTkuLvop5InLAogICAgc3VidGl0bGU6ICfmi5vniYwgwrcg5Li76I+cJywKICAgIHByb21wdDogJ+aKiui/memBk+iPnOaLjeaIkOaVtOaZmueahCBIZXJvIOmVnOWktCcsCiAgICB0aXBzOiBbCiAgICAgICforqnkuLvoj5zljaDmja7nlLvpnaLlpKfljYrvvIzmiJDkuLrllK/kuIDkuLvop5InLAogICAgICAn6Z2g6L+R5LiA5Lqb77yM6K6p54Ot5rCU5LiO5YWJ5rO95riF5pmw5Y+v6KeBJywKICAgICAgJ+S+p+WFieS4i+aLjeaRhO+8jOmjn+eJqeS8muabtOeri+S9k+ivseS6uicsCiAgICBdLAogICAgaWNvbjogJ2Rpc2gnLAogIH0sCiAgewogICAgaWQ6ICdtZW1vcnktbW9tZW50JywKICAgIHJvbGU6ICdzbmFwc2hvdCcsIC8vIOaUr+aMgeeFp+eJh++8muebuOiBmumZquS8tAogICAgY2hhcHRlcjogJ+mZquS8tCcsCiAgICB0aXRsZTogJ+i/mOaciei6q+i+ueeahOS6uicsCiAgICBzdWJ0aXRsZTogJ+ebuOiBmiDCtyDkuL7mna8nLAogICAgcHJvbXB0OiAn5oqK6L+Z5LiA5Yi755qE56yR5a655LiO56Kw5p2v6L276L275pS26L+b55S76Z2iJywKICAgIHRpcHM6IFsKICAgICAgJ+aKk+aLjeiHqueEtueahOS6kuWKqOeerOmXtCcsCiAgICAgICforqnppJDmoYzkuI7mnIvlj4vkuIDotbflhaXplZwnLAogICAgICAn5Li+6LW35p2v5a2Q77yM6K6p5pWF5LqL5pu05pyJ5rip5bqmJywKICAgIF0sCiAgICBpY29uOiAnaGVhcnQnLAogIH0sCl0KCmV4cG9ydCBjb25zdCBQSE9UT19TVEVQX0lOREVYID0gT2JqZWN0LmZyb21FbnRyaWVzKAogIFBIT1RPX1NURVBTLm1hcCgocywgaSkgPT4gW3MuaWQsIGldKSwKKQoKLy8g6Zmq5Ly05a+56LGh6YCJ6aG5CmV4cG9ydCBjb25zdCBDT01QQU5JT05fT1BUSU9OUyA9IFsKICB7IGlkOiAnZnJpZW5kcycsIGxhYmVsOiAn5pyL5Y+LJywgZW1vamk6ICfwn5GvJyB9LAogIHsgaWQ6ICdmYW1pbHknLCBsYWJlbDogJ+WutuS6uicsIGVtb2ppOiAn8J+RqOKAjfCfkanigI3wn5GnJyB9LAogIHsgaWQ6ICdkYXRlJywgbGFiZWw6ICfnuqbkvJonLCBlbW9qaTogJ/Cfkp4nIH0sCiAgeyBpZDogJ2NvbGxlYWd1ZXMnLCBsYWJlbDogJ+WQjOS6iycsIGVtb2ppOiAn8J+knScgfSwKICB7IGlkOiAnc29sbycsIGxhYmVsOiAn54us5Lqr5pe25YWJJywgZW1vamk6ICfwn4y/JyB9LApdCgovLyDmnIDpmr7lv5jnnqzpl7TpgInpobkKZXhwb3J0IGNvbnN0IEZBVk9SSVRFX01PTUVOVF9PUFRJT05TID0gWwogIHsgaWQ6ICdmaXJzdC1iaXRlJywgbGFiZWw6ICfnrKzkuIDlj6Pmg4roibMnLCBlbW9qaTogJ/CfmIsnIH0sCiAgeyBpZDogJ3RvYXN0JywgbGFiZWw6ICfkuL7mna/nm7jluoYnLCBlbW9qaTogJ/CfpYInIH0sCiAgeyBpZDogJ2xhdWdoJywgbGFiZWw6ICflvIDmgIDlpKfnrJEnLCBlbW9qaTogJ/CfmIInIH0sCiAgeyBpZDogJ2FtYmllbmNlJywgbGFiZWw6ICfmsJvlm7TmhJ/mi4nmu6EnLCBlbW9qaTogJ/Cfla/vuI8nIH0sCiAgeyBpZDogJ2Rlc3NlcnQnLCBsYWJlbDogJ+eUnOWTgeaUtuWwvicsIGVtb2ppOiAn8J+NsCcgfSwKICB7IGlkOiAnc3VycHJpc2UnLCBsYWJlbDogJ+aEj+WkluaDiuWWnCcsIGVtb2ppOiAn8J+OgScgfSwKXQoKLy8g6aSQ5Y6F56S65L6L5L+h5oGv77yI55yf5a6e5Zy65pmv5Lit55SxIFFSIOWPguaVsOazqOWFpe+8iQpleHBvcnQgY29uc3QgUkVTVEFVUkFOVCA9IHsKICBuYW1lOiAn5p2+5rS75Y6o5oi/JywKICBlbmdsaXNoTmFtZTogJ1NvbmhvIEtpdGNoZW4nLAogIHRhZ2xpbmU6ICfmiormr4/kuIDppJDvvIzpg73ov4fmiJDlgLzlvpfnuqrlv7XnmoTml6XlrZAnLAogIGxvY2F0aW9uOiAn5rmW5Y2XIMK3IOW4uOW+tycsCn0K
+// 三张照片的引导定义 —— 用"故事章节"而非"任务"来引导用户
+//
+// Sonho Kitchen 构图原则：1 张 Hero（主角）+ 2 张支持照片（Memory Snapshots）
+//   - 不鼓励等权构图
+//   - 第二张"招牌时刻"是 Hero，占据视觉主导
+//   - 第一、三张是氛围与陪伴的支持镜头
+
+export const PHOTO_STEPS = [
+  {
+    id: 'first-impression',
+    role: 'snapshot', // 支持照片：环境氛围
+    chapter: '氛围',
+    title: '先记住这里',
+    subtitle: '环境 · 光 · 气息',
+    prompt: '轻轻环顾四周，拍下让你放松下来的那一角',
+    tips: [
+      '找一个安静的角度，让画面留出呼吸',
+      '捕捉暖光、木桌与杯盘的气息',
+      '不用太满，留白让氛围更耐看',
+    ],
+    icon: 'sparkle',
+  },
+  {
+    id: 'signature-moment',
+    role: 'hero', // Hero：招牌主角
+    chapter: '主角',
+    title: '这一道，是今晚的主角',
+    subtitle: '招牌 · 主菜',
+    prompt: '把这道菜拍成整晚的 Hero 镜头',
+    tips: [
+      '让主菜占据画面大半，成为唯一主角',
+      '靠近一些，让热气与光泽清晰可见',
+      '侧光下拍摄，食物会更立体诱人',
+    ],
+    icon: 'dish',
+  },
+  {
+    id: 'memory-moment',
+    role: 'snapshot', // 支持照片：相聚陪伴
+    chapter: '陪伴',
+    title: '还有身边的人',
+    subtitle: '相聚 · 举杯',
+    prompt: '把这一刻的笑容与碰杯轻轻收进画面',
+    tips: [
+      '抓拍自然的互动瞬间',
+      '让餐桌与朋友一起入镜',
+      '举起杯子，让故事更有温度',
+    ],
+    icon: 'heart',
+  },
+]
+
+export const PHOTO_STEP_INDEX = Object.fromEntries(
+  PHOTO_STEPS.map((s, i) => [s.id, i]),
+)
+
+// 陪伴对象选项
+export const COMPANION_OPTIONS = [
+  { id: 'friends', label: '朋友', emoji: '👯' },
+  { id: 'family', label: '家人', emoji: '👨‍👩‍👧' },
+  { id: 'date', label: '约会', emoji: '💞' },
+  { id: 'colleagues', label: '同事', emoji: '🤝' },
+  { id: 'solo', label: '独享时光', emoji: '🌿' },
+]
+
+// 最难忘瞬间选项
+export const FAVORITE_MOMENT_OPTIONS = [
+  { id: 'first-bite', label: '第一口惊艳', emoji: '😋' },
+  { id: 'toast', label: '举杯相庆', emoji: '🥂' },
+  { id: 'laugh', label: '开怀大笑', emoji: '😂' },
+  { id: 'ambience', label: '氛围感拉满', emoji: '🕯️' },
+  { id: 'dessert', label: '甜品收尾', emoji: '🍰' },
+  { id: 'surprise', label: '意外惊喜', emoji: '🎁' },
+]
+
+// 餐厅示例信息（真实场景中由 QR 参数注入）
+export const RESTAURANT = {
+  name: '松活厨房',
+  englishName: 'Sonho Kitchen',
+  tagline: '把每一餐，都过成值得纪念的日子',
+  location: '湖南 · 常德',
+}

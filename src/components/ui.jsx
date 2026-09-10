@@ -1,1 +1,100 @@
-Ly8g6YCa55SoIFVJIOWwj+e7hOS7tiDigJTigJQgU29uaG8gS2l0Y2hlbiDmmpboibLmiYvkvZzpo47moLwKaW1wb3J0IEljb24gZnJvbSAnLi9JY29uJwoKLy8g56ug6IqC6L+b5bqm5oyH56S65Zmo77yI5LiJ6aKX54K5IC8g56ug6IqC5qCH562+77yJCmV4cG9ydCBmdW5jdGlvbiBDaGFwdGVyUHJvZ3Jlc3MoeyBjdXJyZW50LCB0b3RhbCB9KSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMyI+CiAgICAgIHtBcnJheS5mcm9tKHsgbGVuZ3RoOiB0b3RhbCB9KS5tYXAoKF8sIGkpID0+ICgKICAgICAgICA8ZGl2IGtleT17aX0gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyI+CiAgICAgICAgICB7aSA+IDAgJiYgKAogICAgICAgICAgICA8ZGl2CiAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgaC1weCB3LTYgdHJhbnNpdGlvbi1jb2xvcnMgZHVyYXRpb24tNTAwICR7CiAgICAgICAgICAgICAgICBpIDw9IGN1cnJlbnQgPyAnYmctY29mZmVlLTQwMCcgOiAnYmctY29mZmVlLTMwMC8zMCcKICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgLz4KICAgICAgICAgICl9CiAgICAgICAgICA8ZGl2CiAgICAgICAgICAgIGNsYXNzTmFtZT17YGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtZnVsbCBib3JkZXIgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tNTAwICR7CiAgICAgICAgICAgICAgaSA8IGN1cnJlbnQKICAgICAgICAgICAgICAgID8gJ2gtNiB3LTYgYm9yZGVyLWNvZmZlZS01MDAgYmctY29mZmVlLTUwMCB0ZXh0LWJlaWdlLTUwJwogICAgICAgICAgICAgICAgOiBpID09PSBjdXJyZW50CiAgICAgICAgICAgICAgICAgID8gJ2gtNyB3LTcgYm9yZGVyLWNvZmZlZS01MDAgYmctY29mZmVlLTUwMC8xNSB0ZXh0LWNvZmZlZS02MDAnCiAgICAgICAgICAgICAgICAgIDogJ2gtNiB3LTYgYm9yZGVyLWNvZmZlZS0zMDAvNDAgdGV4dC1jb2ZmZWUtMzAwJwogICAgICAgICAgICB9YH0KICAgICAgICAgID4KICAgICAgICAgICAge2kgPCBjdXJyZW50ID8gKAogICAgICAgICAgICAgIDxJY29uIG5hbWU9ImNoZWNrIiBzaXplPXsxM30gLz4KICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtWzExcHhdIGZvbnQtc2VtaWJvbGQiPntpICsgMX08L3NwYW4+CiAgICAgICAgICAgICl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgKSl9CiAgICA8L2Rpdj4KICApCn0KCi8vIOS4u+aMiemSriDigJTigJQg5ZKW5ZWh5qOV5a6e5b+D77yI5pqW6Imy5omL5L2c77yJCmV4cG9ydCBmdW5jdGlvbiBQcmltYXJ5QnV0dG9uKHsgY2hpbGRyZW4sIG9uQ2xpY2ssIGRpc2FibGVkLCBjbGFzc05hbWUgPSAnJywgaWNvbiB9KSB7CiAgcmV0dXJuICgKICAgIDxidXR0b24KICAgICAgdHlwZT0iYnV0dG9uIgogICAgICBvbkNsaWNrPXtvbkNsaWNrfQogICAgICBkaXNhYmxlZD17ZGlzYWJsZWR9CiAgICAgIGNsYXNzTmFtZT17YGdyb3VwIGlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiByb3VuZGVkLWZ1bGwgYmctY29mZmVlLTUwMCBweC04IHB5LTQgdGV4dC1iYXNlIGZvbnQtc2VtaWJvbGQgdGV4dC1iZWlnZS01MCBzaGFkb3ctbGcgc2hhZG93LWNvZmZlZS01MDAvMjAgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMzAwIGhvdmVyOmJnLWNvZmZlZS02MDAgZGlzYWJsZWQ6Y3Vyc29yLW5vdC1hbGxvd2VkIGRpc2FibGVkOm9wYWNpdHktNDAgZGlzYWJsZWQ6c2hhZG93LW5vbmUgJHtjbGFzc05hbWV9YH0KICAgID4KICAgICAge2NoaWxkcmVufQogICAgICB7aWNvbiAmJiAoCiAgICAgICAgPEljb24KICAgICAgICAgIG5hbWU9e2ljb259CiAgICAgICAgICBzaXplPXsxOH0KICAgICAgICAgIGNsYXNzTmFtZT0idHJhbnNpdGlvbi10cmFuc2Zvcm0gZHVyYXRpb24tMzAwIGdyb3VwLWhvdmVyOnRyYW5zbGF0ZS14LTAuNSIKICAgICAgICAvPgogICAgICApfQogICAgPC9idXR0b24+CiAgKQp9CgovLyDmrKHnuqfmjInpkq4g4oCU4oCUIOaPj+i+ueWSluWVoeajlQpleHBvcnQgZnVuY3Rpb24gR2hvc3RCdXR0b24oeyBjaGlsZHJlbiwgb25DbGljaywgY2xhc3NOYW1lID0gJycsIGljb24gfSkgewogIHJldHVybiAoCiAgICA8YnV0dG9uCiAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgb25DbGljaz17b25DbGlja30KICAgICAgY2xhc3NOYW1lPXtgaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0yIHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWNvZmZlZS00MDAvNDAgcHgtNiBweS0zIHRleHQtc20gZm9udC1tZWRpdW0gdGV4dC1jb2ZmZWUtNTAwIHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLTMwMCBob3Zlcjpib3JkZXItY29mZmVlLTUwMCBob3Zlcjp0ZXh0LWNvZmZlZS02MDAgJHtjbGFzc05hbWV9YH0KICAgID4KICAgICAge2ljb24gJiYgPEljb24gbmFtZT17aWNvbn0gc2l6ZT17MTZ9IC8+fQogICAgICB7Y2hpbGRyZW59CiAgICA8L2J1dHRvbj4KICApCn0KCi8vIOmhtumDqOi/lOWbni/lhbPpl63mnaEKZXhwb3J0IGZ1bmN0aW9uIFRvcEJhcih7IG9uQmFjaywgdGl0bGUsIHJpZ2h0IH0pIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC01IHB0LTUiPgogICAgICB7b25CYWNrID8gKAogICAgICAgIDxidXR0b24KICAgICAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgICAgIG9uQ2xpY2s9e29uQmFja30KICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBoLTEwIHctMTAgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtZnVsbCBib3JkZXIgYm9yZGVyLWNvZmZlZS00MDAvMzAgdGV4dC1jb2ZmZWUtNTAwIHRyYW5zaXRpb24tY29sb3JzIGhvdmVyOmJvcmRlci1jb2ZmZWUtNTAwIGhvdmVyOnRleHQtY29mZmVlLTYwMCIKICAgICAgICAgIGFyaWEtbGFiZWw9Iui/lOWbniIKICAgICAgICA+CiAgICAgICAgICA8SWNvbiBuYW1lPSJiYWNrIiBzaXplPXsyMH0gLz4KICAgICAgICA8L2J1dHRvbj4KICAgICAgKSA6ICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaC0xMCB3LTEwIiAvPgogICAgICApfQogICAgICB7dGl0bGUgJiYgKAogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1zZXJpZiB0ZXh0LWxnIHRyYWNraW5nLXdpZGUgdGV4dC1jb2ZmZWUtNjAwIj57dGl0bGV9PC9zcGFuPgogICAgICApfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iaC0xMCB3LTEwIj57cmlnaHR9PC9kaXY+CiAgICA8L2Rpdj4KICApCn0KCi8vIOW6lemDqOWuieWFqOWMugpleHBvcnQgZnVuY3Rpb24gQm90dG9tU2FmZSgpIHsKICByZXR1cm4gPGRpdiBjbGFzc05hbWU9ImgtW2VudihzYWZlLWFyZWEtaW5zZXQtYm90dG9tKV0iIC8+Cn0K
+// 通用 UI 小组件 —— Sonho Kitchen 暖色手作风格
+import Icon from './Icon'
+
+// 章节进度指示器（三颗点 / 章节标签）
+export function ChapterProgress({ current, total }) {
+  return (
+    <div className="flex items-center justify-center gap-3">
+      {Array.from({ length: total }).map((_, i) => (
+        <div key={i} className="flex items-center gap-3">
+          {i > 0 && (
+            <div
+              className={`h-px w-6 transition-colors duration-500 ${
+                i <= current ? 'bg-coffee-400' : 'bg-coffee-300/30'
+              }`}
+            />
+          )}
+          <div
+            className={`flex items-center justify-center rounded-full border transition-all duration-500 ${
+              i < current
+                ? 'h-6 w-6 border-coffee-500 bg-coffee-500 text-beige-50'
+                : i === current
+                  ? 'h-7 w-7 border-coffee-500 bg-coffee-500/15 text-coffee-600'
+                  : 'h-6 w-6 border-coffee-300/40 text-coffee-300'
+            }`}
+          >
+            {i < current ? (
+              <Icon name="check" size={13} />
+            ) : (
+              <span className="text-[11px] font-semibold">{i + 1}</span>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+// 主按钮 —— 咖啡棕实心（暖色手作）
+export function PrimaryButton({ children, onClick, disabled, className = '', icon }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      className={`group inline-flex items-center justify-center gap-2 rounded-full bg-coffee-500 px-8 py-4 text-base font-semibold text-beige-50 shadow-lg shadow-coffee-500/20 transition-all duration-300 hover:bg-coffee-600 disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none ${className}`}
+    >
+      {children}
+      {icon && (
+        <Icon
+          name={icon}
+          size={18}
+          className="transition-transform duration-300 group-hover:translate-x-0.5"
+        />
+      )}
+    </button>
+  )
+}
+
+// 次级按钮 —— 描边咖啡棕
+export function GhostButton({ children, onClick, className = '', icon }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`inline-flex items-center justify-center gap-2 rounded-full border border-coffee-400/40 px-6 py-3 text-sm font-medium text-coffee-500 transition-all duration-300 hover:border-coffee-500 hover:text-coffee-600 ${className}`}
+    >
+      {icon && <Icon name={icon} size={16} />}
+      {children}
+    </button>
+  )
+}
+
+// 顶部返回/关闭条
+export function TopBar({ onBack, title, right }) {
+  return (
+    <div className="flex items-center justify-between px-5 pt-5">
+      {onBack ? (
+        <button
+          type="button"
+          onClick={onBack}
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-coffee-400/30 text-coffee-500 transition-colors hover:border-coffee-500 hover:text-coffee-600"
+          aria-label="返回"
+        >
+          <Icon name="back" size={20} />
+        </button>
+      ) : (
+        <div className="h-10 w-10" />
+      )}
+      {title && (
+        <span className="font-serif text-lg tracking-wide text-coffee-600">{title}</span>
+      )}
+      <div className="h-10 w-10">{right}</div>
+    </div>
+  )
+}
+
+// 底部安全区
+export function BottomSafe() {
+  return <div className="h-[env(safe-area-inset-bottom)]" />
+}

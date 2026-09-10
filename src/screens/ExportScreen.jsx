@@ -1,1 +1,170 @@
-Ly8g5a+85Ye66KeG5Zu+IOKAlOKAlCBTb25obyBLaXRjaGVuIOaaluiJsuaJi+S9nOmjjuagvOeahCLorrDlv4bmnYLlv5ci5ZGI546wCi8vCi8vIEhlcm8tZmlyc3TvvJpIZXJvIOeFp+eJh+S4u+WvvO+8jOWFtuS9meS4uiBNZW1vcnkgU25hcHNob3RzCi8vIOWIhuS6q+WbvumihOiniOWDj+S4gOW8oOWPr+aUtuiXj+eahOaYjuS/oeeJhy/miYvkvZzljaHniYcKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBleHBvcnRTdG9yeUltYWdlIH0gZnJvbSAnLi4vbGliL2V4cG9ydFN0b3J5JwppbXBvcnQgeyBidWlsZE1lbW9yeVRoZW1lLCBtYWtlQmx1cnJlZEJnIH0gZnJvbSAnLi4vbGliL3Zpc3VhbHMnCmltcG9ydCBJY29uIGZyb20gJy4uL2NvbXBvbmVudHMvSWNvbicKaW1wb3J0IHsgUHJpbWFyeUJ1dHRvbiwgR2hvc3RCdXR0b24sIEJvdHRvbVNhZmUgfSBmcm9tICcuLi9jb21wb25lbnRzL3VpJwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRXhwb3J0U2NyZWVuKHsgcGhvdG9zLCBzdG9yeSwgY29tcGFuaW9uT2JqLCBtb21lbnRPYmosIG9uUmVzdGFydCB9KSB7CiAgY29uc3QgW2V4cG9ydGVkLCBzZXRFeHBvcnRlZF0gPSB1c2VTdGF0ZShudWxsKQogIGNvbnN0IFtleHBvcnRpbmcsIHNldEV4cG9ydGluZ10gPSB1c2VTdGF0ZSh0cnVlKQogIGNvbnN0IFtjb3BpZWQsIHNldENvcGllZF0gPSB1c2VTdGF0ZShmYWxzZSkKICBjb25zdCBbdGhlbWUsIHNldFRoZW1lXSA9IHVzZVN0YXRlKG51bGwpCiAgY29uc3QgW3Bob3RvQmcsIHNldFBob3RvQmddID0gdXNlU3RhdGUobnVsbCkKCiAgLy8g55Sf5oiQ5YiG5Lqr5Zu+ICsg5o+Q5Y+W5rCb5Zu077yI55SoIEhlcm8g54Wn54mH77yJCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGxldCBjYW5jZWxsZWQgPSBmYWxzZQogICAgY29uc3QgaGVybyA9IHBpY2tIZXJvUGhvdG8ocGhvdG9zKQogICAgaWYgKGhlcm8pIHsKICAgICAgUHJvbWlzZS5hbGwoW2J1aWxkTWVtb3J5VGhlbWUoaGVyby5zcmMpLCBtYWtlQmx1cnJlZEJnKGhlcm8uc3JjKV0pLnRoZW4oKFt0LCBiZ10pID0+IHsKICAgICAgICBpZiAoIWNhbmNlbGxlZCkgewogICAgICAgICAgc2V0VGhlbWUodCkKICAgICAgICAgIHNldFBob3RvQmcoYmcpCiAgICAgICAgfQogICAgICB9KQogICAgfQogICAgc2V0RXhwb3J0aW5nKHRydWUpCiAgICBleHBvcnRTdG9yeUltYWdlKHsKICAgICAgcGhvdG9zLAogICAgICBzdG9yeSwKICAgICAgY29tcGFuaW9uRW1vamk6IGNvbXBhbmlvbk9iaj8uZW1vamksCiAgICAgIG1vbWVudEVtb2ppOiBtb21lbnRPYmo/LmVtb2ppLAogICAgfSkudGhlbigodXJsKSA9PiB7CiAgICAgIGlmICghY2FuY2VsbGVkKSB7CiAgICAgICAgc2V0RXhwb3J0ZWQodXJsKQogICAgICAgIHNldEV4cG9ydGluZyhmYWxzZSkKICAgICAgfQogICAgfSkKICAgIHJldHVybiAoKSA9PiB7CiAgICAgIGNhbmNlbGxlZCA9IHRydWUKICAgIH0KICAgIC8vIGVzbGludC1kaXNhYmxlLW5leHQtbGluZSByZWFjdC1ob29rcy9leGhhdXN0aXZlLWRlcHMKICB9LCBbXSkKCiAgLy8g5LiL6L295Zu+54mHCiAgY29uc3QgZG93bmxvYWQgPSAoKSA9PiB7CiAgICBpZiAoIWV4cG9ydGVkKSByZXR1cm4KICAgIGNvbnN0IGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdhJykKICAgIGEuaHJlZiA9IGV4cG9ydGVkCiAgICBhLmRvd25sb2FkID0gYGRpbmluZy1tZW1vcnktJHtEYXRlLm5vdygpfS5qcGdgCiAgICBkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpCiAgICBhLmNsaWNrKCkKICAgIGEucmVtb3ZlKCkKICB9CgogIC8vIOWkjeWItuWIsOWJqui0tOadv++8iOeUqOS6jueymOi0tOWIsCBJbnN0YWdyYW3vvIkKICBjb25zdCBjb3B5VG9DbGlwYm9hcmQgPSBhc3luYyAoKSA9PiB7CiAgICBpZiAoIWV4cG9ydGVkKSByZXR1cm4KICAgIHRyeSB7CiAgICAgIGNvbnN0IGJsb2IgPSBhd2FpdCAoYXdhaXQgZmV0Y2goZXhwb3J0ZWQpKS5ibG9iKCkKICAgICAgYXdhaXQgbmF2aWdhdG9yLmNsaXBib2FyZC53cml0ZShbCiAgICAgICAgbmV3IENsaXBib2FyZEl0ZW0oeyAnaW1hZ2UvcG5nJzogYmxvYiB9KSwKICAgICAgXSkKICAgICAgc2V0Q29waWVkKHRydWUpCiAgICAgIHNldFRpbWVvdXQoKCkgPT4gc2V0Q29waWVkKGZhbHNlKSwgMjAwMCkKICAgIH0gY2F0Y2ggewogICAgICBkb3dubG9hZCgpCiAgICB9CiAgfQoKICAvLyDliIbkuqvliLAgSW5zdGFncmFt77yI5omT5byA5YiG5Lqr6Z2i5p2/77yJCiAgY29uc3Qgc2hhcmVUb0luc3RhZ3JhbSA9IGFzeW5jICgpID0+IHsKICAgIGlmIChuYXZpZ2F0b3Iuc2hhcmUgJiYgZXhwb3J0ZWQpIHsKICAgICAgdHJ5IHsKICAgICAgICBjb25zdCBibG9iID0gYXdhaXQgKGF3YWl0IGZldGNoKGV4cG9ydGVkKSkuYmxvYigpCiAgICAgICAgY29uc3QgZmlsZSA9IG5ldyBGaWxlKFtibG9iXSwgJ2RpbmluZy1tZW1vcnkuanBnJywgeyB0eXBlOiAnaW1hZ2UvanBlZycgfSkKICAgICAgICBhd2FpdCBuYXZpZ2F0b3Iuc2hhcmUoeyBmaWxlczogW2ZpbGVdLCB0aXRsZTogJ+aIkeeahOmkkOmlruiusOW/hicgfSkKICAgICAgICByZXR1cm4KICAgICAgfSBjYXRjaCB7CiAgICAgICAgLy8g55So5oi35Y+W5raI5oiW5aSx6LSl77yM5Zue6YCA5LiL6L29CiAgICAgIH0KICAgIH0KICAgIGRvd25sb2FkKCkKICB9CgogIGNvbnN0IGNzcyA9IHRoZW1lCiAgICA/IHsKICAgICAgICAnLS1iZy1nbG93JzogdGhlbWUuZ2xvdywKICAgICAgICAnLS1iZy1hY2NlbnQnOiB0aGVtZS5hY2NlbnQsCiAgICAgICAgJy0tYmctbWlkJzogdGhlbWUubWlkLAogICAgICAgICctLWJnLWRlZXAnOiB0aGVtZS5kZWVwLAogICAgICB9CiAgICA6IHt9CgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgZmxleCBtaW4taC1zdmggZmxleC1jb2wgb3ZlcmZsb3ctaGlkZGVuIGJnLWJlaWdlLTEwMCI+CiAgICAgIHsvKiDliqjmgIHmsJvlm7Tog4zmma8gKi99CiAgICAgIHtwaG90b0JnICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWVtb3J5LXBob3RvLWJnIiBzdHlsZT17eyBiYWNrZ3JvdW5kSW1hZ2U6IGB1cmwoJHtwaG90b0JnfSlgIH19IC8+CiAgICAgICl9CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtZW1vcnktYmcgYWJzb2x1dGUgaW5zZXQtMCIgc3R5bGU9e2Nzc30gLz4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSB6LTEwIGZsZXggZmxleC0xIGZsZXgtY29sIGl0ZW1zLWNlbnRlciBweC01IHB0LTYiPgogICAgICAgIHsvKiDmg4XmhJ/ljJblrozmiJDmj5DnpLogKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdsYXNzLWxpZ2h0IGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHJvdW5kZWQtZnVsbCBweC00IHB5LTIgdGV4dC1jb2ZmZWUtNjAwIGFuaW1hdGUtcG9wIj4KICAgICAgICAgIDxJY29uIG5hbWU9ImNoZWNrIiBzaXplPXsxNn0gY2xhc3NOYW1lPSJ0ZXh0LXNreS01MDAiIC8+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtc20gZm9udC1tZWRpdW0iPui/meS4gOaZmu+8jOW3suiiq+S9oOePjeiXjzwvc3Bhbj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgey8qIOWIhuS6q+WbvumihOiniO+8iEhlcm8tZmlyc3Qg5pS26JeP5Y2h77yJICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBtdC02IHctZnVsbCBtYXgtdy1bMzAwcHhdIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJrZWVwc2FrZS1jYXJkIHJvdGF0ZS1bLTFkZWddIG92ZXJmbG93LWhpZGRlbiByb3VuZGVkLVsxLjZyZW1dIHAtMiI+CiAgICAgICAgICAgIHtleHBvcnRpbmcgfHwgIWV4cG9ydGVkID8gKAogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGFzcGVjdC1bOS8xNl0gdy1mdWxsIGZsZXgtY29sIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtNCByb3VuZGVkLVsxLjJyZW1dIgogICAgICAgICAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZDogJ2xpbmVhci1ncmFkaWVudCgxODBkZWcsI2Y3ZjBlMywjZWZlNGQwKScgfX0+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaC0xMCB3LTEwIGFuaW1hdGUtc3BpbiByb3VuZGVkLWZ1bGwgYm9yZGVyLTIgYm9yZGVyLWNvZmZlZS00MDAvMjAgYm9yZGVyLXQtY29mZmVlLTUwMCIgLz4KICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LWNvZmZlZS01MDAiPuato+WcqOWQiOaIkOS9oOeahOiusOW/huKApjwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICA8aW1nIHNyYz17ZXhwb3J0ZWR9IGFsdD0i55Sf5oiQ55qE6K6w5b+G5pS26JeP5Y2hIiBjbGFzc05hbWU9ImFzcGVjdC1bOS8xNl0gdy1mdWxsIHJvdW5kZWQtWzEuMnJlbV0gb2JqZWN0LWNvdmVyIiAvPgogICAgICAgICAgICApfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiDmk43kvZzljLogKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdsYXNzIGdsYXNzLWhpZ2hsaWdodCBtdC02IHctZnVsbCBtYXgtdy1bMzAwcHhdIHJvdW5kZWQtM3hsIHAtNCI+CiAgICAgICAgICA8UHJpbWFyeUJ1dHRvbiBvbkNsaWNrPXtzaGFyZVRvSW5zdGFncmFtfSBjbGFzc05hbWU9InctZnVsbCIgaWNvbj0iZG93bmxvYWQiPgogICAgICAgICAgICDkv53lrZggLyDliIbkuqvliLAgSW5zdGFncmFtCiAgICAgICAgICA8L1ByaW1hcnlCdXR0b24+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtMyBmbGV4IGdhcC0zIj4KICAgICAgICAgICAgPEdob3N0QnV0dG9uIG9uQ2xpY2s9e2NvcHlUb0NsaXBib2FyZH0gY2xhc3NOYW1lPSJmbGV4LTEiIGljb249ImNoZWNrIj4KICAgICAgICAgICAgICB7Y29waWVkID8gJ+W3suWkjeWIticgOiAn5aSN5Yi25Zu+54mHJ30KICAgICAgICAgICAgPC9HaG9zdEJ1dHRvbj4KICAgICAgICAgICAgPEdob3N0QnV0dG9uIG9uQ2xpY2s9e2Rvd25sb2FkfSBjbGFzc05hbWU9ImZsZXgtMSIgaWNvbj0iZG93bmxvYWQiPgogICAgICAgICAgICAgIOS4i+i9veWOn+WbvgogICAgICAgICAgICA8L0dob3N0QnV0dG9uPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiDmj5DnpLogKi99CiAgICAgICAgPHAgY2xhc3NOYW1lPSJlZGl0b3JpYWwtYm9keSBtdC00IG1heC13LXhzIHRleHQtY2VudGVyIHRleHQtWzExcHhdIHRleHQtY29mZmVlLTQwMCI+CiAgICAgICAgICDmiZPlvIAgSW5zdGFncmFt77yM5paw5bu6IFN0b3J577yM57KY6LS05oiW5LiK5Lyg6L+Z5byg5Zu+54mH77yMCiAgICAgICAgICA8YnIgLz4KICAgICAgICAgIOaKiui/meS4gOaZmu+8jOWIhuS6q+e7meWAvOW+l+eahOS6uuOAggogICAgICAgIDwvcD4KICAgICAgPC9kaXY+CgogICAgICB7Lyog5bqV6YOo77ya6YeN5paw5byA5aeLICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgei0xMCBweC02IHBiLTYiPgogICAgICAgIDxidXR0b24KICAgICAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgICAgIG9uQ2xpY2s9e29uUmVzdGFydH0KICAgICAgICAgIGNsYXNzTmFtZT0ibXgtYXV0byBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiB0ZXh0LXNtIHRleHQtY29mZmVlLTQwMCB0cmFuc2l0aW9uLWNvbG9ycyBob3Zlcjp0ZXh0LWNvZmZlZS02MDAiCiAgICAgICAgPgogICAgICAgICAgPEljb24gbmFtZT0icmV0YWtlIiBzaXplPXsxNX0gLz4KICAgICAgICAgIOWGjeaUtuiXj+S4gOasoQogICAgICAgIDwvYnV0dG9uPgogICAgICAgIDxCb3R0b21TYWZlIC8+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKQp9CgovLyDpgInlh7ogSGVybyDnhafniYcKZnVuY3Rpb24gcGlja0hlcm9QaG90byhwaG90b3MpIHsKICByZXR1cm4gcGhvdG9zLmZpbmQoKHApID0+IHAgJiYgcC5yb2xlID09PSAnaGVybycgJiYgcC5zcmMpIHx8IHBob3Rvcy5maW5kKChwKSA9PiBwICYmIHAuc3JjKSB8fCBudWxsCn0K
+// 导出视图 —— Sonho Kitchen 暖色手作风格的"记忆杂志"呈现
+//
+// Hero-first：Hero 照片主导，其余为 Memory Snapshots
+// 分享图预览像一张可收藏的明信片/手作卡片
+import { useEffect, useState } from 'react'
+import { exportStoryImage } from '../lib/exportStory'
+import { buildMemoryTheme, makeBlurredBg } from '../lib/visuals'
+import Icon from '../components/Icon'
+import { PrimaryButton, GhostButton, BottomSafe } from '../components/ui'
+
+export default function ExportScreen({ photos, story, companionObj, momentObj, onRestart }) {
+  const [exported, setExported] = useState(null)
+  const [exporting, setExporting] = useState(true)
+  const [copied, setCopied] = useState(false)
+  const [theme, setTheme] = useState(null)
+  const [photoBg, setPhotoBg] = useState(null)
+
+  // 生成分享图 + 提取氛围（用 Hero 照片）
+  useEffect(() => {
+    let cancelled = false
+    const hero = pickHeroPhoto(photos)
+    if (hero) {
+      Promise.all([buildMemoryTheme(hero.src), makeBlurredBg(hero.src)]).then(([t, bg]) => {
+        if (!cancelled) {
+          setTheme(t)
+          setPhotoBg(bg)
+        }
+      })
+    }
+    setExporting(true)
+    exportStoryImage({
+      photos,
+      story,
+      companionEmoji: companionObj?.emoji,
+      momentEmoji: momentObj?.emoji,
+    }).then((url) => {
+      if (!cancelled) {
+        setExported(url)
+        setExporting(false)
+      }
+    })
+    return () => {
+      cancelled = true
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // 下载图片
+  const download = () => {
+    if (!exported) return
+    const a = document.createElement('a')
+    a.href = exported
+    a.download = `dining-memory-${Date.now()}.jpg`
+    document.body.appendChild(a)
+    a.click()
+    a.remove()
+  }
+
+  // 复制到剪贴板（用于粘贴到 Instagram）
+  const copyToClipboard = async () => {
+    if (!exported) return
+    try {
+      const blob = await (await fetch(exported)).blob()
+      await navigator.clipboard.write([
+        new ClipboardItem({ 'image/png': blob }),
+      ])
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      download()
+    }
+  }
+
+  // 分享到 Instagram（打开分享面板）
+  const shareToInstagram = async () => {
+    if (navigator.share && exported) {
+      try {
+        const blob = await (await fetch(exported)).blob()
+        const file = new File([blob], 'dining-memory.jpg', { type: 'image/jpeg' })
+        await navigator.share({ files: [file], title: '我的餐饮记忆' })
+        return
+      } catch {
+        // 用户取消或失败，回退下载
+      }
+    }
+    download()
+  }
+
+  const css = theme
+    ? {
+        '--bg-glow': theme.glow,
+        '--bg-accent': theme.accent,
+        '--bg-mid': theme.mid,
+        '--bg-deep': theme.deep,
+      }
+    : {}
+
+  return (
+    <div className="relative flex min-h-svh flex-col overflow-hidden bg-beige-100">
+      {/* 动态氛围背景 */}
+      {photoBg && (
+        <div className="memory-photo-bg" style={{ backgroundImage: `url(${photoBg})` }} />
+      )}
+      <div className="memory-bg absolute inset-0" style={css} />
+
+      <div className="relative z-10 flex flex-1 flex-col items-center px-5 pt-6">
+        {/* 情感化完成提示 */}
+        <div className="glass-light flex items-center gap-2 rounded-full px-4 py-2 text-coffee-600 animate-pop">
+          <Icon name="check" size={16} className="text-sky-500" />
+          <span className="text-sm font-medium">这一晚，已被你珍藏</span>
+        </div>
+
+        {/* 分享图预览（Hero-first 收藏卡） */}
+        <div className="relative mt-6 w-full max-w-[300px]">
+          <div className="keepsake-card rotate-[-1deg] overflow-hidden rounded-[1.6rem] p-2">
+            {exporting || !exported ? (
+              <div className="flex aspect-[9/16] w-full flex-col items-center justify-center gap-4 rounded-[1.2rem]"
+                style={{ background: 'linear-gradient(180deg,#f7f0e3,#efe4d0)' }}>
+                <div className="h-10 w-10 animate-spin rounded-full border-2 border-coffee-400/20 border-t-coffee-500" />
+                <p className="text-sm text-coffee-500">正在合成你的记忆…</p>
+              </div>
+            ) : (
+              <img src={exported} alt="生成的记忆收藏卡" className="aspect-[9/16] w-full rounded-[1.2rem] object-cover" />
+            )}
+          </div>
+        </div>
+
+        {/* 操作区 */}
+        <div className="glass glass-highlight mt-6 w-full max-w-[300px] rounded-3xl p-4">
+          <PrimaryButton onClick={shareToInstagram} className="w-full" icon="download">
+            保存 / 分享到 Instagram
+          </PrimaryButton>
+          <div className="mt-3 flex gap-3">
+            <GhostButton onClick={copyToClipboard} className="flex-1" icon="check">
+              {copied ? '已复制' : '复制图片'}
+            </GhostButton>
+            <GhostButton onClick={download} className="flex-1" icon="download">
+              下载原图
+            </GhostButton>
+          </div>
+        </div>
+
+        {/* 提示 */}
+        <p className="editorial-body mt-4 max-w-xs text-center text-[11px] text-coffee-400">
+          打开 Instagram，新建 Story，粘贴或上传这张图片，
+          <br />
+          把这一晚，分享给值得的人。
+        </p>
+      </div>
+
+      {/* 底部：重新开始 */}
+      <div className="relative z-10 px-6 pb-6">
+        <button
+          type="button"
+          onClick={onRestart}
+          className="mx-auto flex items-center gap-2 text-sm text-coffee-400 transition-colors hover:text-coffee-600"
+        >
+          <Icon name="retake" size={15} />
+          再收藏一次
+        </button>
+        <BottomSafe />
+      </div>
+    </div>
+  )
+}
+
+// 选出 Hero 照片
+function pickHeroPhoto(photos) {
+  return photos.find((p) => p && p.role === 'hero' && p.src) || photos.find((p) => p && p.src) || null
+}

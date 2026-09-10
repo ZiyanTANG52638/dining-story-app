@@ -1,1 +1,72 @@
-Ly8g5Li75bqU55SoIOKAlOKAlCDnirbmgIHmnLrot6/nlLHlkITlsY/luZUKaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCcKaW1wb3J0IExhbmRpbmdTY3JlZW4gZnJvbSAnLi9zY3JlZW5zL0xhbmRpbmdTY3JlZW4nCmltcG9ydCBDYXB0dXJlU2NyZWVuIGZyb20gJy4vc2NyZWVucy9DYXB0dXJlU2NyZWVuJwppbXBvcnQgU3RvcnlTY3JlZW4gZnJvbSAnLi9zY3JlZW5zL1N0b3J5U2NyZWVuJwppbXBvcnQgRXhwb3J0U2NyZWVuIGZyb20gJy4vc2NyZWVucy9FeHBvcnRTY3JlZW4nCgpjb25zdCBTQ1JFRU4gPSB7CiAgTEFORElORzogJ2xhbmRpbmcnLAogIENBUFRVUkU6ICdjYXB0dXJlJywKICBTVE9SWTogJ3N0b3J5JywKICBFWFBPUlQ6ICdleHBvcnQnLAp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBcHAoKSB7CiAgY29uc3QgW3NjcmVlbiwgc2V0U2NyZWVuXSA9IHVzZVN0YXRlKFNDUkVFTi5MQU5ESU5HKQogIGNvbnN0IFtwaG90b3MsIHNldFBob3Rvc10gPSB1c2VTdGF0ZShbXSkKICBjb25zdCBbc3RvcnlEYXRhLCBzZXRTdG9yeURhdGFdID0gdXNlU3RhdGUobnVsbCkKCiAgLy8g5a6M5oiQ5LiJ5byg54Wn54mH5ouN5pGECiAgY29uc3QgaGFuZGxlQ2FwdHVyZUNvbXBsZXRlID0gKGNhcHR1cmVkUGhvdG9zKSA9PiB7CiAgICBzZXRQaG90b3MoY2FwdHVyZWRQaG90b3MpCiAgICBzZXRTY3JlZW4oU0NSRUVOLlNUT1JZKQogIH0KCiAgLy8g5a6M5oiQ5pWF5LqL55Sf5oiQ5LiO57yW6L6RCiAgY29uc3QgaGFuZGxlU3RvcnlDb21wbGV0ZSA9IChzdG9yeSwgY29tcGFuaW9uT2JqLCBtb21lbnRPYmopID0+IHsKICAgIHNldFN0b3J5RGF0YSh7IHN0b3J5LCBjb21wYW5pb25PYmosIG1vbWVudE9iaiB9KQogICAgc2V0U2NyZWVuKFNDUkVFTi5FWFBPUlQpCiAgfQoKICAvLyDph43mlrDlvIDlp4sKICBjb25zdCBoYW5kbGVSZXN0YXJ0ID0gKCkgPT4gewogICAgc2V0UGhvdG9zKFtdKQogICAgc2V0U3RvcnlEYXRhKG51bGwpCiAgICBzZXRTY3JlZW4oU0NSRUVOLkxBTkRJTkcpCiAgfQoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im14LWF1dG8gbWluLWgtc3ZoIHctZnVsbCBtYXgtdy1tZCBiZy1iZWlnZS0xMDAiPgogICAgICB7c2NyZWVuID09PSBTQ1JFRU4uTEFORElORyAmJiAoCiAgICAgICAgPExhbmRpbmdTY3JlZW4gb25TdGFydD17KCkgPT4gc2V0U2NyZWVuKFNDUkVFTi5DQVBUVVJFKX0gLz4KICAgICAgKX0KCiAgICAgIHtzY3JlZW4gPT09IFNDUkVFTi5DQVBUVVJFICYmICgKICAgICAgICA8Q2FwdHVyZVNjcmVlbgogICAgICAgICAgaW5pdGlhbFBob3Rvcz17cGhvdG9zfQogICAgICAgICAgb25Db21wbGV0ZT17aGFuZGxlQ2FwdHVyZUNvbXBsZXRlfQogICAgICAgICAgb25FeGl0PXsoKSA9PiBzZXRTY3JlZW4oU0NSRUVOLkxBTkRJTkcpfQogICAgICAgIC8+CiAgICAgICl9CgogICAgICB7c2NyZWVuID09PSBTQ1JFRU4uU1RPUlkgJiYgKAogICAgICAgIDxTdG9yeVNjcmVlbgogICAgICAgICAgcGhvdG9zPXtwaG90b3N9CiAgICAgICAgICBvbkJhY2s9eygpID0+IHNldFNjcmVlbihTQ1JFRU4uQ0FQVFVSRSl9CiAgICAgICAgICBvbkNvbXBsZXRlPXtoYW5kbGVTdG9yeUNvbXBsZXRlfQogICAgICAgIC8+CiAgICAgICl9CgogICAgICB7c2NyZWVuID09PSBTQ1JFRU4uRVhQT1JUICYmIHN0b3J5RGF0YSAmJiAoCiAgICAgICAgPEV4cG9ydFNjcmVlbgogICAgICAgICAgcGhvdG9zPXtwaG90b3N9CiAgICAgICAgICBzdG9yeT17c3RvcnlEYXRhLnN0b3J5fQogICAgICAgICAgY29tcGFuaW9uT2JqPXtzdG9yeURhdGEuY29tcGFuaW9uT2JqfQogICAgICAgICAgbW9tZW50T2JqPXtzdG9yeURhdGEubW9tZW50T2JqfQogICAgICAgICAgb25SZXN0YXJ0PXtoYW5kbGVSZXN0YXJ0fQogICAgICAgIC8+CiAgICAgICl9CiAgICA8L2Rpdj4KICApCn0K
+// 主应用 —— 状态机路由各屏幕
+import { useState } from 'react'
+import LandingScreen from './screens/LandingScreen'
+import CaptureScreen from './screens/CaptureScreen'
+import StoryScreen from './screens/StoryScreen'
+import ExportScreen from './screens/ExportScreen'
+
+const SCREEN = {
+  LANDING: 'landing',
+  CAPTURE: 'capture',
+  STORY: 'story',
+  EXPORT: 'export',
+}
+
+export default function App() {
+  const [screen, setScreen] = useState(SCREEN.LANDING)
+  const [photos, setPhotos] = useState([])
+  const [storyData, setStoryData] = useState(null)
+
+  // 完成三张照片拍摄
+  const handleCaptureComplete = (capturedPhotos) => {
+    setPhotos(capturedPhotos)
+    setScreen(SCREEN.STORY)
+  }
+
+  // 完成故事生成与编辑
+  const handleStoryComplete = (story, companionObj, momentObj) => {
+    setStoryData({ story, companionObj, momentObj })
+    setScreen(SCREEN.EXPORT)
+  }
+
+  // 重新开始
+  const handleRestart = () => {
+    setPhotos([])
+    setStoryData(null)
+    setScreen(SCREEN.LANDING)
+  }
+
+  return (
+    <div className="mx-auto min-h-svh w-full max-w-md bg-beige-100">
+      {screen === SCREEN.LANDING && (
+        <LandingScreen onStart={() => setScreen(SCREEN.CAPTURE)} />
+      )}
+
+      {screen === SCREEN.CAPTURE && (
+        <CaptureScreen
+          initialPhotos={photos}
+          onComplete={handleCaptureComplete}
+          onExit={() => setScreen(SCREEN.LANDING)}
+        />
+      )}
+
+      {screen === SCREEN.STORY && (
+        <StoryScreen
+          photos={photos}
+          onBack={() => setScreen(SCREEN.CAPTURE)}
+          onComplete={handleStoryComplete}
+        />
+      )}
+
+      {screen === SCREEN.EXPORT && storyData && (
+        <ExportScreen
+          photos={photos}
+          story={storyData.story}
+          companionObj={storyData.companionObj}
+          momentObj={storyData.momentObj}
+          onRestart={handleRestart}
+        />
+      )}
+    </div>
+  )
+}

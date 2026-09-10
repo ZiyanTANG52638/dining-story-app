@@ -1,1 +1,114 @@
-Ly8gQUkg6aSQ6aWu6K6w5b+G5Y+Z5LqL55Sf5oiQ5Zmo77yI5Y6f5Z6L54mI77yJCi8vCi8vIOecn+WunuWcuuaZr++8muWwhueFp+eJhyArIOivhuWIq+WIsOeahOiPnOWTgSArIOeUqOaIt+mAieaLqSDlj5HpgIHnu5kgTExN77yMCi8vIOeUn+aIkOS4gOauteaciea4qeW6puOAgeWPr+e8lui+keeahCLorrDlv4blj5nkuosi44CCCi8vIOWOn+Wei+mYtuaute+8muWfuuS6juaooeadvyArIOeUqOaIt+mAieaLqee7hOWQiOeUn+aIkO+8jOS/neivgeeos+WumuS4lOWPr+e8lui+keOAggovLwovLyDorr7orqHljp/liJnvvJrovpPlh7oi55Sf5rS75pa55byP5Y+Z5LqLIu+8jOiAjOmdnuaVsOaNruW6k+agh+etvuOAggovLyAgIOS+i+Wmgu+8miLku6XnlJ/omp3lvIDlnLrvvIzku6Xlt6flhYvlipvnhpTlsqnmlLblsL7nmoTkuIDmmZrjgIIiCi8vICAg5q+P5byg6K6w5b+G5Y2h6YO95bqU5oSf6KeJ54us54m577yI5Y+v5pS26JeP54mp5Lu277yJ77yM5qCH6aKY6ZqP556s6Ze05Y+Y5YyW44CCCgppbXBvcnQgeyBSRVNUQVVSQU5UIH0gZnJvbSAnLi4vZGF0YS9waG90b3MnCgovLyDpmarkvLTlr7nosaEg4oaSIOaDheaEn+WMluensOWRvApjb25zdCBDT01QQU5JT05fTEFCRUwgPSB7CiAgZnJpZW5kczogJ+aMmuWPiycsCiAgZmFtaWx5OiAn5a625Lq6JywKICBkYXRlOiAn6YKj5Liq54m55Yir55qE5Lq6JywKICBjb2xsZWFndWVzOiAn5ZCM6KGM55qE5LyZ5Ly0JywKICBzb2xvOiAn54us5Lqr55qE5oWi5pe25YWJJywKfQoKLy8g6Zmq5Ly05a+56LGhIOKGkiDlvIDlnLrlj5nkuosKY29uc3QgQ09NUEFOSU9OX09QRU5JTkcgPSB7CiAgZnJpZW5kczogJ+WSjOaMmuWPi+WbtOWdkO+8jOeskeWjsOiuqeaVtOW8oOahjOWtkOmDveS6ruS6hui1t+adpScsCiAgZmFtaWx5OiAn5a625Lq65Zu05Z2Q5LiA5qGM77yM6L+e56m65rCU6YO95Y+Y5b6X5p+U6L2vJywKICBkYXRlOiAn5ZKM6YKj5Liq54m55Yir55qE5Lq677yM5oqK5pe26Ze06L+H5b6X5b6I5oWi5b6I5oWiJywKICBjb2xsZWFndWVzOiAn5ZKM5ZCM6KGM55qE5LyZ5Ly077yM5oqK5b+Z56KM5pqC5pe255WZ5Zyo5LqG6Zeo5aSWJywKICBzb2xvOiAn5LiA5Liq5Lq677yM5Lmf5oqK6L+Z5LiA6aSQ6L+H5b6X6YOR6YeN5YW25LqLJywKfQoKLy8g6Zq+5b+Y556s6Ze0IOKGkiDmg4XmhJ/ljJbmlLblsL4KY29uc3QgTU9NRU5UX1BIUkFTRSA9IHsKICAnZmlyc3QtYml0ZSc6ICfnrKzkuIDlj6PlsLHorqnkurrlsY/kvY/lkbzlkLgnLAogIHRvYXN0OiAn5Li+5p2v55u45bqG77yM5p2v5rK/56Kw5Ye65riF6ISG55qE56Wd56aPJywKICBsYXVnaDogJ+eskeWIsOWBnOS4jeS4i+adpe+8jOecvOinkumDvei1t+S6huikticsCiAgYW1iaWVuY2U6ICfooqvmmpblhYnkuI7pppnmsJTmuKnmn5TljIXoo7knLAogIGRlc3NlcnQ6ICfnlJzlk4HmlLblsL7vvIznlJzlvpfliJrliJrlpb0nLAogIHN1cnByaXNlOiAn5oSP5paZ5LmL5aSW55qE5oOK5Zac77yM6K6p5aSc5pma5pu05a6M5pW0JywKfQoKLy8g6Zq+5b+Y556s6Ze0IOKGkiDni6znibnmoIfpopjmhI/osaHvvIjorqnmr4/lvKDorrDlv4bljaHpg73kuI3lkIzvvIkKY29uc3QgTU9NRU5UX1RJVExFID0gewogICdmaXJzdC1iaXRlJzogJ+S7peesrOS4gOWPo+aDiuiJs+W8gOWcuicsCiAgdG9hc3Q6ICfkuLrmraTliLvvvIzovbvovbvkuL7mna8nLAogIGxhdWdoOiAn56yR5Yiw5YGc5LiN5LiL5p2l55qE5aSc5pmaJywKICBhbWJpZW5jZTogJ+iiq+awm+WbtOa4qeaflOWMheijueeahOS4gOaZmicsCiAgZGVzc2VydDogJ+S7peS4gOaKueeUnO+8jOaUtuWwvui/meS4gOaZmicsCiAgc3VycHJpc2U6ICfol4/nnYDmg4rllpznmoTkuIDmmZonLAp9CgovLyDpmr7lv5jnnqzpl7Qg4oaSIOaUtuiXj+WNoeWJr+agh+mimO+8iOeJqeS7tuaEn++8iQpjb25zdCBNT01FTlRfU1VCVElUTEUgPSB7CiAgJ2ZpcnN0LWJpdGUnOiAn5ZGz6JW+6K6w5L2P55qE56ys5LiA56eSJywKICB0b2FzdDogJ+adr+ayv+ebuOeisOeahOelneemjycsCiAgbGF1Z2g6ICfnnLzop5Lms5votbfnmoTnrJHmhI8nLAogIGFtYmllbmNlOiAn5pqW5YWJ5LiO6aaZ5rCUJywKICBkZXNzZXJ0OiAn5oGw5Yiw5aW95aSE55qE55ScJywKICBzdXJwcmlzZTogJ+aEj+aWmeS5i+WklueahOWchua7oScsCn0KCi8vIOeUn+aIkOiusOW/huWPmeS6i+aVsOaNrgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2VuZXJhdGVTdG9yeSh7IGNvbXBhbmlvbiwgZmF2b3JpdGVNb21lbnQsIGRpc2hlcywgcGhvdG9Db3VudCB9KSB7CiAgLy8g5qih5oufIEFJIOeUn+aIkOW7tui/nwogIGF3YWl0IHNsZWVwKDEyMDAgKyBNYXRoLnJhbmRvbSgpICogODAwKQoKICBjb25zdCBjb21wYW5pb25MYWJlbCA9IENPTVBBTklPTl9MQUJFTFtjb21wYW5pb25dIHx8ICfmnIvlj4snCiAgY29uc3Qgb3BlbmluZyA9IENPTVBBTklPTl9PUEVOSU5HW2NvbXBhbmlvbl0gfHwgJ+aIkeS7rOWbtOWdkOWcqOS4gOi1tycKICBjb25zdCBtb21lbnRQaHJhc2UgPSBNT01FTlRfUEhSQVNFW2Zhdm9yaXRlTW9tZW50XSB8fCAn6Zq+5b+Y55qE556s6Ze0JwogIGNvbnN0IHRpdGxlUGhyYXNlID0gTU9NRU5UX1RJVExFW2Zhdm9yaXRlTW9tZW50XSB8fCAn5YC85b6X6K6w5L2P55qE5LiA5pmaJwogIGNvbnN0IHN1YnRpdGxlID0gTU9NRU5UX1NVQlRJVExFW2Zhdm9yaXRlTW9tZW50XSB8fCAn5YC85b6X6K6w5L2P55qE5LiA5pmaJwoKICAvLyDku47or4bliKvliLDnmoToj5zlk4HkuK3mjJHpgIkgMi0zIOS4quS9nOS4uiLov5nkuIDppJDnmoTovajov7kiCiAgY29uc3QgYWxsRGlzaGVzID0gZGlzaGVzLmZsYXQoKS5maWx0ZXIoQm9vbGVhbikKICBjb25zdCB1bmlxdWUgPSBbLi4ubmV3IFNldChhbGxEaXNoZXMpXQogIGNvbnN0IGVuam95ZWQgPSB1bmlxdWUuc2xpY2UoMCwgMykKCiAgLy8g54us54m55qCH6aKY77yI6ZqP556s6Ze05Y+Y5YyW77yM6Z2e5Zu65a6aIuWAvOW+l+iusOS9j+eahOS4gOaZmiLvvIkKICBjb25zdCBoZWFkbGluZSA9IHRpdGxlUGhyYXNlCiAgLy8g5Y+Z5LqL5q2j5paHCiAgY29uc3QgYm9keSA9IGDlnKgke1JFU1RBVVJBTlQubmFtZX3vvIwke29wZW5pbmd944CCJHsKICAgIGVuam95ZWQubGVuZ3RoID8gYOS7jiR7ZW5qb3llZFswXX3lvIDlp4vvvIxgIDogJycKICB95pyA6Zq+5b+Y55qE5pivJHttb21lbnRQaHJhc2V944CCYAoKICByZXR1cm4gewogICAgaGVhZGxpbmUsCiAgICB0aXRsZVBocmFzZSwKICAgIHN1YnRpdGxlLAogICAgYm9keSwKICAgIGNvbXBhbmlvbjogY29tcGFuaW9uTGFiZWwsCiAgICBlbmpveWVkLAogICAgZmF2b3JpdGVNb21lbnQ6IG1vbWVudFBocmFzZSwKICAgIHBob3RvQ291bnQsCiAgICByZXN0YXVyYW50OiBSRVNUQVVSQU5ULm5hbWUsCiAgICBsb2NhdGlvbjogUkVTVEFVUkFOVC5sb2NhdGlvbiwKICAgIGRhdGU6IGZvcm1hdFRvZGF5KCksCiAgICAvLyDkvpvnvJbovpHnmoTljp/lp4vlrZfmrrXvvIjku6Ui5ram6Imy5Y+Z5LqLIueahOaWueW8j+WRiOeOsO+8iQogICAgZWRpdGFibGU6IHsKICAgICAgaGVhZGxpbmUsCiAgICAgIGNvbXBhbmlvbjogY29tcGFuaW9uTGFiZWwsCiAgICAgIGVuam95ZWRUZXh0OiBlbmpveWVkLmpvaW4oJ+OAgScpLAogICAgICBtb21lbnRUZXh0OiBtb21lbnRQaHJhc2UsCiAgICB9LAogIH0KfQoKZnVuY3Rpb24gZm9ybWF0VG9kYXkoKSB7CiAgY29uc3QgZCA9IG5ldyBEYXRlKCkKICBjb25zdCB3ZWVrID0gWyfml6UnLCAn5LiAJywgJ+S6jCcsICfkuIknLCAn5ZubJywgJ+S6lCcsICflha0nXVtkLmdldERheSgpXQogIHJldHVybiBgJHtkLmdldE1vbnRoKCkgKyAxfeaciCR7ZC5nZXREYXRlKCl95pelIMK3IOWRqCR7d2Vla31gCn0KCmZ1bmN0aW9uIHNsZWVwKG1zKSB7CiAgcmV0dXJuIG5ldyBQcm9taXNlKChyKSA9PiBzZXRUaW1lb3V0KHIsIG1zKSkKfQo=
+// AI 餐饮记忆叙事生成器（原型版）
+//
+// 真实场景：将照片 + 识别到的菜品 + 用户选择 发送给 LLM，
+// 生成一段有温度、可编辑的"记忆叙事"。
+// 原型阶段：基于模板 + 用户选择组合生成，保证稳定且可编辑。
+//
+// 设计原则：输出"生活方式叙事"，而非数据库标签。
+//   例如："以生蚝开场，以巧克力熔岩收尾的一晚。"
+//   每张记忆卡都应感觉独特（可收藏物件），标题随瞬间变化。
+
+import { RESTAURANT } from '../data/photos'
+
+// 陪伴对象 → 情感化称呼
+const COMPANION_LABEL = {
+  friends: '挚友',
+  family: '家人',
+  date: '那个特别的人',
+  colleagues: '同行的伙伴',
+  solo: '独享的慢时光',
+}
+
+// 陪伴对象 → 开场叙事
+const COMPANION_OPENING = {
+  friends: '和挚友围坐，笑声让整张桌子都亮了起来',
+  family: '家人围坐一桌，连空气都变得柔软',
+  date: '和那个特别的人，把时间过得很慢很慢',
+  colleagues: '和同行的伙伴，把忙碌暂时留在了门外',
+  solo: '一个人，也把这一餐过得郑重其事',
+}
+
+// 难忘瞬间 → 情感化收尾
+const MOMENT_PHRASE = {
+  'first-bite': '第一口就让人屏住呼吸',
+  toast: '举杯相庆，杯沿碰出清脆的祝福',
+  laugh: '笑到停不下来，眼角都起了褶',
+  ambience: '被暖光与香气温柔包裹',
+  dessert: '甜品收尾，甜得刚刚好',
+  surprise: '意料之外的惊喜，让夜晚更完整',
+}
+
+// 难忘瞬间 → 独特标题意象（让每张记忆卡都不同）
+const MOMENT_TITLE = {
+  'first-bite': '以第一口惊艳开场',
+  toast: '为此刻，轻轻举杯',
+  laugh: '笑到停不下来的夜晚',
+  ambience: '被氛围温柔包裹的一晚',
+  dessert: '以一抹甜，收尾这一晚',
+  surprise: '藏着惊喜的一晚',
+}
+
+// 难忘瞬间 → 收藏卡副标题（物件感）
+const MOMENT_SUBTITLE = {
+  'first-bite': '味蕾记住的第一秒',
+  toast: '杯沿相碰的祝福',
+  laugh: '眼角泛起的笑意',
+  ambience: '暖光与香气',
+  dessert: '恰到好处的甜',
+  surprise: '意料之外的圆满',
+}
+
+// 生成记忆叙事数据
+export async function generateStory({ companion, favoriteMoment, dishes, photoCount }) {
+  // 模拟 AI 生成延迟
+  await sleep(1200 + Math.random() * 800)
+
+  const companionLabel = COMPANION_LABEL[companion] || '朋友'
+  const opening = COMPANION_OPENING[companion] || '我们围坐在一起'
+  const momentPhrase = MOMENT_PHRASE[favoriteMoment] || '难忘的瞬间'
+  const titlePhrase = MOMENT_TITLE[favoriteMoment] || '值得记住的一晚'
+  const subtitle = MOMENT_SUBTITLE[favoriteMoment] || '值得记住的一晚'
+
+  // 从识别到的菜品中挑选 2-3 个作为"这一餐的轨迹"
+  const allDishes = dishes.flat().filter(Boolean)
+  const unique = [...new Set(allDishes)]
+  const enjoyed = unique.slice(0, 3)
+
+  // 独特标题（随瞬间变化，非固定"值得记住的一晚"）
+  const headline = titlePhrase
+  // 叙事正文
+  const body = `在${RESTAURANT.name}，${opening}。${
+    enjoyed.length ? `从${enjoyed[0]}开始，` : ''
+  }最难忘的是${momentPhrase}。`
+
+  return {
+    headline,
+    titlePhrase,
+    subtitle,
+    body,
+    companion: companionLabel,
+    enjoyed,
+    favoriteMoment: momentPhrase,
+    photoCount,
+    restaurant: RESTAURANT.name,
+    location: RESTAURANT.location,
+    date: formatToday(),
+    // 供编辑的原始字段（以"润色叙事"的方式呈现）
+    editable: {
+      headline,
+      companion: companionLabel,
+      enjoyedText: enjoyed.join('、'),
+      momentText: momentPhrase,
+    },
+  }
+}
+
+function formatToday() {
+  const d = new Date()
+  const week = ['日', '一', '二', '三', '四', '五', '六'][d.getDay()]
+  return `${d.getMonth() + 1}月${d.getDate()}日 · 周${week}`
+}
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms))
+}

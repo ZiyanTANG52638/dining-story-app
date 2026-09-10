@@ -1,1 +1,471 @@
-Ly8g55u45py65ouN54Wn5rWB56iLIOKAlOKAlCBTb25obyBLaXRjaGVuIOaaluiJsuaJi+S9nOmjjuagvAovLwovLyDmnoTlm77ljp/liJnvvJoxIOW8oCBIZXJv77yI5Li76KeS77yJKyAyIOW8oOaUr+aMgeeFp+eJh++8iE1lbW9yeSBTbmFwc2hvdHPvvIkKLy8gICAtIOesrOS6jOW8oCLmi5vniYzml7bliLsi5pivIEhlcm/vvIzlvJXlr7zml7bop4bop4nlvLrosIMKLy8gICAtIOS4jem8k+WKseetieadg+aehOWbvgppbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnCmltcG9ydCB7IFBIT1RPX1NURVBTIH0gZnJvbSAnLi4vZGF0YS9waG90b3MnCmltcG9ydCB7IHVzZUNhbWVyYSB9IGZyb20gJy4uL2hvb2tzL3VzZUNhbWVyYScKaW1wb3J0IHsgYW5hbHl6ZVBob3RvIH0gZnJvbSAnLi4vbGliL2FpQW5hbHlzaXMnCmltcG9ydCB7IGVuaGFuY2VJbWFnZSwgY3JlYXRlRGVtb1Bob3RvIH0gZnJvbSAnLi4vbGliL2ltYWdlRW5oYW5jZScKaW1wb3J0IHsgYnVpbGRNZW1vcnlUaGVtZSwgbWFrZUJsdXJyZWRCZyB9IGZyb20gJy4uL2xpYi92aXN1YWxzJwppbXBvcnQgSWNvbiBmcm9tICcuLi9jb21wb25lbnRzL0ljb24nCmltcG9ydCB7IFByaW1hcnlCdXR0b24sIEdob3N0QnV0dG9uLCBCb3R0b21TYWZlIH0gZnJvbSAnLi4vY29tcG9uZW50cy91aScKCi8vIOeroOiKguWGhemDqOeKtuaAgeacugpjb25zdCBQSEFTRSA9IHsKICBHVUlERTogJ2d1aWRlJywgLy8g5ouN5pGE5byV5a+8CiAgQ0FNRVJBOiAnY2FtZXJhJywgLy8g5Y+W5pmv5LitCiAgQU5BTFlaSU5HOiAnYW5hbHl6aW5nJywgLy8gQUkg5YiG5p6Q5LitCiAgUkVWSUVXOiAncmV2aWV3JywgLy8g5aKe5by65ZCO56Gu6K6kCn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENhcHR1cmVTY3JlZW4oeyBvbkNvbXBsZXRlLCBvbkV4aXQsIGluaXRpYWxQaG90b3MgPSBbXSB9KSB7CiAgY29uc3QgW3N0ZXBJbmRleCwgc2V0U3RlcEluZGV4XSA9IHVzZVN0YXRlKDApCiAgY29uc3QgW3BoYXNlLCBzZXRQaGFzZV0gPSB1c2VTdGF0ZShQSEFTRS5HVUlERSkKICBjb25zdCBbcGhvdG9zLCBzZXRQaG90b3NdID0gdXNlU3RhdGUoaW5pdGlhbFBob3RvcykgLy8gW3tzcmMsIGVuaGFuY2VkLCBhbmFseXNpc31dCiAgY29uc3QgW2FuYWx5c2lzLCBzZXRBbmFseXNpc10gPSB1c2VTdGF0ZShudWxsKQogIGNvbnN0IFtlbmhhbmNlZFNyYywgc2V0RW5oYW5jZWRTcmNdID0gdXNlU3RhdGUobnVsbCkKICBjb25zdCBbZW5oYW5jaW5nLCBzZXRFbmhhbmNpbmddID0gdXNlU3RhdGUoZmFsc2UpCiAgY29uc3QgW2NhbWVyYURlbmllZCwgc2V0Q2FtZXJhRGVuaWVkXSA9IHVzZVN0YXRlKGZhbHNlKQogIGNvbnN0IFtkZW1vTW9kZSwgc2V0RGVtb01vZGVdID0gdXNlU3RhdGUoZmFsc2UpCiAgY29uc3QgW3RoZW1lLCBzZXRUaGVtZV0gPSB1c2VTdGF0ZShudWxsKSAvLyDliqjmgIHoibLlvankuLvpopgKICBjb25zdCBbcGhvdG9CZywgc2V0UGhvdG9CZ10gPSB1c2VTdGF0ZShudWxsKSAvLyDmqKHns4rnhafniYfog4zmma8KCiAgY29uc3QgY2FtZXJhID0gdXNlQ2FtZXJhKCkKICBjb25zdCBzdGVwID0gUEhPVE9fU1RFUFNbc3RlcEluZGV4XQogIGNvbnN0IGlzTGFzdCA9IHN0ZXBJbmRleCA9PT0gUEhPVE9fU1RFUFMubGVuZ3RoIC0gMQogIGNvbnN0IGlzSGVybyA9IHN0ZXAucm9sZSA9PT0gJ2hlcm8nCgogIC8vIOi/m+WFpeebuOacuumYtuauteaXtuWQr+WKqOaRhOWDj+WktAogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAocGhhc2UgPT09IFBIQVNFLkNBTUVSQSAmJiAhZGVtb01vZGUpIHsKICAgICAgY2FtZXJhLnN0YXJ0KCkudGhlbigoKSA9PiB7CiAgICAgICAgaWYgKGNhbWVyYS5lcnJvcikgc2V0Q2FtZXJhRGVuaWVkKHRydWUpCiAgICAgIH0pCiAgICB9CiAgICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgcmVhY3QtaG9va3MvZXhoYXVzdGl2ZS1kZXBzCiAgfSwgW3BoYXNlLCBkZW1vTW9kZV0pCgogIC8vIOemu+W8gOebuOacuumYtuauteaXtuWBnOatogogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAocGhhc2UgIT09IFBIQVNFLkNBTUVSQSkgY2FtZXJhLnN0b3AoKQogICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIHJlYWN0LWhvb2tzL2V4aGF1c3RpdmUtZGVwcwogIH0sIFtwaGFzZV0pCgogIC8vIOaLjeaRhOW8leWvvCDihpIg55u45py6CiAgY29uc3QgZ29DYW1lcmEgPSAoKSA9PiB7CiAgICBzZXRQaGFzZShQSEFTRS5DQU1FUkEpCiAgICBzZXRDYW1lcmFEZW5pZWQoZmFsc2UpCiAgfQoKICAvLyDkvb/nlKjmvJTnpLrnhafniYfvvIjml6Dnm7jmnLrnjq/looPvvIkKICBjb25zdCB1c2VEZW1vID0gKCkgPT4gewogICAgc2V0RGVtb01vZGUodHJ1ZSkKICAgIHNldFBoYXNlKFBIQVNFLkNBTUVSQSkKICB9CgogIC8vIOaLjeeFpwogIGNvbnN0IHRha2VQaG90byA9IGFzeW5jICgpID0+IHsKICAgIGxldCBzcmMgPSBjYW1lcmEuY2FwdHVyZSgpCiAgICBpZiAoIXNyYykgewogICAgICBzcmMgPSBjcmVhdGVEZW1vUGhvdG8oc3RlcC5pZCkKICAgIH0KICAgIGF3YWl0IHByb2Nlc3NQaG90byhzcmMpCiAgfQoKICAvLyDlpITnkIbkuIDlvKDnhafniYfvvJrmj5Dlj5bmsJvlm7Qg4oaSIEFJIOWIhuaekCDihpIg5aKe5by6CiAgY29uc3QgcHJvY2Vzc1Bob3RvID0gYXN5bmMgKHNyYykgPT4gewogICAgc2V0UGhhc2UoUEhBU0UuQU5BTFlaSU5HKQogICAgc2V0QW5hbHlzaXMobnVsbCkKICAgIHNldEVuaGFuY2VkU3JjKG51bGwpCgogICAgLy8g5o+Q5Y+W5Yqo5oCB6Imy5b2p5LiO5qih57OK6IOM5pmv77yI5pqW6Imy5rCb5Zu077yJCiAgICBjb25zdCBbdCwgYmddID0gYXdhaXQgUHJvbWlzZS5hbGwoW2J1aWxkTWVtb3J5VGhlbWUoc3JjKSwgbWFrZUJsdXJyZWRCZyhzcmMpXSkKICAgIHNldFRoZW1lKHQpCiAgICBzZXRQaG90b0JnKGJnKQoKICAgIC8vIDEuIEFJIOWIhuaekO+8iOato+WQkeW7uuiuru+8iQogICAgY29uc3QgcmVzdWx0ID0gYXdhaXQgYW5hbHl6ZVBob3RvKHNyYywgc3RlcC5pZCkKICAgIHNldEFuYWx5c2lzKHJlc3VsdCkKCiAgICAvLyAyLiDoh6rliqjlop7lvLoKICAgIHNldEVuaGFuY2luZyh0cnVlKQogICAgY29uc3QgZW5oYW5jZWQgPSBhd2FpdCBlbmhhbmNlSW1hZ2Uoc3JjLCByZXN1bHQuZW5oYW5jZSkKICAgIHNldEVuaGFuY2VkU3JjKGVuaGFuY2VkKQogICAgc2V0RW5oYW5jaW5nKGZhbHNlKQoKICAgIHNldFBoYXNlKFBIQVNFLlJFVklFVykKICB9CgogIC8vIOehruiupOi/meW8oOeFp+eJhwogIGNvbnN0IGNvbmZpcm1QaG90byA9ICgpID0+IHsKICAgIGNvbnN0IG5ld1Bob3RvcyA9IFsuLi5waG90b3NdCiAgICBuZXdQaG90b3Nbc3RlcEluZGV4XSA9IHsKICAgICAgc3JjOiBlbmhhbmNlZFNyYywKICAgICAgcmF3OiBlbmhhbmNlZFNyYywKICAgICAgYW5hbHlzaXMsCiAgICAgIHN0ZXBJZDogc3RlcC5pZCwKICAgICAgcm9sZTogc3RlcC5yb2xlLAogICAgfQogICAgc2V0UGhvdG9zKG5ld1Bob3RvcykKCiAgICBpZiAoaXNMYXN0KSB7CiAgICAgIG9uQ29tcGxldGUobmV3UGhvdG9zKQogICAgfSBlbHNlIHsKICAgICAgc2V0U3RlcEluZGV4KHN0ZXBJbmRleCArIDEpCiAgICAgIHNldFBoYXNlKFBIQVNFLkdVSURFKQogICAgICBzZXRBbmFseXNpcyhudWxsKQogICAgICBzZXRFbmhhbmNlZFNyYyhudWxsKQogICAgICBzZXRUaGVtZShudWxsKQogICAgICBzZXRQaG90b0JnKG51bGwpCiAgICB9CiAgfQoKICAvLyDph43mi40KICBjb25zdCByZXRha2UgPSAoKSA9PiB7CiAgICBzZXRQaGFzZShQSEFTRS5DQU1FUkEpCiAgICBzZXRBbmFseXNpcyhudWxsKQogICAgc2V0RW5oYW5jZWRTcmMobnVsbCkKICB9CgogIC8vIOi/lOWbnuS4iuS4gOeroO+8iOiLpeW3suacieeFp+eJh++8iQogIGNvbnN0IGdvQmFjayA9ICgpID0+IHsKICAgIGlmIChzdGVwSW5kZXggPiAwKSB7CiAgICAgIHNldFN0ZXBJbmRleChzdGVwSW5kZXggLSAxKQogICAgICBzZXRQaGFzZShQSEFTRS5HVUlERSkKICAgIH0gZWxzZSB7CiAgICAgIG9uRXhpdCgpCiAgICB9CiAgfQoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIGZsZXggbWluLWgtc3ZoIGZsZXgtY29sIG92ZXJmbG93LWhpZGRlbiBiZy1iZWlnZS0xMDAiPgogICAgICB7Lyog6aG26YOo77ya6L+b5bqmICsg6L+U5ZueICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgei0yMCBweC01IHB0LTUiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iPgogICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICB0eXBlPSJidXR0b24iCiAgICAgICAgICAgIG9uQ2xpY2s9e2dvQmFja30KICAgICAgICAgICAgY2xhc3NOYW1lPSJnbGFzcyBmbGV4IGgtMTAgdy0xMCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC1mdWxsIHRleHQtY29mZmVlLTUwMCB0cmFuc2l0aW9uLWNvbG9ycyBob3Zlcjp0ZXh0LWNvZmZlZS02MDAiCiAgICAgICAgICAgIGFyaWEtbGFiZWw9Iui/lOWbniIKICAgICAgICAgID4KICAgICAgICAgICAgPEljb24gbmFtZT0iYmFjayIgc2l6ZT17MjB9IC8+CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDxDaGFwdGVyRG90cyBjdXJyZW50PXtzdGVwSW5kZXh9IHRvdGFsPXtQSE9UT19TVEVQUy5sZW5ndGh9IC8+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaC0xMCB3LTEwIiAvPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiDkuLvkvZPlhoXlrrkgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSB6LTEwIGZsZXggZmxleC0xIGZsZXgtY29sIj4KICAgICAgICB7cGhhc2UgPT09IFBIQVNFLkdVSURFICYmICgKICAgICAgICAgIDxHdWlkZVZpZXcgc3RlcD17c3RlcH0gc3RlcEluZGV4PXtzdGVwSW5kZXh9IGlzSGVybz17aXNIZXJvfSBvblN0YXJ0PXtnb0NhbWVyYX0gb25EZW1vPXt1c2VEZW1vfSAvPgogICAgICAgICl9CgogICAgICAgIHtwaGFzZSA9PT0gUEhBU0UuQ0FNRVJBICYmICgKICAgICAgICAgIDxDYW1lcmFWaWV3CiAgICAgICAgICAgIGNhbWVyYT17Y2FtZXJhfQogICAgICAgICAgICBzdGVwPXtzdGVwfQogICAgICAgICAgICBpc0hlcm89e2lzSGVyb30KICAgICAgICAgICAgb25DYXB0dXJlPXt0YWtlUGhvdG99CiAgICAgICAgICAgIG9uRGVuaWVkPXsoKSA9PiBzZXRDYW1lcmFEZW5pZWQodHJ1ZSl9CiAgICAgICAgICAgIGNhbWVyYURlbmllZD17Y2FtZXJhRGVuaWVkfQogICAgICAgICAgICBvblVzZURlbW89e3VzZURlbW99CiAgICAgICAgICAgIGRlbW9Nb2RlPXtkZW1vTW9kZX0KICAgICAgICAgIC8+CiAgICAgICAgKX0KCiAgICAgICAge3BoYXNlID09PSBQSEFTRS5BTkFMWVpJTkcgJiYgKAogICAgICAgICAgPEFuYWx5emluZ1ZpZXcgZW5oYW5jaW5nPXtlbmhhbmNpbmd9IHRoZW1lPXt0aGVtZX0gcGhvdG9CZz17cGhvdG9CZ30gLz4KICAgICAgICApfQoKICAgICAgICB7cGhhc2UgPT09IFBIQVNFLlJFVklFVyAmJiAoCiAgICAgICAgICA8UmV2aWV3VmlldwogICAgICAgICAgICBhbmFseXNpcz17YW5hbHlzaXN9CiAgICAgICAgICAgIGVuaGFuY2VkU3JjPXtlbmhhbmNlZFNyY30KICAgICAgICAgICAgdGhlbWU9e3RoZW1lfQogICAgICAgICAgICBwaG90b0JnPXtwaG90b0JnfQogICAgICAgICAgICBvbkNvbmZpcm09e2NvbmZpcm1QaG90b30KICAgICAgICAgICAgb25SZXRha2U9e3JldGFrZX0KICAgICAgICAgICAgaXNMYXN0PXtpc0xhc3R9CiAgICAgICAgICAgIGlzSGVybz17aXNIZXJvfQogICAgICAgICAgLz4KICAgICAgICApfQogICAgICA8L2Rpdj4KICAgICAgPEJvdHRvbVNhZmUgLz4KICAgIDwvZGl2PgogICkKfQoKLy8gLS0tLSDnq6DoioLov5vluqbvvIjpobbpg6jliIbmrrXmnaHvvIzmmpboibLvvIkgLS0tLQpmdW5jdGlvbiBDaGFwdGVyRG90cyh7IGN1cnJlbnQsIHRvdGFsIH0pIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0xLjUiPgogICAgICB7QXJyYXkuZnJvbSh7IGxlbmd0aDogdG90YWwgfSkubWFwKChfLCBpKSA9PiAoCiAgICAgICAgPGRpdgogICAgICAgICAga2V5PXtpfQogICAgICAgICAgY2xhc3NOYW1lPXtgaC0xIHJvdW5kZWQtZnVsbCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi01MDAgJHsKICAgICAgICAgICAgaSA9PT0gY3VycmVudCA/ICd3LTYgYmctY29mZmVlLTUwMCcgOiBpIDwgY3VycmVudCA/ICd3LTQgYmctY29mZmVlLTQwMC82MCcgOiAndy00IGJnLWNvZmZlZS0zMDAvMzAnCiAgICAgICAgICB9YH0KICAgICAgICAvPgogICAgICApKX0KICAgIDwvZGl2PgogICkKfQoKLy8gLS0tLSDmi43mkYTlvJXlr7zop4blm77vvIjmmpboibLmiYvkvZwgKyBIZXJvIOW8uuiwg++8iSAtLS0tCmZ1bmN0aW9uIEd1aWRlVmlldyh7IHN0ZXAsIHN0ZXBJbmRleCwgaXNIZXJvLCBvblN0YXJ0LCBvbkRlbW8gfSkgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LTEgZmxleC1jb2wgcHgtNiBwdC02IGFuaW1hdGUtZmFkZS1pbiI+CiAgICAgIHsvKiDnq6DoioLmsJvlm7TlpKflm74gKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPXtgcmVsYXRpdmUgbXgtYXV0byB3LWZ1bGwgbWF4LXctc20gb3ZlcmZsb3ctaGlkZGVuIHJvdW5kZWQtWzEuOHJlbV0gJHtpc0hlcm8gPyAnYXNwZWN0LVs0LzVdJyA6ICdhc3BlY3QtWzQvM10nfWB9PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIiBzdHlsZT17eyBiYWNrZ3JvdW5kOiBndWlkZUJnKHN0ZXAuaWQpIH19IC8+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgYmctZ3JhZGllbnQtdG8tdCBmcm9tLWJlaWdlLTIwMC83MCB2aWEtdHJhbnNwYXJlbnQgdG8tdHJhbnNwYXJlbnQiIC8+CiAgICAgICAgey8qIOeroOiKguagh+etviAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ2xhc3MtbGlnaHQgYWJzb2x1dGUgbGVmdC00IHRvcC00IGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHJvdW5kZWQtZnVsbCBweC0zIHB5LTEuNSI+CiAgICAgICAgICA8SWNvbiBuYW1lPXtzdGVwLmljb259IHNpemU9ezE0fSBjbGFzc05hbWU9InRleHQtY29mZmVlLTUwMCIgLz4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyBmb250LW1lZGl1bSB0ZXh0LWNvZmZlZS02MDAiPntzdGVwLmNoYXB0ZXJ9PC9zcGFuPgogICAgICAgIDwvZGl2PgogICAgICAgIHsvKiBIZXJvIOW+veeroCAqL30KICAgICAgICB7aXNIZXJvICYmICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSByaWdodC00IHRvcC00IGZsZXggaXRlbXMtY2VudGVyIGdhcC0xLjUgcm91bmRlZC1mdWxsIGJnLXNreS00MDAvOTAgcHgtMyBweS0xLjUgdGV4dC1iZWlnZS01MCI+CiAgICAgICAgICAgIDxJY29uIG5hbWU9ImRpc2giIHNpemU9ezEzfSAvPgogICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQteHMgZm9udC1zZW1pYm9sZCI+SGVybyDkuLvop5LplZzlpLQ8L3NwYW4+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApfQogICAgICAgIHsvKiDkuK3lpK7mg4XmhJ/mlofmoYggKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LXgtMCBib3R0b20tMCBwLTUiPgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0ic3RvcnktZGlzcGxheSB0ZXh0LTN4bCB0ZXh0LWNvZmZlZS02MDAiPntzdGVwLnRpdGxlfTwvaDI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9Im10LTEgdGV4dC1zbSB0ZXh0LWNvZmZlZS01MDAvODAiPntzdGVwLnN1YnRpdGxlfTwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7Lyog5byV5a+86K+tICovfQogICAgICA8cCBjbGFzc05hbWU9InN0b3J5LWRpc3BsYXkgbXgtYXV0byBtdC03IG1heC13LXhzIHRleHQtY2VudGVyIHRleHQtbGcgbGVhZGluZy1yZWxheGVkIHRleHQtY29mZmVlLTYwMCI+CiAgICAgICAge3N0ZXAucHJvbXB0fQogICAgICA8L3A+CgogICAgICB7Lyog5pGE5b2x5bCP6LS05aOr77yI5pqW6Imy546755KD77yJICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0ibXgtYXV0byBtdC02IHctZnVsbCBtYXgtdy1zbSBzcGFjZS15LTIuNSI+CiAgICAgICAge3N0ZXAudGlwcy5tYXAoKHRpcCwgaSkgPT4gKAogICAgICAgICAgPGRpdgogICAgICAgICAgICBrZXk9e2l9CiAgICAgICAgICAgIGNsYXNzTmFtZT0iZ2xhc3MgZmxleCBpdGVtcy1zdGFydCBnYXAtMyByb3VuZGVkLTJ4bCBweC00IHB5LTMiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17YG10LTAuNSBmbGV4IGgtNiB3LTYgc2hyaW5rLTAgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtZnVsbCB0ZXh0LVsxMXB4XSBmb250LXNlbWlib2xkICR7aXNIZXJvID8gJ2JnLXNreS00MDAvMjUgdGV4dC1za3ktNTAwJyA6ICdiZy1jb2ZmZWUtNTAwLzE1IHRleHQtY29mZmVlLTUwMCd9YH0+CiAgICAgICAgICAgICAge2kgKyAxfQogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zbSBsZWFkaW5nLXJlbGF4ZWQgdGV4dC1jb2ZmZWUtNTAwIj57dGlwfTwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgICkpfQogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJteC1hdXRvIG10LWF1dG8gdy1mdWxsIG1heC13LXNtIHNwYWNlLXktMyBwYi02IHB0LTgiPgogICAgICAgIDxQcmltYXJ5QnV0dG9uIG9uQ2xpY2s9e29uU3RhcnR9IGNsYXNzTmFtZT0idy1mdWxsIiBpY29uPSJjYW1lcmEiPgogICAgICAgICAge2lzSGVybyA/ICfmi43kuIvku4rmmZrnmoTkuLvop5InIDogc3RlcEluZGV4ID09PSAwID8gJ+aLjeS4i+esrOS4gOW5leawm+WbtCcgOiAn5ouN5LiL6L+Z5LiA56ugJ30KICAgICAgICA8L1ByaW1hcnlCdXR0b24+CiAgICAgICAgPEdob3N0QnV0dG9uIG9uQ2xpY2s9e29uRGVtb30gY2xhc3NOYW1lPSJ3LWZ1bGwiPgogICAgICAgICAg55So56S65L6L54Wn54mH5L2T6aqMCiAgICAgICAgPC9HaG9zdEJ1dHRvbj4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApCn0KCmZ1bmN0aW9uIGd1aWRlQmcoaWQpIHsKICBjb25zdCBtYXAgPSB7CiAgICAnZmlyc3QtaW1wcmVzc2lvbic6ICdsaW5lYXItZ3JhZGllbnQoMTYwZGVnLCNlZmU0ZDAsI2U1ZDViYSA1NSUsI2Q2YmY5YyAxMzAlKScsCiAgICAnc2lnbmF0dXJlLW1vbWVudCc6ICdsaW5lYXItZ3JhZGllbnQoMTYwZGVnLCNlNWQwYWUsI2M5YTA2YSA1NSUsI2IwOGE2YSAxMzAlKScsCiAgICAnbWVtb3J5LW1vbWVudCc6ICdsaW5lYXItZ3JhZGllbnQoMTYwZGVnLCNlOGUyZDgsI2Q3ZTZlYyA1NSUsI2JjZDZlMiAxMzAlKScsCiAgfQogIHJldHVybiBtYXBbaWRdIHx8IG1hcFsnc2lnbmF0dXJlLW1vbWVudCddCn0KCi8vIC0tLS0g55u45py65Y+W5pmv6KeG5Zu+77yISGVybyDlvLrosIPlj5bmma/moYbvvIkgLS0tLQpmdW5jdGlvbiBDYW1lcmFWaWV3KHsgY2FtZXJhLCBzdGVwLCBpc0hlcm8sIG9uQ2FwdHVyZSwgY2FtZXJhRGVuaWVkLCBvblVzZURlbW8sIGRlbW9Nb2RlIH0pIHsKICBjb25zdCB7IHZpZGVvUmVmLCBmbGlwIH0gPSBjYW1lcmEKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC0xIGZsZXgtY29sIHB4LTQgcHQtMyI+CiAgICAgIHsvKiDnq6DoioLmj5DnpLrmnaEgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJnbGFzcyBteC1hdXRvIG1iLTMgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgcm91bmRlZC1mdWxsIHB4LTQgcHktMiB0ZXh0LWNvZmZlZS02MDAiPgogICAgICAgIDxJY29uIG5hbWU9e3N0ZXAuaWNvbn0gc2l6ZT17MTV9IGNsYXNzTmFtZT0idGV4dC1jb2ZmZWUtNTAwIiAvPgogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1bMTNweF0iPntzdGVwLnByb21wdH08L3NwYW4+CiAgICAgICAge2lzSGVybyAmJiAoCiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9Im1sLTEgcm91bmRlZC1mdWxsIGJnLXNreS00MDAvOTAgcHgtMiBweS0wLjUgdGV4dC1bMTBweF0gZm9udC1zZW1pYm9sZCB0ZXh0LWJlaWdlLTUwIj5IZXJvPC9zcGFuPgogICAgICAgICl9CiAgICAgIDwvZGl2PgoKICAgICAgey8qIOWFqOWxj+WPluaZr+ahhiAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9e2ByZWxhdGl2ZSBteC1hdXRvIHctZnVsbCBtYXgtdy1zbSBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC1bMS44cmVtXSBiZy1iZWlnZS0yMDAgc2hhZG93LXhsIHNoYWRvdy1jb2ZmZWUtNTAwLzE1ICR7aXNIZXJvID8gJ2FzcGVjdC1bMy80XScgOiAnYXNwZWN0LVszLzRdJ31gfT4KICAgICAgICB7IWNhbWVyYURlbmllZCAmJiAhZGVtb01vZGUgPyAoCiAgICAgICAgICA8dmlkZW8KICAgICAgICAgICAgcmVmPXt2aWRlb1JlZn0KICAgICAgICAgICAgcGxheXNJbmxpbmUKICAgICAgICAgICAgbXV0ZWQKICAgICAgICAgICAgYXV0b1BsYXkKICAgICAgICAgICAgY2xhc3NOYW1lPSJoLWZ1bGwgdy1mdWxsIG9iamVjdC1jb3ZlciIKICAgICAgICAgIC8+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGgtZnVsbCB3LWZ1bGwgZmxleC1jb2wgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0zIHAtNiB0ZXh0LWNlbnRlciIKICAgICAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZDogZ3VpZGVCZyhzdGVwLmlkKSB9fT4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdsYXNzLWxpZ2h0IGZsZXggaC0xNiB3LTE2IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciByb3VuZGVkLWZ1bGwiPgogICAgICAgICAgICAgIDxJY29uIG5hbWU9ImNhbWVyYSIgc2l6ZT17MzB9IGNsYXNzTmFtZT0idGV4dC1jb2ZmZWUtNTAwIiAvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIHRleHQtY29mZmVlLTYwMCI+CiAgICAgICAgICAgICAge2RlbW9Nb2RlCiAgICAgICAgICAgICAgICA/ICfnpLrkvovmqKHlvI8gwrcg5bCG55Sf5oiQ5ryU56S654Wn54mHJwogICAgICAgICAgICAgICAgOiAn5peg5rOV6K6/6Zeu55u45py677yM5Y+v5YiH5o2i5Li656S65L6L54Wn54mH5L2T6aqM5a6M5pW05rWB56iLJ30KICAgICAgICAgICAgPC9wPgogICAgICAgICAgICB7IWRlbW9Nb2RlICYmICgKICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICB0eXBlPSJidXR0b24iCiAgICAgICAgICAgICAgICBvbkNsaWNrPXtvblVzZURlbW99CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImdsYXNzIG10LTIgcm91bmRlZC1mdWxsIHB4LTUgcHktMiB0ZXh0LXNtIHRleHQtY29mZmVlLTUwMCIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICDkvb/nlKjnpLrkvovnhafniYcKICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgICl9CgogICAgICAgIHsvKiDlj5bmma/moYboo4XppbDvvJpIZXJvIOeUqOWkqeiTneiBmueEpuahhu+8jOWFtuS9meeUqOWSluWVoee7huahhiAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT17YHBvaW50ZXItZXZlbnRzLW5vbmUgYWJzb2x1dGUgaW5zZXQtNCByb3VuZGVkLTN4bCBib3JkZXIgJHtpc0hlcm8gPyAnYm9yZGVyLXNreS00MDAvNzAnIDogJ2JvcmRlci1jb2ZmZWUtNDAwLzMwJ31gfSAvPgogICAgICAgIHtpc0hlcm8gJiYgKAogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InBvaW50ZXItZXZlbnRzLW5vbmUgYWJzb2x1dGUgbGVmdC0xLzIgdG9wLTEvMiBoLTI0IHctMjQgLXRyYW5zbGF0ZS14LTEvMiAtdHJhbnNsYXRlLXktMS8yIHJvdW5kZWQtZnVsbCBib3JkZXItMiBib3JkZXItc2t5LTQwMC83MCIgLz4KICAgICAgICApfQogICAgICAgIHsvKiDlupXpg6jmuJDpmpAgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InBvaW50ZXItZXZlbnRzLW5vbmUgYWJzb2x1dGUgaW5zZXQteC0wIGJvdHRvbS0wIGgtMjQgYmctZ3JhZGllbnQtdG8tdCBmcm9tLWJlaWdlLTIwMC82MCB0by10cmFuc3BhcmVudCIgLz4KICAgICAgPC9kaXY+CgogICAgICB7Lyog5bqV6YOo5o6n5Yi2ICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtYXV0byBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMTAgcGItNiBwdC02Ij4KICAgICAgICA8YnV0dG9uCiAgICAgICAgICB0eXBlPSJidXR0b24iCiAgICAgICAgICBvbkNsaWNrPXtmbGlwfQogICAgICAgICAgY2xhc3NOYW1lPSJnbGFzcyBmbGV4IGgtMTIgdy0xMiBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC1mdWxsIHRleHQtY29mZmVlLTUwMCB0cmFuc2l0aW9uLWNvbG9ycyBob3Zlcjp0ZXh0LWNvZmZlZS02MDAiCiAgICAgICAgICBhcmlhLWxhYmVsPSLliIfmjaLmkYTlg4/lpLQiCiAgICAgICAgPgogICAgICAgICAgPEljb24gbmFtZT0iZmxpcCIgc2l6ZT17MjJ9IC8+CiAgICAgICAgPC9idXR0b24+CgogICAgICAgIDxidXR0b24KICAgICAgICAgIHR5cGU9ImJ1dHRvbiIKICAgICAgICAgIG9uQ2xpY2s9e29uQ2FwdHVyZX0KICAgICAgICAgIGNsYXNzTmFtZT0iZ3JvdXAgcmVsYXRpdmUgZmxleCBoLVs0LjVyZW1dIHctWzQuNXJlbV0gaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtZnVsbCIKICAgICAgICAgIGFyaWEtbGFiZWw9IuaLjeeFpyIKICAgICAgICA+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9e2BhYnNvbHV0ZSBpbnNldC0wIHJvdW5kZWQtZnVsbCBib3JkZXItMiB0cmFuc2l0aW9uLXRyYW5zZm9ybSBncm91cC1hY3RpdmU6c2NhbGUtOTAgJHtpc0hlcm8gPyAnYm9yZGVyLXNreS00MDAnIDogJ2JvcmRlci1jb2ZmZWUtNTAwLzcwJ31gfSAvPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtgaC1bMy40cmVtXSB3LVszLjRyZW1dIHJvdW5kZWQtZnVsbCBzaGFkb3ctbGcgdHJhbnNpdGlvbi10cmFuc2Zvcm0gZ3JvdXAtYWN0aXZlOnNjYWxlLTkwICR7aXNIZXJvID8gJ2JnLWdyYWRpZW50LXRvLWJyIGZyb20tc2t5LTQwMCB0by1za3ktNTAwIHNoYWRvdy1za3ktNDAwLzMwJyA6ICdiZy1ncmFkaWVudC10by1iciBmcm9tLWNvZmZlZS00MDAgdG8tY29mZmVlLTYwMCBzaGFkb3ctY29mZmVlLTUwMC8zMCd9YH0gLz4KICAgICAgICA8L2J1dHRvbj4KCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImgtMTIgdy0xMiIgLz4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApCn0KCi8vIC0tLS0gQUkg5YiG5p6Q5Lit6KeG5Zu+77yI5pqW6Imy5Yqo5oCB5rCb5Zu077yJIC0tLS0KZnVuY3Rpb24gQW5hbHl6aW5nVmlldyh7IGVuaGFuY2luZywgdGhlbWUsIHBob3RvQmcgfSkgewogIGNvbnN0IGNzcyA9IHRoZW1lCiAgICA/IHsKICAgICAgICAnLS1iZy1nbG93JzogdGhlbWUuZ2xvdywKICAgICAgICAnLS1iZy1hY2NlbnQnOiB0aGVtZS5hY2NlbnQsCiAgICAgICAgJy0tYmctbWlkJzogdGhlbWUubWlkLAogICAgICAgICctLWJnLWRlZXAnOiB0aGVtZS5kZWVwLAogICAgICB9CiAgICA6IHt9CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBmbGV4IGZsZXgtMSBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgb3ZlcmZsb3ctaGlkZGVuIHB4LTggdGV4dC1jZW50ZXIgYW5pbWF0ZS1mYWRlLWluIj4KICAgICAgey8qIOWKqOaAgeawm+WbtOiDjOaZryAqL30KICAgICAge3Bob3RvQmcgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtZW1vcnktcGhvdG8tYmciIHN0eWxlPXt7IGJhY2tncm91bmRJbWFnZTogYHVybCgke3Bob3RvQmd9KWAgfX0gLz4KICAgICAgKX0KICAgICAgPGRpdiBjbGFzc05hbWU9Im1lbW9yeS1iZyBhYnNvbHV0ZSBpbnNldC0wIiBzdHlsZT17Y3NzfSAvPgoKICAgICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIHotMTAgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJnbGFzcyBnbGFzcy1oaWdobGlnaHQgcmVsYXRpdmUgbWItOCBmbGV4IGgtMjggdy0yOCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC1mdWxsIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIGFuaW1hdGUtc3BpbiByb3VuZGVkLWZ1bGwgYm9yZGVyLTIgYm9yZGVyLWNvZmZlZS00MDAvMjAgYm9yZGVyLXQtY29mZmVlLTUwMCIgLz4KICAgICAgICAgIDxJY29uIG5hbWU9InNwYXJrbGVzIiBzaXplPXszOH0gY2xhc3NOYW1lPSJ0ZXh0LWNvZmZlZS01MDAiIC8+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGgzIGNsYXNzTmFtZT0ic3RvcnktZGlzcGxheSB0ZXh0LTJ4bCB0ZXh0LWNvZmZlZS02MDAiPgogICAgICAgICAge2VuaGFuY2luZyA/ICfmraPlnKjmuKnmn5Tkv67niYfigKYnIDogJ0FJIOato+WcqOivu+aHgui/meS4gOWIu+KApid9CiAgICAgICAgPC9oMz4KICAgICAgICA8cCBjbGFzc05hbWU9Im10LTMgbWF4LXcteHMgdGV4dC1zbSBsZWFkaW5nLXJlbGF4ZWQgdGV4dC1jb2ZmZWUtNTAwIj4KICAgICAgICAgIHtlbmhhbmNpbmcKICAgICAgICAgICAgPyAn6Ieq5Yqo6LCD5pW05YWJ57q/5LiO6Imy5b2p77yM6K6p55S76Z2i5pu05Ye65b2pJwogICAgICAgICAgICA6ICfmhJ/lj5fmsJvlm7TjgIHlhYnnur/kuI7mnoTlm77vvIzkuLrkvaDpgIHkuIrmraPlkJHlu7rorq4nfQogICAgICAgIDwvcD4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApCn0KCi8vIC0tLS0g5aKe5by65ZCO56Gu6K6k6KeG5Zu+77yI5pqW6ImyICsgSGVybyDlvLrosIPvvIkgLS0tLQpmdW5jdGlvbiBSZXZpZXdWaWV3KHsgYW5hbHlzaXMsIGVuaGFuY2VkU3JjLCB0aGVtZSwgcGhvdG9CZywgb25Db25maXJtLCBvblJldGFrZSwgaXNMYXN0LCBpc0hlcm8gfSkgewogIGNvbnN0IGNzcyA9IHRoZW1lCiAgICA/IHsKICAgICAgICAnLS1iZy1nbG93JzogdGhlbWUuZ2xvdywKICAgICAgICAnLS1iZy1hY2NlbnQnOiB0aGVtZS5hY2NlbnQsCiAgICAgICAgJy0tYmctbWlkJzogdGhlbWUubWlkLAogICAgICAgICctLWJnLWRlZXAnOiB0aGVtZS5kZWVwLAogICAgICB9CiAgICA6IHt9CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBmbGV4IGZsZXgtMSBmbGV4LWNvbCBvdmVyZmxvdy1oaWRkZW4gcHgtNSBwdC0zIGFuaW1hdGUtZmFkZS1pbiI+CiAgICAgIHsvKiDliqjmgIHmsJvlm7Tog4zmma8gKi99CiAgICAgIHtwaG90b0JnICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWVtb3J5LXBob3RvLWJnIiBzdHlsZT17eyBiYWNrZ3JvdW5kSW1hZ2U6IGB1cmwoJHtwaG90b0JnfSlgIH19IC8+CiAgICAgICl9CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtZW1vcnktYmcgYWJzb2x1dGUgaW5zZXQtMCIgc3R5bGU9e2Nzc30gLz4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSB6LTEwIGZsZXggZmxleC0xIGZsZXgtY29sIj4KICAgICAgICB7Lyog5aKe5by65ZCO54Wn54mHICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBteC1hdXRvIHctZnVsbCBtYXgtdy1zbSI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17YHBob3RvLWNhcmQgdy1mdWxsICR7aXNIZXJvID8gJ2FzcGVjdC1bMy80XScgOiAnYXNwZWN0LVszLzRdJ30gcm90YXRlLVstMWRlZ11gfT4KICAgICAgICAgICAgPGltZyBzcmM9e2VuaGFuY2VkU3JjfSBhbHQ9IuWinuW8uuWQjueahOeFp+eJhyIgLz4KICAgICAgICAgICAgey8qIOa7pOmVnOagh+etviAqL30KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdsYXNzLWxpZ2h0IGFic29sdXRlIGxlZnQtMyB0b3AtMyBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMS41IHJvdW5kZWQtZnVsbCBweC0zIHB5LTEuNSI+CiAgICAgICAgICAgICAgPEljb24gbmFtZT0ic3BhcmtsZXMiIHNpemU9ezEzfSBjbGFzc05hbWU9InRleHQtY29mZmVlLTUwMCIgLz4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQteHMgZm9udC1tZWRpdW0gdGV4dC1jb2ZmZWUtNjAwIj5BSSDlt7LmuKnmn5TkvJjljJY8L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICB7aXNIZXJvICYmICgKICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgcmlnaHQtMyB0b3AtMyBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMSByb3VuZGVkLWZ1bGwgYmctc2t5LTQwMC85MCBweC0yLjUgcHktMSB0ZXh0LWJlaWdlLTUwIj4KICAgICAgICAgICAgICAgIDxJY29uIG5hbWU9ImRpc2giIHNpemU9ezEyfSAvPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LVsxMXB4XSBmb250LXNlbWlib2xkIj5IZXJvPC9zcGFuPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiDmraPlkJEgQUkg5Y+N6aaIICovfQogICAgICAgIHthbmFseXNpcyAmJiAoCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ2xhc3MgZ2xhc3MtaGlnaGxpZ2h0IG14LWF1dG8gbXQtNSB3LWZ1bGwgbWF4LXctc20gcm91bmRlZC0zeGwgcC00IGFuaW1hdGUtcG9wIj4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJtYi0yIGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LWNvZmZlZS02MDAiPgogICAgICAgICAgICAgIDxJY29uIG5hbWU9InNwYXJrbGUiIHNpemU9ezE1fSAvPgogICAgICAgICAgICAgIHthbmFseXNpcy5vcGVuZXJ9CiAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT0ic3BhY2UteS0xLjUiPgogICAgICAgICAgICAgIHthbmFseXNpcy5zdWdnZXN0aW9ucy5zbGljZSgwLCAyKS5tYXAoKHMsIGkpID0+ICgKICAgICAgICAgICAgICAgIDxsaSBrZXk9e2l9IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1zdGFydCBnYXAtMiB0ZXh0LXNtIGxlYWRpbmctcmVsYXhlZCB0ZXh0LWNvZmZlZS01MDAiPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9Im10LTEuNSBoLTEgdy0xIHNocmluay0wIHJvdW5kZWQtZnVsbCBiZy1za3ktNDAwIiAvPgogICAgICAgICAgICAgICAgICB7c30KICAgICAgICAgICAgICAgIDwvbGk+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApfQoKICAgICAgICB7Lyog5pON5L2c5oyJ6ZKuICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJteC1hdXRvIG10LWF1dG8gZmxleCB3LWZ1bGwgbWF4LXctc20gZ2FwLTMgcGItNiBwdC01Ij4KICAgICAgICAgIDxHaG9zdEJ1dHRvbiBvbkNsaWNrPXtvblJldGFrZX0gaWNvbj0icmV0YWtlIiBjbGFzc05hbWU9ImZsZXgtMSI+CiAgICAgICAgICAgIOmHjeaLjQogICAgICAgICAgPC9HaG9zdEJ1dHRvbj4KICAgICAgICAgIDxQcmltYXJ5QnV0dG9uIG9uQ2xpY2s9e29uQ29uZmlybX0gY2xhc3NOYW1lPSJmbGV4LVsxLjZdIiBpY29uPSJhcnJvdyI+CiAgICAgICAgICAgIHtpc0xhc3QgPyAn5a6M5oiQ6K6w5b2VJyA6ICfkuIvkuIDluZUnfQogICAgICAgICAgPC9QcmltYXJ5QnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICkKfQo=
+// 相机拍照流程 —— Sonho Kitchen 暖色手作风格
+//
+// 构图原则：1 张 Hero（主角）+ 2 张支持照片（Memory Snapshots）
+//   - 第二张"招牌时刻"是 Hero，引导时视觉强调
+//   - 不鼓励等权构图
+import { useEffect, useState } from 'react'
+import { PHOTO_STEPS } from '../data/photos'
+import { useCamera } from '../hooks/useCamera'
+import { analyzePhoto } from '../lib/aiAnalysis'
+import { enhanceImage, createDemoPhoto } from '../lib/imageEnhance'
+import { buildMemoryTheme, makeBlurredBg } from '../lib/visuals'
+import Icon from '../components/Icon'
+import { PrimaryButton, GhostButton, BottomSafe } from '../components/ui'
+
+// 章节内部状态机
+const PHASE = {
+  GUIDE: 'guide', // 拍摄引导
+  CAMERA: 'camera', // 取景中
+  ANALYZING: 'analyzing', // AI 分析中
+  REVIEW: 'review', // 增强后确认
+}
+
+export default function CaptureScreen({ onComplete, onExit, initialPhotos = [] }) {
+  const [stepIndex, setStepIndex] = useState(0)
+  const [phase, setPhase] = useState(PHASE.GUIDE)
+  const [photos, setPhotos] = useState(initialPhotos) // [{src, enhanced, analysis}]
+  const [analysis, setAnalysis] = useState(null)
+  const [enhancedSrc, setEnhancedSrc] = useState(null)
+  const [enhancing, setEnhancing] = useState(false)
+  const [cameraDenied, setCameraDenied] = useState(false)
+  const [demoMode, setDemoMode] = useState(false)
+  const [theme, setTheme] = useState(null) // 动态色彩主题
+  const [photoBg, setPhotoBg] = useState(null) // 模糊照片背景
+
+  const camera = useCamera()
+  const step = PHOTO_STEPS[stepIndex]
+  const isLast = stepIndex === PHOTO_STEPS.length - 1
+  const isHero = step.role === 'hero'
+
+  // 进入相机阶段时启动摄像头
+  useEffect(() => {
+    if (phase === PHASE.CAMERA && !demoMode) {
+      camera.start().then(() => {
+        if (camera.error) setCameraDenied(true)
+      })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, demoMode])
+
+  // 离开相机阶段时停止
+  useEffect(() => {
+    if (phase !== PHASE.CAMERA) camera.stop()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase])
+
+  // 拍摄引导 → 相机
+  const goCamera = () => {
+    setPhase(PHASE.CAMERA)
+    setCameraDenied(false)
+  }
+
+  // 使用演示照片（无相机环境）
+  const useDemo = () => {
+    setDemoMode(true)
+    setPhase(PHASE.CAMERA)
+  }
+
+  // 拍照
+  const takePhoto = async () => {
+    let src = camera.capture()
+    if (!src) {
+      src = createDemoPhoto(step.id)
+    }
+    await processPhoto(src)
+  }
+
+  // 处理一张照片：提取氛围 → AI 分析 → 增强
+  const processPhoto = async (src) => {
+    setPhase(PHASE.ANALYZING)
+    setAnalysis(null)
+    setEnhancedSrc(null)
+
+    // 提取动态色彩与模糊背景（暖色氛围）
+    const [t, bg] = await Promise.all([buildMemoryTheme(src), makeBlurredBg(src)])
+    setTheme(t)
+    setPhotoBg(bg)
+
+    // 1. AI 分析（正向建议）
+    const result = await analyzePhoto(src, step.id)
+    setAnalysis(result)
+
+    // 2. 自动增强
+    setEnhancing(true)
+    const enhanced = await enhanceImage(src, result.enhance)
+    setEnhancedSrc(enhanced)
+    setEnhancing(false)
+
+    setPhase(PHASE.REVIEW)
+  }
+
+  // 确认这张照片
+  const confirmPhoto = () => {
+    const newPhotos = [...photos]
+    newPhotos[stepIndex] = {
+      src: enhancedSrc,
+      raw: enhancedSrc,
+      analysis,
+      stepId: step.id,
+      role: step.role,
+    }
+    setPhotos(newPhotos)
+
+    if (isLast) {
+      onComplete(newPhotos)
+    } else {
+      setStepIndex(stepIndex + 1)
+      setPhase(PHASE.GUIDE)
+      setAnalysis(null)
+      setEnhancedSrc(null)
+      setTheme(null)
+      setPhotoBg(null)
+    }
+  }
+
+  // 重拍
+  const retake = () => {
+    setPhase(PHASE.CAMERA)
+    setAnalysis(null)
+    setEnhancedSrc(null)
+  }
+
+  // 返回上一章（若已有照片）
+  const goBack = () => {
+    if (stepIndex > 0) {
+      setStepIndex(stepIndex - 1)
+      setPhase(PHASE.GUIDE)
+    } else {
+      onExit()
+    }
+  }
+
+  return (
+    <div className="relative flex min-h-svh flex-col overflow-hidden bg-beige-100">
+      {/* 顶部：进度 + 返回 */}
+      <div className="relative z-20 px-5 pt-5">
+        <div className="flex items-center justify-between">
+          <button
+            type="button"
+            onClick={goBack}
+            className="glass flex h-10 w-10 items-center justify-center rounded-full text-coffee-500 transition-colors hover:text-coffee-600"
+            aria-label="返回"
+          >
+            <Icon name="back" size={20} />
+          </button>
+          <ChapterDots current={stepIndex} total={PHOTO_STEPS.length} />
+          <div className="h-10 w-10" />
+        </div>
+      </div>
+
+      {/* 主体内容 */}
+      <div className="relative z-10 flex flex-1 flex-col">
+        {phase === PHASE.GUIDE && (
+          <GuideView step={step} stepIndex={stepIndex} isHero={isHero} onStart={goCamera} onDemo={useDemo} />
+        )}
+
+        {phase === PHASE.CAMERA && (
+          <CameraView
+            camera={camera}
+            step={step}
+            isHero={isHero}
+            onCapture={takePhoto}
+            onDenied={() => setCameraDenied(true)}
+            cameraDenied={cameraDenied}
+            onUseDemo={useDemo}
+            demoMode={demoMode}
+          />
+        )}
+
+        {phase === PHASE.ANALYZING && (
+          <AnalyzingView enhancing={enhancing} theme={theme} photoBg={photoBg} />
+        )}
+
+        {phase === PHASE.REVIEW && (
+          <ReviewView
+            analysis={analysis}
+            enhancedSrc={enhancedSrc}
+            theme={theme}
+            photoBg={photoBg}
+            onConfirm={confirmPhoto}
+            onRetake={retake}
+            isLast={isLast}
+            isHero={isHero}
+          />
+        )}
+      </div>
+      <BottomSafe />
+    </div>
+  )
+}
+
+// ---- 章节进度（顶部分段条，暖色） ----
+function ChapterDots({ current, total }) {
+  return (
+    <div className="flex items-center gap-1.5">
+      {Array.from({ length: total }).map((_, i) => (
+        <div
+          key={i}
+          className={`h-1 rounded-full transition-all duration-500 ${
+            i === current ? 'w-6 bg-coffee-500' : i < current ? 'w-4 bg-coffee-400/60' : 'w-4 bg-coffee-300/30'
+          }`}
+        />
+      ))}
+    </div>
+  )
+}
+
+// ---- 拍摄引导视图（暖色手作 + Hero 强调） ----
+function GuideView({ step, stepIndex, isHero, onStart, onDemo }) {
+  return (
+    <div className="flex flex-1 flex-col px-6 pt-6 animate-fade-in">
+      {/* 章节氛围大图 */}
+      <div className={`relative mx-auto w-full max-w-sm overflow-hidden rounded-[1.8rem] ${isHero ? 'aspect-[4/5]' : 'aspect-[4/3]'}`}>
+        <div className="absolute inset-0" style={{ background: guideBg(step.id) }} />
+        <div className="absolute inset-0 bg-gradient-to-t from-beige-200/70 via-transparent to-transparent" />
+        {/* 章节标签 */}
+        <div className="glass-light absolute left-4 top-4 flex items-center gap-2 rounded-full px-3 py-1.5">
+          <Icon name={step.icon} size={14} className="text-coffee-500" />
+          <span className="text-xs font-medium text-coffee-600">{step.chapter}</span>
+        </div>
+        {/* Hero 徽章 */}
+        {isHero && (
+          <div className="absolute right-4 top-4 flex items-center gap-1.5 rounded-full bg-sky-400/90 px-3 py-1.5 text-beige-50">
+            <Icon name="dish" size={13} />
+            <span className="text-xs font-semibold">Hero 主角镜头</span>
+          </div>
+        )}
+        {/* 中央情感文案 */}
+        <div className="absolute inset-x-0 bottom-0 p-5">
+          <h2 className="story-display text-3xl text-coffee-600">{step.title}</h2>
+          <p className="mt-1 text-sm text-coffee-500/80">{step.subtitle}</p>
+        </div>
+      </div>
+
+      {/* 引导语 */}
+      <p className="story-display mx-auto mt-7 max-w-xs text-center text-lg leading-relaxed text-coffee-600">
+        {step.prompt}
+      </p>
+
+      {/* 摄影小贴士（暖色玻璃） */}
+      <div className="mx-auto mt-6 w-full max-w-sm space-y-2.5">
+        {step.tips.map((tip, i) => (
+          <div
+            key={i}
+            className="glass flex items-start gap-3 rounded-2xl px-4 py-3"
+          >
+            <span className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[11px] font-semibold ${isHero ? 'bg-sky-400/25 text-sky-500' : 'bg-coffee-500/15 text-coffee-500'}`}>
+              {i + 1}
+            </span>
+            <p className="text-sm leading-relaxed text-coffee-500">{tip}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mx-auto mt-auto w-full max-w-sm space-y-3 pb-6 pt-8">
+        <PrimaryButton onClick={onStart} className="w-full" icon="camera">
+          {isHero ? '拍下今晚的主角' : stepIndex === 0 ? '拍下第一幕氛围' : '拍下这一章'}
+        </PrimaryButton>
+        <GhostButton onClick={onDemo} className="w-full">
+          用示例照片体验
+        </GhostButton>
+      </div>
+    </div>
+  )
+}
+
+function guideBg(id) {
+  const map = {
+    'first-impression': 'linear-gradient(160deg,#efe4d0,#e5d5ba 55%,#d6bf9c 130%)',
+    'signature-moment': 'linear-gradient(160deg,#e5d0ae,#c9a06a 55%,#b08a6a 130%)',
+    'memory-moment': 'linear-gradient(160deg,#e8e2d8,#d7e6ec 55%,#bcd6e2 130%)',
+  }
+  return map[id] || map['signature-moment']
+}
+
+// ---- 相机取景视图（Hero 强调取景框） ----
+function CameraView({ camera, step, isHero, onCapture, cameraDenied, onUseDemo, demoMode }) {
+  const { videoRef, flip } = camera
+  return (
+    <div className="flex flex-1 flex-col px-4 pt-3">
+      {/* 章节提示条 */}
+      <div className="glass mx-auto mb-3 flex items-center gap-2 rounded-full px-4 py-2 text-coffee-600">
+        <Icon name={step.icon} size={15} className="text-coffee-500" />
+        <span className="text-[13px]">{step.prompt}</span>
+        {isHero && (
+          <span className="ml-1 rounded-full bg-sky-400/90 px-2 py-0.5 text-[10px] font-semibold text-beige-50">Hero</span>
+        )}
+      </div>
+
+      {/* 全屏取景框 */}
+      <div className={`relative mx-auto w-full max-w-sm overflow-hidden rounded-[1.8rem] bg-beige-200 shadow-xl shadow-coffee-500/15 ${isHero ? 'aspect-[3/4]' : 'aspect-[3/4]'}`}>
+        {!cameraDenied && !demoMode ? (
+          <video
+            ref={videoRef}
+            playsInline
+            muted
+            autoPlay
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <div className="flex h-full w-full flex-col items-center justify-center gap-3 p-6 text-center"
+            style={{ background: guideBg(step.id) }}>
+            <div className="glass-light flex h-16 w-16 items-center justify-center rounded-full">
+              <Icon name="camera" size={30} className="text-coffee-500" />
+            </div>
+            <p className="text-sm text-coffee-600">
+              {demoMode
+                ? '示例模式 · 将生成演示照片'
+                : '无法访问相机，可切换为示例照片体验完整流程'}
+            </p>
+            {!demoMode && (
+              <button
+                type="button"
+                onClick={onUseDemo}
+                className="glass mt-2 rounded-full px-5 py-2 text-sm text-coffee-500"
+              >
+                使用示例照片
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* 取景框装饰：Hero 用天蓝聚焦框，其余用咖啡细框 */}
+        <div className={`pointer-events-none absolute inset-4 rounded-3xl border ${isHero ? 'border-sky-400/70' : 'border-coffee-400/30'}`} />
+        {isHero && (
+          <div className="pointer-events-none absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-sky-400/70" />
+        )}
+        {/* 底部渐隐 */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-beige-200/60 to-transparent" />
+      </div>
+
+      {/* 底部控制 */}
+      <div className="mt-auto flex items-center justify-center gap-10 pb-6 pt-6">
+        <button
+          type="button"
+          onClick={flip}
+          className="glass flex h-12 w-12 items-center justify-center rounded-full text-coffee-500 transition-colors hover:text-coffee-600"
+          aria-label="切换摄像头"
+        >
+          <Icon name="flip" size={22} />
+        </button>
+
+        <button
+          type="button"
+          onClick={onCapture}
+          className="group relative flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full"
+          aria-label="拍照"
+        >
+          <span className={`absolute inset-0 rounded-full border-2 transition-transform group-active:scale-90 ${isHero ? 'border-sky-400' : 'border-coffee-500/70'}`} />
+          <span className={`h-[3.4rem] w-[3.4rem] rounded-full shadow-lg transition-transform group-active:scale-90 ${isHero ? 'bg-gradient-to-br from-sky-400 to-sky-500 shadow-sky-400/30' : 'bg-gradient-to-br from-coffee-400 to-coffee-600 shadow-coffee-500/30'}`} />
+        </button>
+
+        <div className="h-12 w-12" />
+      </div>
+    </div>
+  )
+}
+
+// ---- AI 分析中视图（暖色动态氛围） ----
+function AnalyzingView({ enhancing, theme, photoBg }) {
+  const css = theme
+    ? {
+        '--bg-glow': theme.glow,
+        '--bg-accent': theme.accent,
+        '--bg-mid': theme.mid,
+        '--bg-deep': theme.deep,
+      }
+    : {}
+  return (
+    <div className="relative flex flex-1 flex-col items-center justify-center overflow-hidden px-8 text-center animate-fade-in">
+      {/* 动态氛围背景 */}
+      {photoBg && (
+        <div className="memory-photo-bg" style={{ backgroundImage: `url(${photoBg})` }} />
+      )}
+      <div className="memory-bg absolute inset-0" style={css} />
+
+      <div className="relative z-10 flex flex-col items-center">
+        <div className="glass glass-highlight relative mb-8 flex h-28 w-28 items-center justify-center rounded-full">
+          <div className="absolute inset-0 animate-spin rounded-full border-2 border-coffee-400/20 border-t-coffee-500" />
+          <Icon name="sparkles" size={38} className="text-coffee-500" />
+        </div>
+        <h3 className="story-display text-2xl text-coffee-600">
+          {enhancing ? '正在温柔修片…' : 'AI 正在读懂这一刻…'}
+        </h3>
+        <p className="mt-3 max-w-xs text-sm leading-relaxed text-coffee-500">
+          {enhancing
+            ? '自动调整光线与色彩，让画面更出彩'
+            : '感受氛围、光线与构图，为你送上正向建议'}
+        </p>
+      </div>
+    </div>
+  )
+}
+
+// ---- 增强后确认视图（暖色 + Hero 强调） ----
+function ReviewView({ analysis, enhancedSrc, theme, photoBg, onConfirm, onRetake, isLast, isHero }) {
+  const css = theme
+    ? {
+        '--bg-glow': theme.glow,
+        '--bg-accent': theme.accent,
+        '--bg-mid': theme.mid,
+        '--bg-deep': theme.deep,
+      }
+    : {}
+  return (
+    <div className="relative flex flex-1 flex-col overflow-hidden px-5 pt-3 animate-fade-in">
+      {/* 动态氛围背景 */}
+      {photoBg && (
+        <div className="memory-photo-bg" style={{ backgroundImage: `url(${photoBg})` }} />
+      )}
+      <div className="memory-bg absolute inset-0" style={css} />
+
+      <div className="relative z-10 flex flex-1 flex-col">
+        {/* 增强后照片 */}
+        <div className="relative mx-auto w-full max-w-sm">
+          <div className={`photo-card w-full ${isHero ? 'aspect-[3/4]' : 'aspect-[3/4]'} rotate-[-1deg]`}>
+            <img src={enhancedSrc} alt="增强后的照片" />
+            {/* 滤镜标签 */}
+            <div className="glass-light absolute left-3 top-3 flex items-center gap-1.5 rounded-full px-3 py-1.5">
+              <Icon name="sparkles" size={13} className="text-coffee-500" />
+              <span className="text-xs font-medium text-coffee-600">AI 已温柔优化</span>
+            </div>
+            {isHero && (
+              <div className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-sky-400/90 px-2.5 py-1 text-beige-50">
+                <Icon name="dish" size={12} />
+                <span className="text-[11px] font-semibold">Hero</span>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* 正向 AI 反馈 */}
+        {analysis && (
+          <div className="glass glass-highlight mx-auto mt-5 w-full max-w-sm rounded-3xl p-4 animate-pop">
+            <p className="mb-2 flex items-center gap-2 text-sm font-semibold text-coffee-600">
+              <Icon name="sparkle" size={15} />
+              {analysis.opener}
+            </p>
+            <ul className="space-y-1.5">
+              {analysis.suggestions.slice(0, 2).map((s, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm leading-relaxed text-coffee-500">
+                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-sky-400" />
+                  {s}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* 操作按钮 */}
+        <div className="mx-auto mt-auto flex w-full max-w-sm gap-3 pb-6 pt-5">
+          <GhostButton onClick={onRetake} icon="retake" className="flex-1">
+            重拍
+          </GhostButton>
+          <PrimaryButton onClick={onConfirm} className="flex-[1.6]" icon="arrow">
+            {isLast ? '完成记录' : '下一幕'}
+          </PrimaryButton>
+        </div>
+      </div>
+    </div>
+  )
+}

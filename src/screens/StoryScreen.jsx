@@ -1,1 +1,378 @@
-Ly8gQUkg6K6w5b+G5Y+Z5LqL55Sf5oiQIOKAlOKAlCBTb25obyBLaXRjaGVuIOaaluiJsuaJi+S9nOmjjuagvAovLwovLyBIZXJvLWZpcnN0IOaOkueJiO+8mkhlcm8g54Wn54mH5Y2gIDYwLTcwJe+8jOWFtuS9meS4uiBNZW1vcnkgU25hcHNob3Rz77yI5pSv5oyB6ICM6Z2e56ue5LqJ77yJCi8vIOiusOW/huWNoeiuvuiuoeaIkCLlj6/mlLbol4/nianku7Yi77yI5piO5L+h54mHL+aJi+S9nOWNoeeJh+aEn++8iQppbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBDT01QQU5JT05fT1BUSU9OUywgRkFWT1JJVEVfTU9NRU5UX09QVElPTlMgfSBmcm9tICcuLi9kYXRhL3Bob3RvcycKaW1wb3J0IHsgZ2VuZXJhdGVTdG9yeSB9IGZyb20gJy4uL2xpYi9zdG9yeUdlbmVyYXRvcicKaW1wb3J0IHsgYnVpbGRNZW1vcnlUaGVtZSwgbWFrZUJsdXJyZWRCZyB9IGZyb20gJy4uL2xpYi92aXN1YWxzJwppbXBvcnQgSWNvbiBmcm9tICcuLi9jb21wb25lbnRzL0ljb24nCmltcG9ydCB7IFByaW1hcnlCdXR0b24sIEJvdHRvbVNhZmUgfSBmcm9tICcuLi9jb21wb25lbnRzL3VpJwoKY29uc3QgUEhBU0UgPSB7CiAgU0VMRUNUOiAnc2VsZWN0JywgLy8g5oOF5oSf5YyW6YCJ5oupCiAgR0VORVJBVElORzogJ2dlbmVyYXRpbmcnLCAvLyBBSSDnlJ/miJDkuK0KICBFRElUOiAnZWRpdCcsIC8vIOa2puiJsuiusOW/huWNoeeJhwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBTdG9yeVNjcmVlbih7IHBob3Rvcywgb25CYWNrLCBvbkNvbXBsZXRlIH0pIHsKICBjb25zdCBbcGhhc2UsIHNldFBoYXNlXSA9IHVzZVN0YXRlKFBIQVNFLlNFTEVDVCkKICBjb25zdCBbY29tcGFuaW9uLCBzZXRDb21wYW5pb25dID0gdXNlU3RhdGUobnVsbCkKICBjb25zdCBbZmF2b3JpdGVNb21lbnQsIHNldEZhdm9yaXRlTW9tZW50XSA9IHVzZVN0YXRlKG51bGwpCiAgY29uc3QgW3N0b3J5LCBzZXRTdG9yeV0gPSB1c2VTdGF0ZShudWxsKQogIGNvbnN0IFtlZGl0YWJsZSwgc2V0RWRpdGFibGVdID0gdXNlU3RhdGUobnVsbCkKICBjb25zdCBbdGhlbWUsIHNldFRoZW1lXSA9IHVzZVN0YXRlKG51bGwpCiAgY29uc3QgW3Bob3RvQmcsIHNldFBob3RvQmddID0gdXNlU3RhdGUobnVsbCkKCiAgLy8g5pS26ZuG5omA5pyJ6K+G5Yir5Yiw55qE6I+c5ZOBCiAgY29uc3QgYWxsRGlzaGVzID0gcGhvdG9zLm1hcCgocCkgPT4gcC5hbmFseXNpcz8uZGV0ZWN0ZWREaXNoZXMgfHwgW10pLmZsYXQoKQoKICAvLyDnlJ/miJDmlYXkuosKICBjb25zdCBoYW5kbGVHZW5lcmF0ZSA9IGFzeW5jICgpID0+IHsKICAgIHNldFBoYXNlKFBIQVNFLkdFTkVSQVRJTkcpCiAgICAvLyDmj5Dlj5bmsJvlm7TvvIjnlKggSGVybyDnhafniYfvvIkKICAgIGNvbnN0IGhlcm8gPSBwaWNrSGVyb1Bob3RvKHBob3RvcykKICAgIGlmIChoZXJvKSB7CiAgICAgIGNvbnN0IFt0LCBiZ10gPSBhd2FpdCBQcm9taXNlLmFsbChbYnVpbGRNZW1vcnlUaGVtZShoZXJvLnNyYyksIG1ha2VCbHVycmVkQmcoaGVyby5zcmMpXSkKICAgICAgc2V0VGhlbWUodCkKICAgICAgc2V0UGhvdG9CZyhiZykKICAgIH0KICAgIGNvbnN0IHJlc3VsdCA9IGF3YWl0IGdlbmVyYXRlU3RvcnkoewogICAgICBjb21wYW5pb24sCiAgICAgIGZhdm9yaXRlTW9tZW50LAogICAgICBkaXNoZXM6IGFsbERpc2hlcywKICAgICAgcGhvdG9Db3VudDogcGhvdG9zLmxlbmd0aCwKICAgIH0pCiAgICBzZXRTdG9yeShyZXN1bHQpCiAgICBzZXRFZGl0YWJsZShyZXN1bHQuZWRpdGFibGUpCiAgICBzZXRQaGFzZShQSEFTRS5FRElUKQogIH0KCiAgLy8g57yW6L6R5a2X5q61CiAgY29uc3QgdXBkYXRlRmllbGQgPSAoa2V5LCB2YWx1ZSkgPT4gewogICAgc2V0RWRpdGFibGUoKHByZXYpID0+ICh7IC4uLnByZXYsIFtrZXldOiB2YWx1ZSB9KSkKICB9CgogIC8vIOW6lOeUqOe8lui+ke+8jOaehOW7uuacgOe7iCBzdG9yee+8iOWQjOatpei/lOWbnu+8jOS+m+WvvOWHuuS9v+eUqO+8iQogIGNvbnN0IGJ1aWxkRmluYWxTdG9yeSA9ICgpID0+IHsKICAgIGlmICghc3RvcnkgfHwgIWVkaXRhYmxlKSByZXR1cm4gc3RvcnkKICAgIHJldHVybiB7CiAgICAgIC4uLnN0b3J5LAogICAgICBoZWFkbGluZTogZWRpdGFibGUuaGVhZGxpbmUsCiAgICAgIGNvbXBhbmlvbjogZWRpdGFibGUuY29tcGFuaW9uLAogICAgICBmYXZvcml0ZU1vbWVudDogZWRpdGFibGUubW9tZW50VGV4dCwKICAgICAgYm9keTogYOWcqCR7c3RvcnkucmVzdGF1cmFudH3vvIzmiJHku6zliIbkuqvkuoYke2VkaXRhYmxlLmVuam95ZWRUZXh0feOAguacgOmavuW/mOeahOaYryR7ZWRpdGFibGUubW9tZW50VGV4dH3jgIJgLAogICAgICBlZGl0YWJsZSwKICAgIH0KICB9CgogIGNvbnN0IGNvbXBhbmlvbk9iaiA9IENPTVBBTklPTl9PUFRJT05TLmZpbmQoKGMpID0+IGMuaWQgPT09IGNvbXBhbmlvbikKICBjb25zdCBtb21lbnRPYmogPSBGQVZPUklURV9NT01FTlRfT1BUSU9OUy5maW5kKChtKSA9PiBtLmlkID09PSBmYXZvcml0ZU1vbWVudCkKCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBmbGV4IG1pbi1oLXN2aCBmbGV4LWNvbCBvdmVyZmxvdy1oaWRkZW4gYmctYmVpZ2UtMTAwIj4KICAgICAgey8qIOmhtumDqOi/lOWbniAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIHotMjAgcHgtNSBwdC01Ij4KICAgICAgICA8YnV0dG9uCiAgICAgICAgICB0eXBlPSJidXR0b24iCiAgICAgICAgICBvbkNsaWNrPXtwaGFzZSA9PT0gUEhBU0UuRURJVCA/ICgpID0+IHNldFBoYXNlKFBIQVNFLlNFTEVDVCkgOiBvbkJhY2t9CiAgICAgICAgICBjbGFzc05hbWU9ImdsYXNzIGZsZXggaC0xMCB3LTEwIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciByb3VuZGVkLWZ1bGwgdGV4dC1jb2ZmZWUtNTAwIHRyYW5zaXRpb24tY29sb3JzIGhvdmVyOnRleHQtY29mZmVlLTYwMCIKICAgICAgICAgIGFyaWEtbGFiZWw9Iui/lOWbniIKICAgICAgICA+CiAgICAgICAgICA8SWNvbiBuYW1lPSJiYWNrIiBzaXplPXsyMH0gLz4KICAgICAgICA8L2J1dHRvbj4KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgei0xMCBmbGV4IGZsZXgtMSBmbGV4LWNvbCI+CiAgICAgICAge3BoYXNlID09PSBQSEFTRS5TRUxFQ1QgJiYgKAogICAgICAgICAgPFNlbGVjdFZpZXcKICAgICAgICAgICAgcGhvdG9zPXtwaG90b3N9CiAgICAgICAgICAgIGNvbXBhbmlvbj17Y29tcGFuaW9ufQogICAgICAgICAgICBzZXRDb21wYW5pb249e3NldENvbXBhbmlvbn0KICAgICAgICAgICAgZmF2b3JpdGVNb21lbnQ9e2Zhdm9yaXRlTW9tZW50fQogICAgICAgICAgICBzZXRGYXZvcml0ZU1vbWVudD17c2V0RmF2b3JpdGVNb21lbnR9CiAgICAgICAgICAgIG9uR2VuZXJhdGU9e2hhbmRsZUdlbmVyYXRlfQogICAgICAgICAgICBjYW5HZW5lcmF0ZT17ISFjb21wYW5pb24gJiYgISFmYXZvcml0ZU1vbWVudH0KICAgICAgICAgIC8+CiAgICAgICAgKX0KCiAgICAgICAge3BoYXNlID09PSBQSEFTRS5HRU5FUkFUSU5HICYmIDxHZW5lcmF0aW5nVmlldyAvPn0KCiAgICAgICAge3BoYXNlID09PSBQSEFTRS5FRElUICYmIHN0b3J5ICYmICgKICAgICAgICAgIDxFZGl0VmlldwogICAgICAgICAgICBzdG9yeT17c3Rvcnl9CiAgICAgICAgICAgIGVkaXRhYmxlPXtlZGl0YWJsZX0KICAgICAgICAgICAgdXBkYXRlRmllbGQ9e3VwZGF0ZUZpZWxkfQogICAgICAgICAgICBwaG90b3M9e3Bob3Rvc30KICAgICAgICAgICAgdGhlbWU9e3RoZW1lfQogICAgICAgICAgICBwaG90b0JnPXtwaG90b0JnfQogICAgICAgICAgICBjb21wYW5pb25FbW9qaT17Y29tcGFuaW9uT2JqPy5lbW9qaX0KICAgICAgICAgICAgbW9tZW50RW1vamk9e21vbWVudE9iaj8uZW1vaml9CiAgICAgICAgICAgIG9uRG9uZT17KCkgPT4gewogICAgICAgICAgICAgIG9uQ29tcGxldGUoYnVpbGRGaW5hbFN0b3J5KCksIGNvbXBhbmlvbk9iaiwgbW9tZW50T2JqKQogICAgICAgICAgICB9fQogICAgICAgICAgLz4KICAgICAgICApfQogICAgICA8L2Rpdj4KICAgICAgPEJvdHRvbVNhZmUgLz4KICAgIDwvZGl2PgogICkKfQoKLy8g6YCJ5Ye6IEhlcm8g54Wn54mH77yIcm9sZSA9PT0gJ2hlcm8nIOS8mOWFiO+8jOWQpuWImeWPluesrOS4gOW8oO+8iQpmdW5jdGlvbiBwaWNrSGVyb1Bob3RvKHBob3RvcykgewogIHJldHVybiBwaG90b3MuZmluZCgocCkgPT4gcCAmJiBwLnJvbGUgPT09ICdoZXJvJyAmJiBwLnNyYykgfHwgcGhvdG9zLmZpbmQoKHApID0+IHAgJiYgcC5zcmMpIHx8IG51bGwKfQoKLy8gLS0tLSDmg4XmhJ/ljJbpgInmi6nop4blm74gLS0tLQpmdW5jdGlvbiBTZWxlY3RWaWV3KHsKICBwaG90b3MsCiAgY29tcGFuaW9uLAogIHNldENvbXBhbmlvbiwKICBmYXZvcml0ZU1vbWVudCwKICBzZXRGYXZvcml0ZU1vbWVudCwKICBvbkdlbmVyYXRlLAogIGNhbkdlbmVyYXRlLAp9KSB7CiAgY29uc3QgaGVybyA9IHBpY2tIZXJvUGhvdG8ocGhvdG9zKT8uc3JjCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBmbGV4IGZsZXgtMSBmbGV4LWNvbCBvdmVyZmxvdy1oaWRkZW4gYW5pbWF0ZS1mYWRlLWluIj4KICAgICAgey8qIOaflOWSjOawm+WbtOiDjOaZryAqL30KICAgICAge2hlcm8gJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJwb2ludGVyLWV2ZW50cy1ub25lIGFic29sdXRlIGluc2V0LTAgb3BhY2l0eS00MCI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWVtb3J5LXBob3RvLWJnIiBzdHlsZT17eyBiYWNrZ3JvdW5kSW1hZ2U6IGB1cmwoJHtoZXJvfSlgIH19IC8+CiAgICAgICAgPC9kaXY+CiAgICAgICl9CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJwb2ludGVyLWV2ZW50cy1ub25lIGFic29sdXRlIGluc2V0LTAgYmctZ3JhZGllbnQtdG8tYiBmcm9tLWJlaWdlLTEwMC84MCB2aWEtYmVpZ2UtMTAwLzUwIHRvLWJlaWdlLTEwMCIgLz4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSB6LTEwIGZsZXggZmxleC0xIGZsZXgtY29sIHB4LTYgcHQtNCI+CiAgICAgICAgey8qIOaDheaEn+WMluagh+mimCAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC1jZW50ZXIiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1iLTIgZmxleCBqdXN0aWZ5LWNlbnRlciB0ZXh0LWNvZmZlZS00MDAiPgogICAgICAgICAgICA8SWNvbiBuYW1lPSJzcGFya2xlcyIgc2l6ZT17MjR9IC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InN0b3J5LWRpc3BsYXkgdGV4dC1bMS43cmVtXSBsZWFkaW5nLXNudWcgdGV4dC1jb2ZmZWUtNjAwIj4KICAgICAgICAgICAg6K6pIEFJIOW4ruS9oAogICAgICAgICAgICA8YnIgLz4KICAgICAgICAgICAg5YaZ5LiLPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LWdyYWRpZW50LWdvbGQiPui/meS4gOaZmjwvc3Bhbj4KICAgICAgICAgIDwvaDI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9ImVkaXRvcmlhbC1ib2R5IG14LWF1dG8gbXQtMiBtYXgtdy1bMTZyZW1dIHRleHQtc20gdGV4dC1jb2ZmZWUtNDAwIj4KICAgICAgICAgICAg5Zue562U5Lik5Liq5bCP6Zeu6aKY77yMQUkg5Lya5oqK5L2g55qE54Wn54mHCiAgICAgICAgICAgIDxiciAvPgogICAgICAgICAgICDnvJbnu4fmiJDkuIDmrrXlgLzlvpflm57lkbPnmoTorrDlv4YKICAgICAgICAgIDwvcD4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgey8qIOmZquS8tOWvueixoSAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtOCI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InN0b3J5LWRpc3BsYXkgbWItMyB0ZXh0LWJhc2UgdGV4dC1jb2ZmZWUtNjAwIj4KICAgICAgICAgICAg6LCB6Zmq5L2g5bqm6L+H5LqG6L+Z5LiA5pma77yfCiAgICAgICAgICA8L3A+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBnYXAtMi41IG92ZXJmbG93LXgtYXV0byBwYi0xIG5vLXNjcm9sbGJhciI+CiAgICAgICAgICAgIHtDT01QQU5JT05fT1BUSU9OUy5tYXAoKG9wdCkgPT4gKAogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIGtleT17b3B0LmlkfQogICAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0Q29tcGFuaW9uKG9wdC5pZCl9CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2BmbGV4IHNocmluay0wIGZsZXgtY29sIGl0ZW1zLWNlbnRlciBnYXAtMiByb3VuZGVkLTN4bCBweC01IHB5LTQgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMzAwICR7CiAgICAgICAgICAgICAgICAgIGNvbXBhbmlvbiA9PT0gb3B0LmlkCiAgICAgICAgICAgICAgICAgICAgPyAnZ2xhc3Mtc3Ryb25nIGJvcmRlci1jb2ZmZWUtNTAwLzUwIHRleHQtY29mZmVlLTYwMCBzaGFkb3ctbGcgc2hhZG93LWNvZmZlZS01MDAvMTAnCiAgICAgICAgICAgICAgICAgICAgOiAnZ2xhc3MgdGV4dC1jb2ZmZWUtNDAwIGhvdmVyOnRleHQtY29mZmVlLTYwMCcKICAgICAgICAgICAgICAgIH1gfQogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC0zeGwiPntvcHQuZW1vaml9PC9zcGFuPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXNtIHdoaXRlc3BhY2Utbm93cmFwIj57b3B0LmxhYmVsfTwvc3Bhbj4KICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgey8qIOmavuW/mOeerOmXtCAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtNiI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InN0b3J5LWRpc3BsYXkgbWItMyB0ZXh0LWJhc2UgdGV4dC1jb2ZmZWUtNjAwIj4KICAgICAgICAgICAg5pyA5oOz55WZ5L2P55qE5piv5ZOq5Liq556s6Ze077yfCiAgICAgICAgICA8L3A+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBnYXAtMi41IG92ZXJmbG93LXgtYXV0byBwYi0xIG5vLXNjcm9sbGJhciI+CiAgICAgICAgICAgIHtGQVZPUklURV9NT01FTlRfT1BUSU9OUy5tYXAoKG9wdCkgPT4gKAogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIGtleT17b3B0LmlkfQogICAgICAgICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0RmF2b3JpdGVNb21lbnQob3B0LmlkKX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YGZsZXggc2hyaW5rLTAgZmxleC1jb2wgaXRlbXMtY2VudGVyIGdhcC0yIHJvdW5kZWQtM3hsIHB4LTUgcHktNCB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0zMDAgJHsKICAgICAgICAgICAgICAgICAgZmF2b3JpdGVNb21lbnQgPT09IG9wdC5pZAogICAgICAgICAgICAgICAgICAgID8gJ2dsYXNzLXN0cm9uZyBib3JkZXItY29mZmVlLTUwMC81MCB0ZXh0LWNvZmZlZS02MDAgc2hhZG93LWxnIHNoYWRvdy1jb2ZmZWUtNTAwLzEwJwogICAgICAgICAgICAgICAgICAgIDogJ2dsYXNzIHRleHQtY29mZmVlLTQwMCBob3Zlcjp0ZXh0LWNvZmZlZS02MDAnCiAgICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtM3hsIj57b3B0LmVtb2ppfTwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1zbSB3aGl0ZXNwYWNlLW5vd3JhcCI+e29wdC5sYWJlbH08L3NwYW4+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC1hdXRvIHBiLTYgcHQtOCI+CiAgICAgICAgICA8UHJpbWFyeUJ1dHRvbgogICAgICAgICAgICBvbkNsaWNrPXtvbkdlbmVyYXRlfQogICAgICAgICAgICBkaXNhYmxlZD17IWNhbkdlbmVyYXRlfQogICAgICAgICAgICBjbGFzc05hbWU9InctZnVsbCIKICAgICAgICAgICAgaWNvbj0ic3BhcmtsZXMiCiAgICAgICAgICA+CiAgICAgICAgICAgIOWGmeS4i+aIkeeahOiusOW/hgogICAgICAgICAgPC9QcmltYXJ5QnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICkKfQoKLy8gLS0tLSDnlJ/miJDkuK0gLS0tLQpmdW5jdGlvbiBHZW5lcmF0aW5nVmlldygpIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC0xIGZsZXgtY29sIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBweC04IHRleHQtY2VudGVyIGFuaW1hdGUtZmFkZS1pbiI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJnbGFzcyBnbGFzcy1oaWdobGlnaHQgcmVsYXRpdmUgbWItOCBmbGV4IGgtMjggdy0yOCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZC1mdWxsIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBhbmltYXRlLXNwaW4gcm91bmRlZC1mdWxsIGJvcmRlci0yIGJvcmRlci1jb2ZmZWUtNDAwLzIwIGJvcmRlci10LWNvZmZlZS01MDAiIC8+CiAgICAgICAgPEljb24gbmFtZT0iaGVhcnQiIHNpemU9ezM2fSBjbGFzc05hbWU9InRleHQtY29mZmVlLTUwMCIgLz4KICAgICAgPC9kaXY+CiAgICAgIDxoMyBjbGFzc05hbWU9InN0b3J5LWRpc3BsYXkgdGV4dC0yeGwgdGV4dC1jb2ZmZWUtNjAwIj7mraPlnKjkuablhpnkvaDnmoTmlYXkuovigKY8L2gzPgogICAgICA8cCBjbGFzc05hbWU9Im10LTMgbWF4LXcteHMgdGV4dC1zbSBsZWFkaW5nLXJlbGF4ZWQgdGV4dC1jb2ZmZWUtNDAwIj4KICAgICAgICDmiornhafniYfjgIHmu4vlkbPkuI7kvaDnmoTpgInmi6nvvIwKICAgICAgICA8YnIgLz4KICAgICAgICDnvJbnu4fmiJDkuIDmrrXmnInmuKnluqbnmoTlm57lv4YKICAgICAgPC9wPgogICAgPC9kaXY+CiAgKQp9CgovLyAtLS0tIOa2puiJsuiusOW/huWNoeeJh+inhuWbvu+8iEhlcm8tZmlyc3QgKyDlj6/mlLbol4/nianku7bmhJ/vvIkgLS0tLQpmdW5jdGlvbiBFZGl0Vmlldyh7CiAgc3RvcnksCiAgZWRpdGFibGUsCiAgdXBkYXRlRmllbGQsCiAgcGhvdG9zLAogIHRoZW1lLAogIHBob3RvQmcsCiAgY29tcGFuaW9uRW1vamksCiAgbW9tZW50RW1vamksCiAgb25Eb25lLAp9KSB7CiAgY29uc3QgY3NzID0gdGhlbWUKICAgID8gewogICAgICAgICctLWJnLWdsb3cnOiB0aGVtZS5nbG93LAogICAgICAgICctLWJnLWFjY2VudCc6IHRoZW1lLmFjY2VudCwKICAgICAgICAnLS1iZy1taWQnOiB0aGVtZS5taWQsCiAgICAgICAgJy0tYmctZGVlcCc6IHRoZW1lLmRlZXAsCiAgICAgIH0KICAgIDoge30KICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIGZsZXggZmxleC0xIGZsZXgtY29sIG92ZXJmbG93LWhpZGRlbiBhbmltYXRlLWZhZGUtaW4iPgogICAgICB7Lyog5Yqo5oCB5rCb5Zu06IOM5pmvICovfQogICAgICB7cGhvdG9CZyAmJiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1lbW9yeS1waG90by1iZyIgc3R5bGU9e3sgYmFja2dyb3VuZEltYWdlOiBgdXJsKCR7cGhvdG9CZ30pYCB9fSAvPgogICAgICApfQogICAgICA8ZGl2IGNsYXNzTmFtZT0ibWVtb3J5LWJnIGFic29sdXRlIGluc2V0LTAiIHN0eWxlPXtjc3N9IC8+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgei0xMCBmbGV4IGZsZXgtMSBmbGV4LWNvbCBweC01IHB0LTIiPgogICAgICAgIHsvKiBIZXJvLWZpcnN0IOeFp+eJh+e8luaOkiAqL30KICAgICAgICA8SGVyb0xheW91dCBwaG90b3M9e3Bob3Rvc30gLz4KCiAgICAgICAgey8qIOWPr+aUtuiXj+iusOW/huWNoe+8iOaYjuS/oeeJh+eJqeS7tuaEn++8iSAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ia2VlcHNha2UtY2FyZCBteC1hdXRvIG10LTUgdy1mdWxsIG1heC13LXNtIHAtNiI+CiAgICAgICAgICB7Lyog6aG26YOo77ya5p+U5ZKM5aSp6JOd57uG57q/ICsg5qCH562+ICovfQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNreS1ydWxlIG1iLTQgdy0xMiIgLz4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYi0xIGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIHRleHQtWzExcHhdIHVwcGVyY2FzZSB0cmFja2luZy1bMC4yZW1dIHRleHQtY29mZmVlLTQwMCI+CiAgICAgICAgICAgIDxJY29uIG5hbWU9InNwYXJrbGUiIHNpemU9ezEyfSAvPgogICAgICAgICAgICDkvaDnmoTorrDlv4Ygwrcg5pS26JeP5Y2hCiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICB7Lyog5Y+v5ram6Imy55qE5qCH6aKYICovfQogICAgICAgICAgPGlucHV0CiAgICAgICAgICAgIHZhbHVlPXtlZGl0YWJsZS5oZWFkbGluZX0KICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiB1cGRhdGVGaWVsZCgnaGVhZGxpbmUnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgIGNsYXNzTmFtZT0ic3RvcnktZGlzcGxheSB3LWZ1bGwgYmctdHJhbnNwYXJlbnQgdGV4dC0yeGwgdGV4dC1jb2ZmZWUtNjAwIG91dGxpbmUtbm9uZSBwbGFjZWhvbGRlcjp0ZXh0LWNvZmZlZS0zMDAiCiAgICAgICAgICAgIHBsYWNlaG9sZGVyPSLlgLzlvpforrDkvY/nmoTkuIDmmZoiCiAgICAgICAgICAvPgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC00IHNwYWNlLXktMyI+CiAgICAgICAgICAgIDxOYXJyYXRpdmVGaWVsZAogICAgICAgICAgICAgIGljb249e2NvbXBhbmlvbkVtb2ppIHx8ICfwn5GlJ30KICAgICAgICAgICAgICB2YWx1ZT17ZWRpdGFibGUuY29tcGFuaW9ufQogICAgICAgICAgICAgIG9uQ2hhbmdlPXsodikgPT4gdXBkYXRlRmllbGQoJ2NvbXBhbmlvbicsIHYpfQogICAgICAgICAgICAvPgogICAgICAgICAgICA8TmFycmF0aXZlRmllbGQKICAgICAgICAgICAgICBpY29uPSLwn42977iPIgogICAgICAgICAgICAgIHZhbHVlPXtlZGl0YWJsZS5lbmpveWVkVGV4dH0KICAgICAgICAgICAgICBvbkNoYW5nZT17KHYpID0+IHVwZGF0ZUZpZWxkKCdlbmpveWVkVGV4dCcsIHYpfQogICAgICAgICAgICAvPgogICAgICAgICAgICA8TmFycmF0aXZlRmllbGQKICAgICAgICAgICAgICBpY29uPXttb21lbnRFbW9qaSB8fCAn4pyoJ30KICAgICAgICAgICAgICB2YWx1ZT17ZWRpdGFibGUubW9tZW50VGV4dH0KICAgICAgICAgICAgICBvbkNoYW5nZT17KHYpID0+IHVwZGF0ZUZpZWxkKCdtb21lbnRUZXh0Jywgdil9CiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtNSBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gYm9yZGVyLXQgYm9yZGVyLWNvZmZlZS00MDAvMTUgcHQtMyB0ZXh0LXhzIHRleHQtY29mZmVlLTQwMCI+CiAgICAgICAgICAgIDxzcGFuPntzdG9yeS5yZXN0YXVyYW50fTwvc3Bhbj4KICAgICAgICAgICAgPHNwYW4+e3N0b3J5LmRhdGV9PC9zcGFuPgogICAgICAgICAgICA8c3Bhbj7wn5O3IHtzdG9yeS5waG90b0NvdW50fSDluZU8L3NwYW4+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im14LWF1dG8gbXQtYXV0byB3LWZ1bGwgbWF4LXctc20gcGItNiBwdC01Ij4KICAgICAgICAgIDxQcmltYXJ5QnV0dG9uIG9uQ2xpY2s9e29uRG9uZX0gY2xhc3NOYW1lPSJ3LWZ1bGwiIGljb249ImFycm93Ij4KICAgICAgICAgICAg55Sf5oiQ5YiG5Lqr6K6w5b+GCiAgICAgICAgICA8L1ByaW1hcnlCdXR0b24+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKQp9CgovLyBIZXJvLWZpcnN0IOeFp+eJh+e8luaOku+8mkhlcm8g5aSn5Zu+5Y2g5Li75a+877yM5Lik5bygIE1lbW9yeSBTbmFwc2hvdHMg5bCP5Y2h6ZSZ6JC9CmZ1bmN0aW9uIEhlcm9MYXlvdXQoeyBwaG90b3MgfSkgewogIGNvbnN0IGhlcm8gPSBwaWNrSGVyb1Bob3RvKHBob3RvcykKICBjb25zdCBzbmFwc2hvdHMgPSBwaG90b3MuZmlsdGVyKChwKSA9PiBwICYmIHAgIT09IGhlcm8gJiYgcC5zcmMpLnNsaWNlKDAsIDIpCiAgaWYgKCFoZXJvKSByZXR1cm4gbnVsbAoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9InJlbGF0aXZlIG14LWF1dG8gdy1mdWxsIG1heC13LXNtIj4KICAgICAgey8qIEhlcm8g5aSn5Zu+77yI5Y2g5Li75a+877yJICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0icGhvdG8tY2FyZCBhc3BlY3QtWzQvNV0gdy1mdWxsIHJvdGF0ZS1bLTFkZWddIj4KICAgICAgICA8aW1nIHNyYz17aGVyby5zcmN9IGFsdD0iSGVybyDkuLvop5LnhafniYciIC8+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGxlZnQtMyB0b3AtMyBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMS41IHJvdW5kZWQtZnVsbCBiZy1za3ktNDAwLzkwIHB4LTMgcHktMSB0ZXh0LWJlaWdlLTUwIj4KICAgICAgICAgIDxJY29uIG5hbWU9ImRpc2giIHNpemU9ezEyfSAvPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LVsxMXB4XSBmb250LXNlbWlib2xkIj5IZXJvIMK3IOS7iuaZmuS4u+inkjwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CgogICAgICB7Lyog5Lik5bygIE1lbW9yeSBTbmFwc2hvdHMg5bCP5Y2h77yI6ZSZ6JC95Y+g5pS+77yM5pSv5oyB6ICM6Z2e56ue5LqJ77yJICovfQogICAgICB7c25hcHNob3RzLmxlbmd0aCA+IDAgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSAtbXQtOCBmbGV4IGp1c3RpZnktY2VudGVyIGdhcC0zIHB4LTYiPgogICAgICAgICAge3NuYXBzaG90cy5tYXAoKHAsIGkpID0+ICgKICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIGtleT17aX0KICAgICAgICAgICAgICBjbGFzc05hbWU9InBob3RvLWNhcmQgaC0yMCB3LTE2IHJvdGF0ZS1bMmRlZ10iCiAgICAgICAgICAgICAgc3R5bGU9e3sgdHJhbnNmb3JtOiBgcm90YXRlKCR7aSA9PT0gMCA/ICctM2RlZycgOiAnM2RlZyd9KWAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxpbWcgc3JjPXtwLnNyY30gYWx0PSLorrDlv4blv6vnhaciIC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CiAgICAgICl9CiAgICA8L2Rpdj4KICApCn0KCi8vIOWPmeS6i+W8j+a2puiJsuWtl+aute+8iOmBv+WFjeihqOWNleagh+etvuWkluingu+8iQpmdW5jdGlvbiBOYXJyYXRpdmVGaWVsZCh7IGljb24sIHZhbHVlLCBvbkNoYW5nZSB9KSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMi41IHJvdW5kZWQtMnhsIGJnLWJlaWdlLTEwMC83MCBweC0zLjUgcHktMi41IGZvY3VzLXdpdGhpbjpiZy1iZWlnZS0xMDAiPgogICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtbGciPntpY29ufTwvc3Bhbj4KICAgICAgPGlucHV0CiAgICAgICAgdmFsdWU9e3ZhbHVlfQogICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gb25DaGFuZ2UoZS50YXJnZXQudmFsdWUpfQogICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGJnLXRyYW5zcGFyZW50IHRleHQtc20gdGV4dC1jb2ZmZWUtNjAwIG91dGxpbmUtbm9uZSBwbGFjZWhvbGRlcjp0ZXh0LWNvZmZlZS0zMDAiCiAgICAgIC8+CiAgICA8L2Rpdj4KICApCn0K
+// AI 记忆叙事生成 —— Sonho Kitchen 暖色手作风格
+//
+// Hero-first 排版：Hero 照片占 60-70%，其余为 Memory Snapshots（支持而非竞争）
+// 记忆卡设计成"可收藏物件"（明信片/手作卡片感）
+import { useState } from 'react'
+import { COMPANION_OPTIONS, FAVORITE_MOMENT_OPTIONS } from '../data/photos'
+import { generateStory } from '../lib/storyGenerator'
+import { buildMemoryTheme, makeBlurredBg } from '../lib/visuals'
+import Icon from '../components/Icon'
+import { PrimaryButton, BottomSafe } from '../components/ui'
+
+const PHASE = {
+  SELECT: 'select', // 情感化选择
+  GENERATING: 'generating', // AI 生成中
+  EDIT: 'edit', // 润色记忆卡片
+}
+
+export default function StoryScreen({ photos, onBack, onComplete }) {
+  const [phase, setPhase] = useState(PHASE.SELECT)
+  const [companion, setCompanion] = useState(null)
+  const [favoriteMoment, setFavoriteMoment] = useState(null)
+  const [story, setStory] = useState(null)
+  const [editable, setEditable] = useState(null)
+  const [theme, setTheme] = useState(null)
+  const [photoBg, setPhotoBg] = useState(null)
+
+  // 收集所有识别到的菜品
+  const allDishes = photos.map((p) => p.analysis?.detectedDishes || []).flat()
+
+  // 生成故事
+  const handleGenerate = async () => {
+    setPhase(PHASE.GENERATING)
+    // 提取氛围（用 Hero 照片）
+    const hero = pickHeroPhoto(photos)
+    if (hero) {
+      const [t, bg] = await Promise.all([buildMemoryTheme(hero.src), makeBlurredBg(hero.src)])
+      setTheme(t)
+      setPhotoBg(bg)
+    }
+    const result = await generateStory({
+      companion,
+      favoriteMoment,
+      dishes: allDishes,
+      photoCount: photos.length,
+    })
+    setStory(result)
+    setEditable(result.editable)
+    setPhase(PHASE.EDIT)
+  }
+
+  // 编辑字段
+  const updateField = (key, value) => {
+    setEditable((prev) => ({ ...prev, [key]: value }))
+  }
+
+  // 应用编辑，构建最终 story（同步返回，供导出使用）
+  const buildFinalStory = () => {
+    if (!story || !editable) return story
+    return {
+      ...story,
+      headline: editable.headline,
+      companion: editable.companion,
+      favoriteMoment: editable.momentText,
+      body: `在${story.restaurant}，我们分享了${editable.enjoyedText}。最难忘的是${editable.momentText}。`,
+      editable,
+    }
+  }
+
+  const companionObj = COMPANION_OPTIONS.find((c) => c.id === companion)
+  const momentObj = FAVORITE_MOMENT_OPTIONS.find((m) => m.id === favoriteMoment)
+
+  return (
+    <div className="relative flex min-h-svh flex-col overflow-hidden bg-beige-100">
+      {/* 顶部返回 */}
+      <div className="relative z-20 px-5 pt-5">
+        <button
+          type="button"
+          onClick={phase === PHASE.EDIT ? () => setPhase(PHASE.SELECT) : onBack}
+          className="glass flex h-10 w-10 items-center justify-center rounded-full text-coffee-500 transition-colors hover:text-coffee-600"
+          aria-label="返回"
+        >
+          <Icon name="back" size={20} />
+        </button>
+      </div>
+
+      <div className="relative z-10 flex flex-1 flex-col">
+        {phase === PHASE.SELECT && (
+          <SelectView
+            photos={photos}
+            companion={companion}
+            setCompanion={setCompanion}
+            favoriteMoment={favoriteMoment}
+            setFavoriteMoment={setFavoriteMoment}
+            onGenerate={handleGenerate}
+            canGenerate={!!companion && !!favoriteMoment}
+          />
+        )}
+
+        {phase === PHASE.GENERATING && <GeneratingView />}
+
+        {phase === PHASE.EDIT && story && (
+          <EditView
+            story={story}
+            editable={editable}
+            updateField={updateField}
+            photos={photos}
+            theme={theme}
+            photoBg={photoBg}
+            companionEmoji={companionObj?.emoji}
+            momentEmoji={momentObj?.emoji}
+            onDone={() => {
+              onComplete(buildFinalStory(), companionObj, momentObj)
+            }}
+          />
+        )}
+      </div>
+      <BottomSafe />
+    </div>
+  )
+}
+
+// 选出 Hero 照片（role === 'hero' 优先，否则取第一张）
+function pickHeroPhoto(photos) {
+  return photos.find((p) => p && p.role === 'hero' && p.src) || photos.find((p) => p && p.src) || null
+}
+
+// ---- 情感化选择视图 ----
+function SelectView({
+  photos,
+  companion,
+  setCompanion,
+  favoriteMoment,
+  setFavoriteMoment,
+  onGenerate,
+  canGenerate,
+}) {
+  const hero = pickHeroPhoto(photos)?.src
+  return (
+    <div className="relative flex flex-1 flex-col overflow-hidden animate-fade-in">
+      {/* 柔和氛围背景 */}
+      {hero && (
+        <div className="pointer-events-none absolute inset-0 opacity-40">
+          <div className="memory-photo-bg" style={{ backgroundImage: `url(${hero})` }} />
+        </div>
+      )}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-beige-100/80 via-beige-100/50 to-beige-100" />
+
+      <div className="relative z-10 flex flex-1 flex-col px-6 pt-4">
+        {/* 情感化标题 */}
+        <div className="text-center">
+          <div className="mb-2 flex justify-center text-coffee-400">
+            <Icon name="sparkles" size={24} />
+          </div>
+          <h2 className="story-display text-[1.7rem] leading-snug text-coffee-600">
+            让 AI 帮你
+            <br />
+            写下<span className="text-gradient-gold">这一晚</span>
+          </h2>
+          <p className="editorial-body mx-auto mt-2 max-w-[16rem] text-sm text-coffee-400">
+            回答两个小问题，AI 会把你的照片
+            <br />
+            编织成一段值得回味的记忆
+          </p>
+        </div>
+
+        {/* 陪伴对象 */}
+        <div className="mt-8">
+          <p className="story-display mb-3 text-base text-coffee-600">
+            谁陪你度过了这一晚？
+          </p>
+          <div className="flex gap-2.5 overflow-x-auto pb-1 no-scrollbar">
+            {COMPANION_OPTIONS.map((opt) => (
+              <button
+                key={opt.id}
+                type="button"
+                onClick={() => setCompanion(opt.id)}
+                className={`flex shrink-0 flex-col items-center gap-2 rounded-3xl px-5 py-4 transition-all duration-300 ${
+                  companion === opt.id
+                    ? 'glass-strong border-coffee-500/50 text-coffee-600 shadow-lg shadow-coffee-500/10'
+                    : 'glass text-coffee-400 hover:text-coffee-600'
+                }`}
+              >
+                <span className="text-3xl">{opt.emoji}</span>
+                <span className="text-sm whitespace-nowrap">{opt.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* 难忘瞬间 */}
+        <div className="mt-6">
+          <p className="story-display mb-3 text-base text-coffee-600">
+            最想留住的是哪个瞬间？
+          </p>
+          <div className="flex gap-2.5 overflow-x-auto pb-1 no-scrollbar">
+            {FAVORITE_MOMENT_OPTIONS.map((opt) => (
+              <button
+                key={opt.id}
+                type="button"
+                onClick={() => setFavoriteMoment(opt.id)}
+                className={`flex shrink-0 flex-col items-center gap-2 rounded-3xl px-5 py-4 transition-all duration-300 ${
+                  favoriteMoment === opt.id
+                    ? 'glass-strong border-coffee-500/50 text-coffee-600 shadow-lg shadow-coffee-500/10'
+                    : 'glass text-coffee-400 hover:text-coffee-600'
+                }`}
+              >
+                <span className="text-3xl">{opt.emoji}</span>
+                <span className="text-sm whitespace-nowrap">{opt.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-auto pb-6 pt-8">
+          <PrimaryButton
+            onClick={onGenerate}
+            disabled={!canGenerate}
+            className="w-full"
+            icon="sparkles"
+          >
+            写下我的记忆
+          </PrimaryButton>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ---- 生成中 ----
+function GeneratingView() {
+  return (
+    <div className="flex flex-1 flex-col items-center justify-center px-8 text-center animate-fade-in">
+      <div className="glass glass-highlight relative mb-8 flex h-28 w-28 items-center justify-center rounded-full">
+        <div className="absolute inset-0 animate-spin rounded-full border-2 border-coffee-400/20 border-t-coffee-500" />
+        <Icon name="heart" size={36} className="text-coffee-500" />
+      </div>
+      <h3 className="story-display text-2xl text-coffee-600">正在书写你的故事…</h3>
+      <p className="mt-3 max-w-xs text-sm leading-relaxed text-coffee-400">
+        把照片、滋味与你的选择，
+        <br />
+        编织成一段有温度的回忆
+      </p>
+    </div>
+  )
+}
+
+// ---- 润色记忆卡片视图（Hero-first + 可收藏物件感） ----
+function EditView({
+  story,
+  editable,
+  updateField,
+  photos,
+  theme,
+  photoBg,
+  companionEmoji,
+  momentEmoji,
+  onDone,
+}) {
+  const css = theme
+    ? {
+        '--bg-glow': theme.glow,
+        '--bg-accent': theme.accent,
+        '--bg-mid': theme.mid,
+        '--bg-deep': theme.deep,
+      }
+    : {}
+  return (
+    <div className="relative flex flex-1 flex-col overflow-hidden animate-fade-in">
+      {/* 动态氛围背景 */}
+      {photoBg && (
+        <div className="memory-photo-bg" style={{ backgroundImage: `url(${photoBg})` }} />
+      )}
+      <div className="memory-bg absolute inset-0" style={css} />
+
+      <div className="relative z-10 flex flex-1 flex-col px-5 pt-2">
+        {/* Hero-first 照片编排 */}
+        <HeroLayout photos={photos} />
+
+        {/* 可收藏记忆卡（明信片物件感） */}
+        <div className="keepsake-card mx-auto mt-5 w-full max-w-sm p-6">
+          {/* 顶部：柔和天蓝细线 + 标签 */}
+          <div className="sky-rule mb-4 w-12" />
+          <div className="mb-1 flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-coffee-400">
+            <Icon name="sparkle" size={12} />
+            你的记忆 · 收藏卡
+          </div>
+
+          {/* 可润色的标题 */}
+          <input
+            value={editable.headline}
+            onChange={(e) => updateField('headline', e.target.value)}
+            className="story-display w-full bg-transparent text-2xl text-coffee-600 outline-none placeholder:text-coffee-300"
+            placeholder="值得记住的一晚"
+          />
+
+          <div className="mt-4 space-y-3">
+            <NarrativeField
+              icon={companionEmoji || '👥'}
+              value={editable.companion}
+              onChange={(v) => updateField('companion', v)}
+            />
+            <NarrativeField
+              icon="🍽️"
+              value={editable.enjoyedText}
+              onChange={(v) => updateField('enjoyedText', v)}
+            />
+            <NarrativeField
+              icon={momentEmoji || '✨'}
+              value={editable.momentText}
+              onChange={(v) => updateField('momentText', v)}
+            />
+          </div>
+
+          <div className="mt-5 flex items-center justify-between border-t border-coffee-400/15 pt-3 text-xs text-coffee-400">
+            <span>{story.restaurant}</span>
+            <span>{story.date}</span>
+            <span>📷 {story.photoCount} 幕</span>
+          </div>
+        </div>
+
+        <div className="mx-auto mt-auto w-full max-w-sm pb-6 pt-5">
+          <PrimaryButton onClick={onDone} className="w-full" icon="arrow">
+            生成分享记忆
+          </PrimaryButton>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// Hero-first 照片编排：Hero 大图占主导，两张 Memory Snapshots 小卡错落
+function HeroLayout({ photos }) {
+  const hero = pickHeroPhoto(photos)
+  const snapshots = photos.filter((p) => p && p !== hero && p.src).slice(0, 2)
+  if (!hero) return null
+
+  return (
+    <div className="relative mx-auto w-full max-w-sm">
+      {/* Hero 大图（占主导） */}
+      <div className="photo-card aspect-[4/5] w-full rotate-[-1deg]">
+        <img src={hero.src} alt="Hero 主角照片" />
+        <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-full bg-sky-400/90 px-3 py-1 text-beige-50">
+          <Icon name="dish" size={12} />
+          <span className="text-[11px] font-semibold">Hero · 今晚主角</span>
+        </div>
+      </div>
+
+      {/* 两张 Memory Snapshots 小卡（错落叠放，支持而非竞争） */}
+      {snapshots.length > 0 && (
+        <div className="relative -mt-8 flex justify-center gap-3 px-6">
+          {snapshots.map((p, i) => (
+            <div
+              key={i}
+              className="photo-card h-20 w-16 rotate-[2deg]"
+              style={{ transform: `rotate(${i === 0 ? '-3deg' : '3deg'})` }}
+            >
+              <img src={p.src} alt="记忆快照" />
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+// 叙事式润色字段（避免表单标签外观）
+function NarrativeField({ icon, value, onChange }) {
+  return (
+    <div className="flex items-center gap-2.5 rounded-2xl bg-beige-100/70 px-3.5 py-2.5 focus-within:bg-beige-100">
+      <span className="text-lg">{icon}</span>
+      <input
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full bg-transparent text-sm text-coffee-600 outline-none placeholder:text-coffee-300"
+      />
+    </div>
+  )
+}

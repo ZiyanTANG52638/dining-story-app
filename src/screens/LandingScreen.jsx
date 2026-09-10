@@ -1,1 +1,108 @@
-Ly8gUVIg6JC95Zyw6aG1IOKAlOKAlCBTb25obyBLaXRjaGVuIOaaluiJsuaJi+S9nOmjjuagvOeahCLorrDlv4bpgoDor7ciCi8vCi8vIOinhuinieivreiogO+8mkFwcGxlIEpvdXJuYWwgKyBNVUpJICsg5pel5byP5ZKW5ZWh5ZOB54mMICsg57yW6L6R5p2C5b+XCi8vICAgLSDmmpbnsbPoibLnlZnnmb3og4zmma/vvIjpnZ7lpaLljY7phZLlupfjgIHpnZ7nuq/pu5HvvIkKLy8gICAtIOaJi+S9nOe6uOW8oOi0qOaEnyArIOaflOWSjOWkqeiTneeCuee8gAovLyAgIC0g6aOf54mpIGhlcm8g5bGF5Lit77yM6JCl6YCgIuaUtuiXj+S4gOaZmiLnmoTpgoDor7fmhJ8KaW1wb3J0IHsgUkVTVEFVUkFOVCB9IGZyb20gJy4uL2RhdGEvcGhvdG9zJwppbXBvcnQgSWNvbiBmcm9tICcuLi9jb21wb25lbnRzL0ljb24nCmltcG9ydCB7IEJvdHRvbVNhZmUgfSBmcm9tICcuLi9jb21wb25lbnRzL3VpJwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTGFuZGluZ1NjcmVlbih7IG9uU3RhcnQgfSkgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgZmxleCBtaW4taC1zdmggZmxleC1jb2wgb3ZlcmZsb3ctaGlkZGVuIGJnLWJlaWdlLTEwMCI+CiAgICAgIHsvKiAtLS0tIOaflOWSjOaaluiJsuawm+WbtO+8iOa1heiJsu+8jOmdnua3seiJsuWFieaZle+8iSAtLS0tICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0icG9pbnRlci1ldmVudHMtbm9uZSBhYnNvbHV0ZSBpbnNldC0wIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgLXRvcC0yNCByaWdodC1bLTZyZW1dIGgtODAgdy04MCByb3VuZGVkLWZ1bGwgYmctW3JhZGlhbC1ncmFkaWVudChjaXJjbGUscmdiYSgxNTksMTk1LDIxMiwwLjM1KSx0cmFuc3BhcmVudF82NSUpXSBibHVyLTJ4bCBhbmltYXRlLWRyaWZ0IiAvPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSAtbGVmdC0yNCB0b3AtMS8zIGgtNzIgdy03MiByb3VuZGVkLWZ1bGwgYmctW3JhZGlhbC1ncmFkaWVudChjaXJjbGUscmdiYSgyMTQsMTkxLDE1NiwwLjQpLHRyYW5zcGFyZW50XzY1JSldIGJsdXItMnhsIGFuaW1hdGUtZHJpZnQiIHN0eWxlPXt7IGFuaW1hdGlvbkRlbGF5OiAnLTZzJyB9fSAvPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBib3R0b20tMCBsZWZ0LTEvMiBoLTY0IHctWzMwcmVtXSAtdHJhbnNsYXRlLXgtMS8yIHJvdW5kZWQtZnVsbCBiZy1bcmFkaWFsLWdyYWRpZW50KGNpcmNsZSxyZ2JhKDI0NywyNDAsMjI3LDAuOSksdHJhbnNwYXJlbnRfNzAlKV0gYmx1ci0yeGwiIC8+CiAgICAgICAgey8qIOaflOWSjOWkqeiTnee7hue6vyAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic2t5LXJ1bGUgYWJzb2x1dGUgbGVmdC0xLzIgdG9wLTEyIHctMjQgLXRyYW5zbGF0ZS14LTEvMiIgLz4KICAgICAgPC9kaXY+CgogICAgICB7LyogLS0tLSDpo5/niakgaGVyb++8iOWxheS4re+8jOaaluiJsuaJi+S9nOWNoOS9je+8iSAtLS0tICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgei0wIG10LTE0IGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIHB4LTgiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSB3LWZ1bGwgbWF4LXctWzE5cmVtXSI+CiAgICAgICAgICB7Lyog5Li76I+cIGhlcm8g5Y2hICovfQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InBob3RvLWNhcmQgYXNwZWN0LVs0LzVdIHctZnVsbCBhbmltYXRlLWZsb2F0IiBzdHlsZT17eyAnLS1yb3QnOiAnLTEuNWRlZycgfX0+CiAgICAgICAgICAgIDxEaXNoQXJ0IHZhcmlhbnQ9InNpZ25hdHVyZSIgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgey8qIOaflOWSjOWkqeiTneagh+etviAqL30KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJnbGFzcy1saWdodCBhYnNvbHV0ZSAtcmlnaHQtMyB0b3AtNiBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMS41IHJvdW5kZWQtZnVsbCBweC0zIHB5LTEuNSB0ZXh0LWNvZmZlZS01MDAiPgogICAgICAgICAgICA8SWNvbiBuYW1lPSJkaXNoIiBzaXplPXsxM30gLz4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LVsxMXB4XSBmb250LW1lZGl1bSI+5LuK5pma55qE5Li76KeSPC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgey8qIC0tLS0g5Lit5aSu6YKA6K+35paH5qGI77yI5aSn6YeP55WZ55m977yJIC0tLS0gKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSB6LTEwIG10LTEwIGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIHB4LTggdGV4dC1jZW50ZXIiPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1bMTFweF0gdXBwZXJjYXNlIHRyYWNraW5nLVswLjM1ZW1dIHRleHQtY29mZmVlLTQwMCI+e1JFU1RBVVJBTlQubG9jYXRpb259PC9wPgogICAgICAgIDxoMSBjbGFzc05hbWU9InN0b3J5LWRpc3BsYXkgbXQtMyB0ZXh0LTR4bCB0cmFja2luZy13aWRlIHRleHQtY29mZmVlLTYwMCI+e1JFU1RBVVJBTlQubmFtZX08L2gxPgogICAgICAgIDxwIGNsYXNzTmFtZT0ibXQtMiB0ZXh0LVsxMnB4XSB1cHBlcmNhc2UgdHJhY2tpbmctWzAuNDVlbV0gdGV4dC1jb2ZmZWUtMzAwIj57UkVTVEFVUkFOVC5lbmdsaXNoTmFtZX08L3A+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC04Ij4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0ic3RvcnktZGlzcGxheSB0ZXh0LVsxLjlyZW1dIGxlYWRpbmctc251ZyB0ZXh0LWNvZmZlZS02MDAiPgogICAgICAgICAgICDmiorov5nkuIDmmZrvvIwKICAgICAgICAgICAgPGJyIC8+CiAgICAgICAgICAgIOaUtui/mzxzcGFuIGNsYXNzTmFtZT0idGV4dC1ncmFkaWVudC1nb2xkIj7lgLzlvpforrDkvY/nmoTlm57lv4Y8L3NwYW4+CiAgICAgICAgICA8L3A+CiAgICAgICAgICA8cCBjbGFzc05hbWU9ImVkaXRvcmlhbC1ib2R5IG14LWF1dG8gbXQtNCBtYXgtdy1bMTZyZW1dIHRleHQtWzEzcHhdIHRleHQtY29mZmVlLTQwMCI+CiAgICAgICAgICAgIOS4gOW8oOS4u+inkueFp+eJh++8jOS4pOW5lea4qeaflOeerOmXtOOAggogICAgICAgICAgICA8YnIgLz4KICAgICAgICAgICAg6K6p6L+Z5LiA6aSQ77yM5oiQ5Li65L2g5oS/5oSP5Y+N5aSN5Zue5ZGz55qE5aSc5pma44CCCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiBDVEEgKi99CiAgICAgICAgPGJ1dHRvbgogICAgICAgICAgdHlwZT0iYnV0dG9uIgogICAgICAgICAgb25DbGljaz17b25TdGFydH0KICAgICAgICAgIGNsYXNzTmFtZT0iZ3JvdXAgbXQtMTAgaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0yIHJvdW5kZWQtZnVsbCBiZy1jb2ZmZWUtNTAwIHB4LTkgcHktNCB0ZXh0LWJhc2UgZm9udC1zZW1pYm9sZCB0ZXh0LWJlaWdlLTUwIHNoYWRvdy1sZyBzaGFkb3ctY29mZmVlLTUwMC8yNSB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0zMDAgaG92ZXI6YmctY29mZmVlLTYwMCBhY3RpdmU6c2NhbGUtWzAuOThdIgogICAgICAgID4KICAgICAgICAgIOW8gOWni+aUtuiXj+S7iuaZmgogICAgICAgICAgPEljb24gbmFtZT0iYXJyb3ciIHNpemU9ezE4fSBjbGFzc05hbWU9InRyYW5zaXRpb24tdHJhbnNmb3JtIGR1cmF0aW9uLTMwMCBncm91cC1ob3Zlcjp0cmFuc2xhdGUteC0wLjUiIC8+CiAgICAgICAgPC9idXR0b24+CgogICAgICAgIDxwIGNsYXNzTmFtZT0ibXQtNSB0ZXh0LVsxMXB4XSB0cmFja2luZy13aWRlIHRleHQtY29mZmVlLTMwMCI+CiAgICAgICAgICDml6DpnIDms6jlhowgwrcg5Y+q5Li654+N6JeP5L2g55qE6K6w5b+GCiAgICAgICAgPC9wPgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC1hdXRvIj4KICAgICAgICA8Qm90dG9tU2FmZSAvPgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICkKfQoKLy8g55SoIENTUyDmuJDlj5ggKyDpgKDlnovmqKHmi58i5oub54mM6I+cIuaRhOW9se+8iOaaluiJsuaJi+S9nOWNoOS9je+8iQpmdW5jdGlvbiBEaXNoQXJ0KHsgdmFyaWFudCB9KSB7CiAgY29uc3QgYXJ0ID0gewogICAgc2lnbmF0dXJlOiB7CiAgICAgIGJnOiAnbGluZWFyLWdyYWRpZW50KDE1MGRlZywjZjNlNmQyIDAlLCNlNWQwYWUgNTUlLCNjOWEwNmEgMTAwJSknLAogICAgICBwbGF0ZTogJ3JnYmEoMjU1LDI1MywyNDgsMC45OCknLAogICAgICBmb29kOiAncmFkaWFsLWdyYWRpZW50KGNpcmNsZSBhdCA0MiUgMzYlLCAjZThiMDZhLCAjYjA2YTNhIDcyJSknLAogICAgICBnbG93OiAncmdiYSgyNTUsMjU1LDI1NSwwLjYpJywKICAgICAgbGVhZjogJ3JnYmEoMTIyLDE1NCwxMjAsMC41KScsCiAgICB9LAogIH1bdmFyaWFudF0KCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBoLWZ1bGwgdy1mdWxsIiBzdHlsZT17eyBiYWNrZ3JvdW5kOiBhcnQuYmcgfX0+CiAgICAgIHsvKiDppJDnm5ggKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBsZWZ0LTEvMiB0b3AtMS8yIGFzcGVjdC1zcXVhcmUgdy1bNzQlXSAtdHJhbnNsYXRlLXgtMS8yIC10cmFuc2xhdGUteS0xLzIgcm91bmRlZC1mdWxsIgogICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6IGFydC5wbGF0ZSwgYm94U2hhZG93OiAnMCAxNHB4IDM0cHggcmdiYSgxMjIsOTAsNjIsMC4zKScgfX0+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LVsxMyVdIHJvdW5kZWQtZnVsbCIgc3R5bGU9e3sgYmFja2dyb3VuZDogYXJ0LmZvb2QgfX0gLz4KICAgICAgICB7Lyog6auY5YWJICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBsZWZ0LVszMCVdIHRvcC1bMjYlXSBoLVsyMCVdIHctWzIwJV0gcm91bmRlZC1mdWxsIGJsdXItWzJweF0iCiAgICAgICAgICBzdHlsZT17eyBiYWNrZ3JvdW5kOiBhcnQuZ2xvdyB9fSAvPgogICAgICAgIHsvKiDngrnnvIDlj7bvvIjmiYvkvZzmhJ/vvIkgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIHJpZ2h0LVsyMiVdIHRvcC1bMjQlXSBoLTYgdy0zIHJvdGF0ZS1bLTMwZGVnXSByb3VuZGVkLWZ1bGwgYmx1ci1bMXB4XSIKICAgICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6IGFydC5sZWFmIH19IC8+CiAgICAgIDwvZGl2PgogICAgICB7Lyog5bqV6YOo5p+U5ZKM5riQ6ZqQICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBiZy1ncmFkaWVudC10by10IGZyb20tYmVpZ2UtMjAwLzQwIHZpYS10cmFuc3BhcmVudCB0by10cmFuc3BhcmVudCIgLz4KICAgIDwvZGl2PgogICkKfQo=
+// QR 落地页 —— Sonho Kitchen 暖色手作风格的"记忆邀请"
+//
+// 视觉语言：Apple Journal + MUJI + 日式咖啡品牌 + 编辑杂志
+//   - 暖米色留白背景（非奢华酒店、非纯黑）
+//   - 手作纸张质感 + 柔和天蓝点缀
+//   - 食物 hero 居中，营造"收藏一晚"的邀请感
+import { RESTAURANT } from '../data/photos'
+import Icon from '../components/Icon'
+import { BottomSafe } from '../components/ui'
+
+export default function LandingScreen({ onStart }) {
+  return (
+    <div className="relative flex min-h-svh flex-col overflow-hidden bg-beige-100">
+      {/* ---- 柔和暖色氛围（浅色，非深色光晕） ---- */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-24 right-[-6rem] h-80 w-80 rounded-full bg-[radial-gradient(circle,rgba(159,195,212,0.35),transparent_65%)] blur-2xl animate-drift" />
+        <div className="absolute -left-24 top-1/3 h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(214,191,156,0.4),transparent_65%)] blur-2xl animate-drift" style={{ animationDelay: '-6s' }} />
+        <div className="absolute bottom-0 left-1/2 h-64 w-[30rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(247,240,227,0.9),transparent_70%)] blur-2xl" />
+        {/* 柔和天蓝细线 */}
+        <div className="sky-rule absolute left-1/2 top-12 w-24 -translate-x-1/2" />
+      </div>
+
+      {/* ---- 食物 hero（居中，暖色手作占位） ---- */}
+      <div className="relative z-0 mt-14 flex flex-col items-center px-8">
+        <div className="relative w-full max-w-[19rem]">
+          {/* 主菜 hero 卡 */}
+          <div className="photo-card aspect-[4/5] w-full animate-float" style={{ '--rot': '-1.5deg' }}>
+            <DishArt variant="signature" />
+          </div>
+          {/* 柔和天蓝标签 */}
+          <div className="glass-light absolute -right-3 top-6 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-coffee-500">
+            <Icon name="dish" size={13} />
+            <span className="text-[11px] font-medium">今晚的主角</span>
+          </div>
+        </div>
+      </div>
+
+      {/* ---- 中央邀请文案（大量留白） ---- */}
+      <div className="relative z-10 mt-10 flex flex-col items-center px-8 text-center">
+        <p className="text-[11px] uppercase tracking-[0.35em] text-coffee-400">{RESTAURANT.location}</p>
+        <h1 className="story-display mt-3 text-4xl tracking-wide text-coffee-600">{RESTAURANT.name}</h1>
+        <p className="mt-2 text-[12px] uppercase tracking-[0.45em] text-coffee-300">{RESTAURANT.englishName}</p>
+
+        <div className="mt-8">
+          <p className="story-display text-[1.9rem] leading-snug text-coffee-600">
+            把这一晚，
+            <br />
+            收进<span className="text-gradient-gold">值得记住的回忆</span>
+          </p>
+          <p className="editorial-body mx-auto mt-4 max-w-[16rem] text-[13px] text-coffee-400">
+            一张主角照片，两幕温柔瞬间。
+            <br />
+            让这一餐，成为你愿意反复回味的夜晚。
+          </p>
+        </div>
+
+        {/* CTA */}
+        <button
+          type="button"
+          onClick={onStart}
+          className="group mt-10 inline-flex items-center justify-center gap-2 rounded-full bg-coffee-500 px-9 py-4 text-base font-semibold text-beige-50 shadow-lg shadow-coffee-500/25 transition-all duration-300 hover:bg-coffee-600 active:scale-[0.98]"
+        >
+          开始收藏今晚
+          <Icon name="arrow" size={18} className="transition-transform duration-300 group-hover:translate-x-0.5" />
+        </button>
+
+        <p className="mt-5 text-[11px] tracking-wide text-coffee-300">
+          无需注册 · 只为珍藏你的记忆
+        </p>
+      </div>
+
+      <div className="mt-auto">
+        <BottomSafe />
+      </div>
+    </div>
+  )
+}
+
+// 用 CSS 渐变 + 造型模拟"招牌菜"摄影（暖色手作占位）
+function DishArt({ variant }) {
+  const art = {
+    signature: {
+      bg: 'linear-gradient(150deg,#f3e6d2 0%,#e5d0ae 55%,#c9a06a 100%)',
+      plate: 'rgba(255,253,248,0.98)',
+      food: 'radial-gradient(circle at 42% 36%, #e8b06a, #b06a3a 72%)',
+      glow: 'rgba(255,255,255,0.6)',
+      leaf: 'rgba(122,154,120,0.5)',
+    },
+  }[variant]
+
+  return (
+    <div className="relative h-full w-full" style={{ background: art.bg }}>
+      {/* 餐盘 */}
+      <div className="absolute left-1/2 top-1/2 aspect-square w-[74%] -translate-x-1/2 -translate-y-1/2 rounded-full"
+        style={{ background: art.plate, boxShadow: '0 14px 34px rgba(122,90,62,0.3)' }}>
+        <div className="absolute inset-[13%] rounded-full" style={{ background: art.food }} />
+        {/* 高光 */}
+        <div className="absolute left-[30%] top-[26%] h-[20%] w-[20%] rounded-full blur-[2px]"
+          style={{ background: art.glow }} />
+        {/* 点缀叶（手作感） */}
+        <div className="absolute right-[22%] top-[24%] h-6 w-3 rotate-[-30deg] rounded-full blur-[1px]"
+          style={{ background: art.leaf }} />
+      </div>
+      {/* 底部柔和渐隐 */}
+      <div className="absolute inset-0 bg-gradient-to-t from-beige-200/40 via-transparent to-transparent" />
+    </div>
+  )
+}
