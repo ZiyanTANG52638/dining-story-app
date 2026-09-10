@@ -1,17 +1,1 @@
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import { defineConfig } from 'vite'
-
-// https://vite.dev/config/
-export default defineConfig({
-  // GitHub Pages 项目站点部署路径：<用户名>.github.io/dining-story-app/
-  // 若改为用户主页仓库（<用户名>.github.io），请把 base 改回 '/'
-  base: '/dining-story-app/',
-  plugins: [react(), tailwindcss()],
-  server: {
-    // 允许通过 HTTPS 隧道（如 localhost.run / cloudflared）访问开发服务器，
-    // 以便在手机上通过安全上下文调用相机（getUserMedia 需要 HTTPS）。
-    host: true,
-    allowedHosts: true,
-  },
-})
+aW1wb3J0IHJlYWN0IGZyb20gJ0B2aXRlanMvcGx1Z2luLXJlYWN0JwppbXBvcnQgdGFpbHdpbmRjc3MgZnJvbSAnQHRhaWx3aW5kY3NzL3ZpdGUnCmltcG9ydCB7IGRlZmluZUNvbmZpZyB9IGZyb20gJ3ZpdGUnCgovLyBodHRwczovL3ZpdGUuZGV2L2NvbmZpZy8KZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHsKICAvLyBHaXRIdWIgUGFnZXMg6aG555uu56uZ54K56YOo572y6Lev5b6E77yaPOeUqOaIt+WQjT4uZ2l0aHViLmlvL2RpbmluZy1zdG9yeS1hcHAvCiAgLy8g6Iul5pS55Li655So5oi35Li76aG15LuT5bqT77yIPOeUqOaIt+WQjT4uZ2l0aHViLmlv77yJ77yM6K+35oqKIGJhc2Ug5pS55ZueICcvJwogIGJhc2U6ICcvZGluaW5nLXN0b3J5LWFwcC8nLAogIHBsdWdpbnM6IFtyZWFjdCgpLCB0YWlsd2luZGNzcygpXSwKICBzZXJ2ZXI6IHsKICAgIC8vIOWFgeiuuOmAmui/hyBIVFRQUyDpmqfpgZPvvIjlpoIgbG9jYWxob3N0LnJ1biAvIGNsb3VkZmxhcmVk77yJ6K6/6Zeu5byA5Y+R5pyN5Yqh5Zmo77yMCiAgICAvLyDku6Xkvr/lnKjmiYvmnLrkuIrpgJrov4flronlhajkuIrkuIvmlofosIPnlKjnm7jmnLrvvIhnZXRVc2VyTWVkaWEg6ZyA6KaBIEhUVFBT77yJ44CCCiAgICBob3N0OiB0cnVlLAogICAgYWxsb3dlZEhvc3RzOiB0cnVlLAogIH0sCn0pCg==
