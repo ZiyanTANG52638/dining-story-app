@@ -1,18 +1,34 @@
-// AI 记忆叙事生成 —— Sonho Kitchen 暖色手作风格
+// 记忆创作 —— Sonho Kitchen 暖色手作风格
 //
-// Hero-first 排版：Hero 照片占 60-70%，其余为 Memory Snapshots（支持而非竞争）
-// 记忆卡设计成"可收藏物件"（明信片/手作卡片感）
+// 产品主流程（Art Zine 为核心）：
+//   Capture moments → Create Art Zine → Share memory
+//
+// 用户不再选择版式。系统用用户自己拍摄的三张照片，
+// 编排成 1080×1920 的一页作品（Art Zine 艺术纸刊）。
+//
+// 01–03 确定性模板（Editorial / Memory Collage / Classic）保留为
+// 兜底与「换一种收藏方式」，但不再是主选择入口。
 import { useState } from 'react'
-import { COMPANION_OPTIONS, FAVORITE_MOMENT_OPTIONS } from '../data/photos'
+import { COMPANION_OPTIONS, FAVORITE_MOMENT_OPTIONS, RESTAURANT } from '../data/photos'
 import { generateStory } from '../lib/storyGenerator'
 import { buildMemoryTheme, makeBlurredBg } from '../lib/visuals'
+import { DEFAULT_TEMPLATE_ID, getTemplate, TEXT_LIMITS } from '../lib/templates'
+import { recommendTemplate, generateShortCaption } from '../lib/aiModules'
+import { segmentSubject } from '../lib/segmentSubject'
+import { normalizePhotos } from '../lib/photoNormalize'
+import { generateArtZine } from '../lib/artZine'
+import { pickArtZinePhrase } from '../lib/artZineCopy'
+import StoryPreview from '../components/StoryPreview'
+import ArtZineCanvas from '../components/ArtZineCanvas'
+import ArtZineScreen from './ArtZineScreen'
 import Icon from '../components/Icon'
 import { PrimaryButton, BottomSafe } from '../components/ui'
 
 const PHASE = {
-  SELECT: 'select', // 情感化选择
-  GENERATING: 'generating', // AI 生成中
-  EDIT: 'edit', // 润色记忆卡片
+  SELECT: 'select', // 情感化选择（谁陪你 / 最难忘瞬间）
+  ART_ZINE: 'art-zine', // 艺术纸刊：过渡屏（正在重新整理今晚的三个瞬间）
+  ART_ZINE_RESULT: 'art-zine-result', // 艺术纸刊：结果屏（今晚，被装订成了一页）
+  EDIT: 'edit', // 兜底：换一种收藏方式（01–03 确定性模板）
 }
 
 export default function StoryScreen({ photos, onBack, onComplete }) {
@@ -23,13 +39,22 @@ export default function StoryScreen({ photos, onBack, onComplete }) {
   const [editable, setEditable] = useState(null)
   const [theme, setTheme] = useState(null)
   const [photoBg, setPhotoBg] = useState(null)
+  const [templateId, setTemplateId] = useState(DEFAULT_TEMPLATE_ID)
+  const [caption, setCaption] = useState('')
+  const [heroCutout, setHeroCutout] = useState(null)
+  // 归一化照片（兜底模板共用同一份数据：比例 / 方向 / 焦点 / 主色）
+  const [normalizedPhotos, setNormalizedPhotos] = useState([])
+  // Art Zine 状态
+  const [artZine, setArtZine] = useState(null) // { url, source, meta }
+  const [artZineError, setArtZineError] = useState(false)
+  const [artZinePhrase, setArtZinePhrase] = useState('')
 
   // 收集所有识别到的菜品
   const allDishes = photos.map((p) => p.analysis?.detectedDishes || []).flat()
 
-  // 生成故事
+  // 主流程：回答两个小问题 → 直接进入 Art Zine 创作
+  // （用户不选择版式，系统用他自己的三张照片编排成作品）
   const handleGenerate = async () => {
-    setPhase(PHASE.GENERATING)
     // 提取氛围（用 Hero 照片）
     const hero = pickHeroPhoto(photos)
     if (hero) {
@@ -45,7 +70,82 @@ export default function StoryScreen({ photos, onBack, onComplete }) {
     })
     setStory(result)
     setEditable(result.editable)
+
+    // 归一化照片（兜底模板使用；Art Zine 直接用原始照片）
+    const normalized = await normalizePhotos(photos)
+    setNormalizedPhotos(normalized)
+
+    // 生成短文案（无 API 时走 mock）
+    const cap = await generateShortCaption({ favoriteMoment, dishes: allDishes })
+    setCaption(cap)
+
+    // 进入 Art Zine 创作流程
+    setArtZine(null)
+    setArtZineError(false)
+    setArtZinePhrase(pickArtZinePhrase())
+    setPhase(PHASE.ART_ZINE)
+  }
+
+  // Art Zine 过渡屏结束 → 用用户真实照片渲染成品
+  const handleArtZineCompose = async () => {
+    try {
+      const result = await generateArtZine({
+        // 直接使用用户拍摄的照片（统一结构 { url, type, focalPoint }）
+        photos,
+        restaurant: RESTAURANT,
+        memoryText: artZinePhrase,
+      })
+      setArtZine(result)
+      setArtZineError(false)
+      setPhase(PHASE.ART_ZINE_RESULT)
+    } catch {
+      // 生成失败：绝不留下空白，展示兜底入口
+      setArtZineError(true)
+      setPhase(PHASE.ART_ZINE_RESULT)
+    }
+  }
+
+  // 兜底：Art Zine 失败时回退到经典收藏（01–03 确定性模板）
+  const handleArtZineFallback = async () => {
+    setArtZineError(false)
+    setArtZine(null)
+    setTemplateId('classic')
+    // 兜底模板需要归一化照片与抠图
+    if (!normalizedPhotos.length) {
+      const normalized = await normalizePhotos(photos)
+      setNormalizedPhotos(normalized)
+    }
     setPhase(PHASE.EDIT)
+  }
+
+  // 「换一种收藏方式」：从 Art Zine 结果回到确定性模板（兜底路径）
+  const handleSwitchToTemplates = async () => {
+    if (!normalizedPhotos.length) {
+      const normalized = await normalizePhotos(photos)
+      setNormalizedPhotos(normalized)
+    }
+    const rec = await recommendTemplate(photos)
+    setTemplateId(rec)
+    if (rec === 'collage' && !heroCutout) {
+      const heroPhoto = pickHeroPhoto(photos)
+      if (heroPhoto) {
+        const cut = await segmentSubject(heroPhoto)
+        setHeroCutout(cut)
+      }
+    }
+    setPhase(PHASE.EDIT)
+  }
+
+  // 兜底模板内切换时按需准备抠图（保证预览与导出一致）
+  const handleTemplateChange = async (id) => {
+    setTemplateId(id)
+    if (id === 'collage' && !heroCutout) {
+      const heroPhoto = pickHeroPhoto(photos)
+      if (heroPhoto) {
+        const cut = await segmentSubject(heroPhoto)
+        setHeroCutout(cut)
+      }
+    }
   }
 
   // 编辑字段
@@ -63,11 +163,32 @@ export default function StoryScreen({ photos, onBack, onComplete }) {
       favoriteMoment: editable.momentText,
       body: `在${story.restaurant}，我们分享了${editable.enjoyedText}。最难忘的是${editable.momentText}。`,
       editable,
+      templateId,
+      caption,
+      // 归一化照片随 story 传递，保证导出与预览使用同一份数据
+      normalizedPhotos,
+      // Art Zine 成品图（由用户真实照片本地渲染）
+      artZineUrl: artZine?.url || null,
+      artZineSource: artZine?.source || null,
+      artZinePhrase,
     }
   }
 
   const companionObj = COMPANION_OPTIONS.find((c) => c.id === companion)
   const momentObj = FAVORITE_MOMENT_OPTIONS.find((m) => m.id === favoriteMoment)
+
+  // 返回逻辑：Art Zine 结果 → 回到选择；兜底编辑 → 回到选择；其余 → 退出
+  const handleBack = () => {
+    if (phase === PHASE.ART_ZINE_RESULT) {
+      setPhase(PHASE.SELECT)
+      return
+    }
+    if (phase === PHASE.EDIT) {
+      setPhase(PHASE.SELECT)
+      return
+    }
+    onBack()
+  }
 
   return (
     <div className="relative flex min-h-svh flex-col overflow-hidden bg-beige-100">
@@ -75,7 +196,7 @@ export default function StoryScreen({ photos, onBack, onComplete }) {
       <div className="relative z-20 px-5 pt-5">
         <button
           type="button"
-          onClick={phase === PHASE.EDIT ? () => setPhase(PHASE.SELECT) : onBack}
+          onClick={handleBack}
           className="glass flex h-10 w-10 items-center justify-center rounded-full text-coffee-500 transition-colors hover:text-coffee-600"
           aria-label="返回"
         >
@@ -96,7 +217,20 @@ export default function StoryScreen({ photos, onBack, onComplete }) {
           />
         )}
 
-        {phase === PHASE.GENERATING && <GeneratingView />}
+        {phase === PHASE.ART_ZINE && (
+          <ArtZineScreen onDone={handleArtZineCompose} onFallback={handleArtZineFallback} />
+        )}
+
+        {phase === PHASE.ART_ZINE_RESULT && (
+          <ArtZineResultView
+            url={artZine?.url}
+            error={artZineError}
+            phrase={artZinePhrase}
+            onFallback={handleArtZineFallback}
+            onSwitchToTemplates={handleSwitchToTemplates}
+            onDone={() => onComplete(buildFinalStory(), companionObj, momentObj)}
+          />
+        )}
 
         {phase === PHASE.EDIT && story && (
           <EditView
@@ -108,6 +242,12 @@ export default function StoryScreen({ photos, onBack, onComplete }) {
             photoBg={photoBg}
             companionEmoji={companionObj?.emoji}
             momentEmoji={momentObj?.emoji}
+            templateId={templateId}
+            setTemplateId={handleTemplateChange}
+            caption={caption}
+            setCaption={setCaption}
+            heroCutout={heroCutout}
+            normalizedPhotos={normalizedPhotos}
             onDone={() => {
               onComplete(buildFinalStory(), companionObj, momentObj)
             }}
@@ -119,9 +259,16 @@ export default function StoryScreen({ photos, onBack, onComplete }) {
   )
 }
 
-// 选出 Hero 照片（role === 'hero' 优先，否则取第一张）
+// 选出 Hero 照片（type === 'dish' 优先，否则 role === 'hero'，否则取第一张）
+// 兼容新旧结构：新结构用 url，旧结构用 src
 function pickHeroPhoto(photos) {
-  return photos.find((p) => p && p.role === 'hero' && p.src) || photos.find((p) => p && p.src) || null
+  const src = (p) => p?.url || p?.src || null
+  return (
+    photos.find((p) => p && p.type === 'dish' && src(p)) ||
+    photos.find((p) => p && p.role === 'hero' && src(p)) ||
+    photos.find((p) => p && src(p)) ||
+    null
+  )
 }
 
 // ---- 情感化选择视图 ----
@@ -134,7 +281,8 @@ function SelectView({
   onGenerate,
   canGenerate,
 }) {
-  const hero = pickHeroPhoto(photos)?.src
+  const heroPhoto = pickHeroPhoto(photos)
+  const hero = heroPhoto?.url || heroPhoto?.src
   return (
     <div className="relative flex flex-1 flex-col overflow-hidden animate-fade-in">
       {/* 柔和氛围背景 */}
@@ -152,14 +300,14 @@ function SelectView({
             <Icon name="sparkles" size={24} />
           </div>
           <h2 className="story-display text-[1.7rem] leading-snug text-coffee-600">
-            让 AI 帮你
+            把今晚
             <br />
-            写下<span className="text-gradient-gold">这一晚</span>
+            装订成<span className="text-gradient-gold">一页</span>
           </h2>
           <p className="editorial-body mx-auto mt-2 max-w-[16rem] text-sm text-coffee-400">
-            回答两个小问题，AI 会把你的照片
+            回答两个小问题，我们会用你的三张照片
             <br />
-            编织成一段值得回味的记忆
+            编排成一张只属于今晚的作品
           </p>
         </div>
 
@@ -218,7 +366,7 @@ function SelectView({
             className="w-full"
             icon="sparkles"
           >
-            写下我的记忆
+            装订今晚这一页
           </PrimaryButton>
         </div>
       </div>
@@ -226,25 +374,7 @@ function SelectView({
   )
 }
 
-// ---- 生成中 ----
-function GeneratingView() {
-  return (
-    <div className="flex flex-1 flex-col items-center justify-center px-8 text-center animate-fade-in">
-      <div className="glass glass-highlight relative mb-8 flex h-28 w-28 items-center justify-center rounded-full">
-        <div className="absolute inset-0 animate-spin rounded-full border-2 border-coffee-400/20 border-t-coffee-500" />
-        <Icon name="heart" size={36} className="text-coffee-500" />
-      </div>
-      <h3 className="story-display text-2xl text-coffee-600">正在书写你的故事…</h3>
-      <p className="mt-3 max-w-xs text-sm leading-relaxed text-coffee-400">
-        把照片、滋味与你的选择，
-        <br />
-        编织成一段有温度的回忆
-      </p>
-    </div>
-  )
-}
-
-// ---- 润色记忆卡片视图（Hero-first + 可收藏物件感） ----
+// ---- 润色记忆卡片视图（兜底：01–03 确定性模板 + 9:16 实时预览） ----
 function EditView({
   story,
   editable,
@@ -254,6 +384,12 @@ function EditView({
   photoBg,
   companionEmoji,
   momentEmoji,
+  templateId,
+  setTemplateId,
+  caption,
+  setCaption,
+  heroCutout,
+  normalizedPhotos,
   onDone,
 }) {
   const css = theme
@@ -264,6 +400,8 @@ function EditView({
         '--bg-deep': theme.deep,
       }
     : {}
+  const activeTemplate = getTemplate(templateId)
+
   return (
     <div className="relative flex flex-1 flex-col overflow-hidden animate-fade-in">
       {/* 动态氛围背景 */}
@@ -273,48 +411,71 @@ function EditView({
       <div className="memory-bg absolute inset-0" style={css} />
 
       <div className="relative z-10 flex flex-1 flex-col px-5 pt-2">
-        {/* Hero-first 照片编排 */}
-        <HeroLayout photos={photos} />
-
-        {/* 可收藏记忆卡（明信片物件感） */}
-        <div className="keepsake-card mx-auto mt-5 w-full max-w-sm p-6">
-          {/* 顶部：柔和天蓝细线 + 标签 */}
-          <div className="sky-rule mb-4 w-12" />
-          <div className="mb-1 flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-coffee-400">
-            <Icon name="sparkle" size={12} />
-            你的记忆 · 收藏卡
+        {/* 标题：换一种收藏方式（兜底路径，非主流程） */}
+        <div className="text-center">
+          <div className="mb-1 flex justify-center text-coffee-400">
+            <Icon name="sparkles" size={20} />
           </div>
+          <h2 className="story-display text-[1.35rem] text-coffee-600">换一种收藏方式</h2>
+          <p className="editorial-body mt-1 text-xs text-coffee-400">
+            同样的三张照片，换一种讲述方式
+          </p>
+        </div>
 
-          {/* 可润色的标题 */}
-          <input
-            value={editable.headline}
-            onChange={(e) => updateField('headline', e.target.value)}
-            className="story-display w-full bg-transparent text-2xl text-coffee-600 outline-none placeholder:text-coffee-300"
-            placeholder="值得记住的一晚"
+        {/* 模板切换器（横滑）：01–03 确定性模板 + 04 Art Zine 生成式模式 */}
+        <div className="template-switcher mt-4">
+          {SELECTOR_CARDS.map((t) => (
+            <button
+              key={t.id}
+              type="button"
+              onClick={() => setTemplateId(t.id)}
+              className={`template-chip ${templateId === t.id ? 'template-chip--active' : ''} ${
+                t.sparkle ? 'template-chip--zine' : ''
+              }`}
+            >
+              <span className="template-chip__index">
+                {t.index}
+                {t.sparkle && (
+                  <span className="template-chip__sparkle">
+                    <Icon name="sparkle" size={11} />
+                  </span>
+                )}
+              </span>
+              <span className="template-chip__name">{t.name}</span>
+              <span className="template-chip__desc">{t.nameZh}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* 选择器说明（不提及 AI） */}
+        <p className="mt-2 text-center text-[0.68rem] leading-relaxed text-coffee-300">
+          {TEMPLATE_SELECTOR_NOTE}
+        </p>
+
+        {/* 9:16 实时预览（视觉中心，所见即所得） */}
+        <div className="mt-4">
+          <StoryPreview
+            photos={normalizedPhotos.length ? normalizedPhotos : photos}
+            story={story}
+            templateId={templateId}
+            caption={caption}
+            heroCutout={heroCutout}
           />
+        </div>
 
-          <div className="mt-4 space-y-3">
-            <NarrativeField
-              icon={companionEmoji || '👥'}
-              value={editable.companion}
-              onChange={(v) => updateField('companion', v)}
+        {/* 短文案编辑（编辑式，无表单感；严格限长，绝不改变布局） */}
+        <div className="mx-auto mt-4 w-full max-w-sm">
+          <div className="caption-field">
+            <Icon name="sparkle" size={14} className="shrink-0 text-coffee-400" />
+            <input
+              value={caption}
+              onChange={(e) => setCaption(e.target.value)}
+              placeholder={activeTemplate.caption}
+              maxLength={TEXT_LIMITS.memory}
             />
-            <NarrativeField
-              icon="🍽️"
-              value={editable.enjoyedText}
-              onChange={(v) => updateField('enjoyedText', v)}
-            />
-            <NarrativeField
-              icon={momentEmoji || '✨'}
-              value={editable.momentText}
-              onChange={(v) => updateField('momentText', v)}
-            />
-          </div>
-
-          <div className="mt-5 flex items-center justify-between border-t border-coffee-400/15 pt-3 text-xs text-coffee-400">
-            <span>{story.restaurant}</span>
-            <span>{story.date}</span>
-            <span>📷 {story.photoCount} 幕</span>
+            <span className="shrink-0 text-[0.65rem] tabular-nums text-coffee-300">
+              {caption.length}/{TEXT_LIMITS.memory}
+            </span>
           </div>
         </div>
 
@@ -328,51 +489,56 @@ function EditView({
   )
 }
 
-// Hero-first 照片编排：Hero 大图占主导，两张 Memory Snapshots 小卡错落
-function HeroLayout({ photos }) {
-  const hero = pickHeroPhoto(photos)
-  const snapshots = photos.filter((p) => p && p !== hero && p.src).slice(0, 2)
-  if (!hero) return null
-
+// ---- Art Zine 结果视图 ----
+// 展示「被编排的一页」：用户照片渲染的成品图 + 主短句 + 兜底入口
+function ArtZineResultView({ url, error, phrase, onFallback, onSwitchToTemplates, onDone }) {
   return (
-    <div className="relative mx-auto w-full max-w-sm">
-      {/* Hero 大图（占主导，编辑式画框） */}
-      <div className="editorial-frame photo-vignette aspect-[4/5] w-full">
-        <img src={hero.src} alt="今晚的主角照片" className="photo-warm" />
-        <div className="glass-capsule absolute left-3 top-3 flex items-center gap-1.5 rounded-full px-3 py-1">
-          <Icon name="dish" size={12} className="text-beige-50" />
-          <span className="text-[11px] font-semibold text-beige-50 photo-text-shadow">今晚的主角</span>
+    <div className="relative flex flex-1 flex-col overflow-hidden animate-fade-in">
+      <div className="relative z-10 flex flex-1 flex-col px-5 pt-2">
+        {/* 标题 */}
+        <div className="text-center">
+          <div className="mb-1 flex justify-center text-coffee-400">
+            <Icon name="sparkles" size={20} />
+          </div>
+          <h2 className="story-display text-[1.35rem] text-coffee-600">今晚，被装订成了一页</h2>
+          <p className="editorial-body mt-1 text-xs text-coffee-400">
+            这一页只属于今晚，不会重复
+          </p>
+        </div>
+
+        {/* 成品图（或兜底） */}
+        <div className="mt-4">
+          <ArtZineCanvas url={url} error={error} onFallback={onFallback} />
+        </div>
+
+        {/* 主短句（≤12 字） */}
+        {!error && phrase ? (
+          <p className="art-zine-phrase mt-4 text-center">{phrase}</p>
+        ) : null}
+
+        {/* 操作区 */}
+        <div className="mx-auto mt-auto w-full max-w-sm pb-6 pt-5">
+          {error ? (
+            <PrimaryButton onClick={onFallback} className="w-full" icon="heart">
+              先保存为经典收藏
+            </PrimaryButton>
+          ) : (
+            <>
+              <PrimaryButton onClick={onDone} className="w-full" icon="arrow">
+                生成分享记忆
+              </PrimaryButton>
+              <button
+                type="button"
+                onClick={onSwitchToTemplates}
+                className="mx-auto mt-3 flex items-center gap-2 text-xs text-coffee-400 transition-colors hover:text-coffee-600"
+              >
+                <Icon name="back" size={13} />
+                换一种收藏方式
+              </button>
+            </>
+          )}
         </div>
       </div>
-
-      {/* 两张 Memory Snapshots 小卡（错落叠放，支持而非竞争） */}
-      {snapshots.length > 0 && (
-        <div className="relative -mt-8 flex justify-center gap-3 px-6">
-          {snapshots.map((p, i) => (
-            <div
-              key={i}
-              className="photo-card h-20 w-16 overflow-hidden"
-              style={{ transform: `rotate(${i === 0 ? '-3deg' : '3deg'})` }}
-            >
-              <img src={p.src} alt="记忆快照" className="photo-warm" />
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
-
-// 叙事式润色字段（避免表单标签外观）
-function NarrativeField({ icon, value, onChange }) {
-  return (
-    <div className="flex items-center gap-2.5 rounded-2xl bg-beige-100/70 px-3.5 py-2.5 focus-within:bg-beige-100">
-      <span className="text-lg">{icon}</span>
-      <input
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="w-full bg-transparent text-sm text-coffee-600 outline-none placeholder:text-coffee-300"
-      />
     </div>
   )
 }

@@ -15,6 +15,7 @@ import { useCamera } from '../hooks/useCamera'
 import { analyzePhoto } from '../lib/aiAnalysis'
 import { enhanceImage, createDemoPhoto } from '../lib/imageEnhance'
 import { buildMemoryTheme, makeBlurredBg } from '../lib/visuals'
+import { fromCaptureStep, savePhotos } from '../lib/photoStore'
 import Icon from '../components/Icon'
 import { PrimaryButton, GhostButton, BottomSafe } from '../components/ui'
 
@@ -107,14 +108,12 @@ export default function CaptureScreen({ onComplete, onExit, initialPhotos = [] }
   // 确认这张照片
   const confirmPhoto = () => {
     const newPhotos = [...photos]
-    newPhotos[stepIndex] = {
-      src: enhancedSrc,
-      raw: enhancedSrc,
-      analysis,
-      stepId: step.id,
-      role: step.role,
-    }
+    // 统一照片对象结构：{ id, url, type, timestamp, focalPoint }
+    // 渲染器只消费 { url, type, focalPoint }，不关心来源（相机 / 文件 / demo）
+    newPhotos[stepIndex] = fromCaptureStep(step, enhancedSrc, analysis)
     setPhotos(newPhotos)
+    // 会话级持久化：刷新不丢失（关闭标签页即清除）
+    savePhotos(newPhotos)
 
     if (isLast) {
       onComplete(newPhotos)

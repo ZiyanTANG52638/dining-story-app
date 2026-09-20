@@ -9,6 +9,14 @@ import Icon from '../components/Icon'
 import { PrimaryButton, GhostButton, BottomSafe } from '../components/ui'
 
 export default function ExportScreen({ photos, story, companionObj, momentObj, onRestart }) {
+  // 模板与短文案从 story 中读取（由 StoryScreen 写入）
+  const templateId = story?.templateId
+  const caption = story?.caption
+  // Art Zine 模式：直接使用生成服务返回的成品图，不走 Canvas 模板
+  const artZineUrl = story?.artZineUrl || null
+  const isArtZine = !!artZineUrl
+  // 优先使用归一化照片（与预览同源），保证预览 = 导出
+  const renderPhotos = story?.normalizedPhotos?.length ? story.normalizedPhotos : photos
   const [exported, setExported] = useState(null)
   const [exporting, setExporting] = useState(true)
   const [copied, setCopied] = useState(false)
@@ -19,18 +27,31 @@ export default function ExportScreen({ photos, story, companionObj, momentObj, o
   useEffect(() => {
     let cancelled = false
     const hero = pickHeroPhoto(photos)
-    if (hero) {
-      Promise.all([buildMemoryTheme(hero.src), makeBlurredBg(hero.src)]).then(([t, bg]) => {
+    const heroSrc = hero?.url || hero?.src
+    if (heroSrc) {
+      Promise.all([buildMemoryTheme(heroSrc), makeBlurredBg(heroSrc)]).then(([t, bg]) => {
         if (!cancelled) {
           setTheme(t)
           setPhotoBg(bg)
         }
       })
     }
+
+    // Art Zine：成品图已由生成服务返回，直接使用，不再走 Canvas 模板
+    if (isArtZine) {
+      setExported(artZineUrl)
+      setExporting(false)
+      return () => {
+        cancelled = true
+      }
+    }
+
     setExporting(true)
     exportStoryImage({
-      photos,
+      photos: renderPhotos,
       story,
+      templateId,
+      caption,
       companionEmoji: companionObj?.emoji,
       momentEmoji: momentObj?.emoji,
     }).then((url) => {
@@ -45,12 +66,13 @@ export default function ExportScreen({ photos, story, companionObj, momentObj, o
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // 下载图片
+  // 下载图片（Art Zine 为 JPEG，兜底模板为 PNG）
   const download = () => {
     if (!exported) return
+    const ext = exported.startsWith('data:image/jpeg') ? 'jpg' : 'png'
     const a = document.createElement('a')
     a.href = exported
-    a.download = `dining-memory-${Date.now()}.jpg`
+    a.download = `dining-memory-${Date.now()}.${ext}`
     document.body.appendChild(a)
     a.click()
     a.remove()
@@ -61,8 +83,9 @@ export default function ExportScreen({ photos, story, companionObj, momentObj, o
     if (!exported) return
     try {
       const blob = await (await fetch(exported)).blob()
+      const type = blob.type || 'image/png'
       await navigator.clipboard.write([
-        new ClipboardItem({ 'image/png': blob }),
+        new ClipboardItem({ [type]: blob }),
       ])
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
@@ -107,7 +130,9 @@ export default function ExportScreen({ photos, story, companionObj, momentObj, o
         {/* 情感化完成提示 */}
         <div className="glass-light flex items-center gap-2 rounded-full px-4 py-2 text-coffee-600 animate-pop">
           <Icon name="check" size={16} className="text-sky-500" />
-          <span className="text-sm font-medium">这一晚，已被你珍藏</span>
+          <span className="text-sm font-medium">
+            {isArtZine ? '今晚，被装订成了一页' : '这一晚，已被你珍藏'}
+          </span>
         </div>
 
         {/* 分享图预览（Hero-first 收藏卡） */}
@@ -164,7 +189,13 @@ export default function ExportScreen({ photos, story, companionObj, momentObj, o
   )
 }
 
-// 选出 Hero 照片
+// 选出 Hero 照片（兼容新旧结构：新结构用 url，旧结构用 src）
 function pickHeroPhoto(photos) {
-  return photos.find((p) => p && p.role === 'hero' && p.src) || photos.find((p) => p && p.src) || null
+  const src = (p) => p?.url || p?.src || null
+  return (
+    photos.find((p) => p && p.type === 'dish' && src(p)) ||
+    photos.find((p) => p && p.role === 'hero' && src(p)) ||
+    photos.find((p) => p && src(p)) ||
+    null
+  )
 }

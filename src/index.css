@@ -371,3 +371,255 @@ body {
 .inspiration-overlay > * {
   pointer-events: auto;
 }
+
+/* ============================================================
+   模板切换器 —— 选择今晚的收藏方式
+   01 Editorial / 02 Cutout / 03 Classic
+   轻量、可横滑、品牌暖色，不喧宾夺主
+   ============================================================ */
+.template-switcher {
+  display: flex;
+  gap: 0.625rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scroll-snap-type: x mandatory;
+}
+.template-switcher::-webkit-scrollbar {
+  display: none;
+}
+.template-switcher {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.template-chip {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  min-width: 6.5rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(122, 90, 62, 0.16);
+  background: rgba(255, 253, 248, 0.72);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  color: #96704f;
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.template-chip--active {
+  border-color: rgba(122, 90, 62, 0.5);
+  background: #fffdf8;
+  color: #5f4530;
+  box-shadow: 0 16px 30px -20px rgba(90, 60, 35, 0.5);
+  transform: translateY(-2px);
+}
+.template-chip__index {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  opacity: 0.7;
+}
+.template-chip__name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.template-chip__desc {
+  font-size: 0.62rem;
+  opacity: 0.72;
+  white-space: nowrap;
+}
+
+/* 04 Art Zine 卡片 —— 细微闪光，不做成付费升级感 */
+.template-chip--zine {
+  border-color: rgba(159, 195, 212, 0.42);
+  background: linear-gradient(160deg, rgba(255, 253, 248, 0.86), rgba(159, 195, 212, 0.16));
+}
+.template-chip--zine.template-chip--active {
+  border-color: rgba(127, 169, 189, 0.7);
+  box-shadow: 0 16px 30px -20px rgba(127, 169, 189, 0.6);
+}
+.template-chip__sparkle {
+  display: inline-flex;
+  margin-left: 0.2rem;
+  vertical-align: middle;
+  color: #7fa9bd;
+  opacity: 0.85;
+}
+
+/* ============================================================
+   Art Zine 艺术纸刊 —— 过渡屏 / 结果屏
+   平静、克制、手作感；无技术感 spinner
+   ============================================================ */
+
+/* 过渡屏：柔和纸面光晕 */
+.art-zine-aura {
+  position: absolute;
+  inset: -20% -10%;
+  background:
+    radial-gradient(60% 45% at 30% 30%, rgba(159, 195, 212, 0.22), transparent 70%),
+    radial-gradient(55% 40% at 72% 68%, rgba(176, 138, 106, 0.16), transparent 72%);
+  filter: blur(6px);
+  animation: art-zine-breathe 6s ease-in-out infinite;
+}
+@keyframes art-zine-breathe {
+  0%, 100% { opacity: 0.75; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+/* 过渡屏：三张纸片缓缓聚拢 */
+.art-zine-compose {
+  position: relative;
+  width: 8.5rem;
+  height: 8.5rem;
+}
+.art-zine-sheet {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5.4rem;
+  height: 6.8rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 253, 248, 0.9);
+  box-shadow: 0 14px 30px -18px rgba(90, 60, 35, 0.5);
+  transform-origin: center;
+}
+.art-zine-sheet--1 {
+  animation: art-zine-gather-1 3s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  background: rgba(159, 195, 212, 0.34);
+}
+.art-zine-sheet--2 {
+  animation: art-zine-gather-2 3s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+.art-zine-sheet--3 {
+  animation: art-zine-gather-3 3s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  background: rgba(176, 138, 106, 0.28);
+}
+@keyframes art-zine-gather-1 {
+  0% { transform: translate(-50%, -50%) rotate(-9deg) translate(-1.6rem, -0.6rem); opacity: 0.5; }
+  60%, 100% { transform: translate(-50%, -50%) rotate(-4deg) translate(-0.5rem, -0.2rem); opacity: 0.95; }
+}
+@keyframes art-zine-gather-2 {
+  0% { transform: translate(-50%, -50%) rotate(6deg) translate(1.5rem, 0.4rem); opacity: 0.5; }
+  60%, 100% { transform: translate(-50%, -50%) rotate(2deg) translate(0.4rem, 0.1rem); opacity: 1; }
+}
+@keyframes art-zine-gather-3 {
+  0% { transform: translate(-50%, -50%) rotate(12deg) translate(0.2rem, 1.4rem); opacity: 0.4; }
+  60%, 100% { transform: translate(-50%, -50%) rotate(5deg) translate(0.1rem, 0.5rem); opacity: 0.9; }
+}
+.art-zine-sparkle {
+  position: absolute;
+  right: 0.4rem;
+  top: 0.2rem;
+  color: #7fa9bd;
+  animation: art-zine-twinkle 2.4s ease-in-out infinite;
+}
+@keyframes art-zine-twinkle {
+  0%, 100% { opacity: 0.35; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+/* 过渡屏：三句文案依次浮现 */
+.art-zine-step {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #b08a6a;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.7s ease, transform 0.7s ease, color 0.7s ease;
+}
+.art-zine-step--on {
+  opacity: 0.7;
+  transform: translateY(0);
+}
+.art-zine-step--current {
+  opacity: 1;
+  color: #5f4530;
+}
+
+/* 结果屏：成品图框 */
+.art-zine-frame {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 19rem;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 1.4rem;
+  background: linear-gradient(180deg, #fbf7ef, #efe4d0);
+  box-shadow: 0 26px 50px -30px rgba(90, 60, 35, 0.55);
+}
+.art-zine-frame--error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(122, 90, 62, 0.28);
+  box-shadow: none;
+}
+.art-zine-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.art-zine-image--on {
+  opacity: 1;
+}
+.art-zine-skeleton {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.art-zine-skeleton__shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 30%, rgba(255, 253, 248, 0.6) 50%, transparent 70%);
+  background-size: 220% 100%;
+  animation: art-zine-shimmer 1.8s ease-in-out infinite;
+}
+@keyframes art-zine-shimmer {
+  0% { background-position: 140% 0; }
+  100% { background-position: -40% 0; }
+}
+.art-zine-skeleton__text {
+  position: relative;
+  font-size: 0.78rem;
+  color: #96704f;
+}
+
+/* 结果屏：主短句 */
+.art-zine-phrase {
+  font-family: 'Huiwen-mincho', 'Songti SC', serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  color: #5f4530;
+}
+
+/* 短文案编辑（编辑式，无表单感） */
+.caption-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(122, 90, 62, 0.14);
+  background: rgba(255, 253, 248, 0.7);
+  padding: 0.6rem 0.9rem;
+}
+.caption-field input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.85rem;
+  color: #5f4530;
+}
+.caption-field input::placeholder {
+  color: #b08a6a;
+}
